@@ -1,0 +1,166 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+
+body {
+  padding-top: 54px;
+  font-family: Nunito;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.logo-rectangle {
+  height: 22px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #333f48;
+}
+
+.nav-item {
+  padding-right: 18px;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-link.selected {
+  color: #77b2af;
+}
+
+.nav-link:hover {
+  color: #77b2af;
+}
+
+.home-section {
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #333f48;
+  color: #fff;
+  height: 1024px;
+  padding: 0;
+  margin: 0;
+}
+
+.home-section-two {
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #e8e9ea;
+  color: #000;
+  height: 1024px;
+  padding: 0;
+  margin: 0;
+}
+
+.home-section-three {
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #d9dbdd;
+  color: #000;
+  height: 1024px;
+  padding: 0;
+  margin: 0;
+}
+
+.home-textbox {
+  font-size: 1.3125rem;
+}
+
+.align-items-center {
+  -ms-flex-align: center!important;
+  align-items: center!important;
+}
+
+.d-flex {
+  display: -ms-flexbox!important;
+  display: flex!important;
+}
+
+
+footer {
+  background-color: #111;
+  color: #ccc;
+  padding: 50px 0 0 0;
+}
+
+footer a {
+  color: #aaa;
+}
+
+footer a:hover {
+  color: #888;
+  text-decoration: none;
+}
+
+#subfooter {
+  background-color: #0a0a0a;
+  color: #5d5d5d;
+  padding: 30px 0 0 0;
+  margin: 20px 0 0 0;
+}
+
+ul.social-links {
+  list-style: none;
+}
+
+ul.social-links li {
+  display: inline;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+ul.general {
+  list-style: none;
+  margin-left: 0;
+}
+
+ul.link-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.link-list li {
+  margin: 0;
+  padding: 2px 0 2px 0;
+  list-style: none;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  background: #707070;
+  color: white;
+}
+.fa:hover {
+  opacity: 0.7;
+  color: white;
+  text-decoration: none;
+}
