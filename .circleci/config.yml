@@ -5,4 +5,5 @@ jobs:
       - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
     steps:
       - checkout # check out the code in the project directory
+      - setup_remote_docker # required to run 'docker' command
       - run: docker build -t fuzzylabs/website .
