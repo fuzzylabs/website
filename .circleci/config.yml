@@ -1,9 +1,42 @@
 version: 2
 jobs:
-  build:
-    docker: # use the docker executor type; machine and macos executors are also supported
-      - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
+  #build:
+  #  docker: # use the docker executor type; machine and macos executors are also supported
+  #    - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
+  #  steps:
+  #    - checkout # check out the code in the project directory
+  #    - setup_remote_docker # required to run 'docker' command
+  #    - run: docker build -t fuzzylabs/website:$CIRCLE_BUILD_NUM .
+  build_and_push:
+    docker:
+      - image: google/cloud-sdk
+    environment:
+      - PROJECT_NAME: "website"
+      - GOOGLE_PROJECT_ID: "euphoric-effect-228622"
+      - GOOGLE_COMPUTE_ZONE: "us-east-1"
+      - GOOGLE_CLUSTER_NAME: "standard-cluster-1"
     steps:
-      - checkout # check out the code in the project directory
-      - setup_remote_docker # required to run 'docker' command
-      - run: docker build -t fuzzylabs/website:$CIRCLE_BUILD_NUM .
+      - checkout
+      - run: 
+          name: Setup Google Cloud SDK
+          command: |
+            apt-get install -qq -y gettext
+            echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json
+            gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
+            gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
+            gcloud --quiet config set compute/zone ${GOOGLE_COMPUTE_ZONE}
+            gcloud --quiet container clusters get-credentials ${GOOGLE_CLUSTER_NAME}
+      - setup_remote_docker
+      - run: 
+          name: Docker build and push
+          command: |
+            docker build -t ${PROJECT_NAME} .
+            docker tag ${PROJECT_NAME} gcr.io/${GOOGLE_PROJECT_ID}/${PROJECT_NAME}:${CIRCLE_SHA1}
+            gcloud auth print-access-token | docker login -u oauth2accesstoken --password-stdin https://eu.gcr.io
+            docker push eu.gcr.io/${GOOGLE_PROJECT_ID}/${PROJECT_NAME}:${CIRCLE_SHA1}
+      #- run: 
+      #    name: Deploy to Kubernetes
+      #    command: |
+      #      envsubst < ${HOME}/project/k8s.yml > ${HOME}/patched_k8s.yml
+      #      kubectl apply -f ${HOME}/patched_k8s.yml
+      #      kubectl rollout status deployment/${PROJECT_NAME}
