@@ -6,4 +6,4 @@ jobs:
     steps:
       - checkout # check out the code in the project directory
       - setup_remote_docker # required to run 'docker' command
-      - run: docker build -t fuzzylabs/website .
+      - run: docker build -t fuzzylabs/website:$CIRCLE_BUILD_NUM .
