@@ -13,7 +13,7 @@ jobs:
     environment:
       - PROJECT_NAME: "website"
       - GOOGLE_PROJECT_ID: "euphoric-effect-228622"
-      - GOOGLE_COMPUTE_ZONE: "us-east-1"
+      - GOOGLE_COMPUTE_ZONE: "us-east1"
       - GOOGLE_CLUSTER_NAME: "standard-cluster-1"
     steps:
       - checkout
