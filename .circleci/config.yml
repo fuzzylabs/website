@@ -1,12 +1,6 @@
+# https://medium.com/@admm/ci-cd-using-circleci-and-google-kubernetes-engine-gke-7ed3a5ad57e
 version: 2
 jobs:
-  #build:
-  #  docker: # use the docker executor type; machine and macos executors are also supported
-  #    - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
-  #  steps:
-  #    - checkout # check out the code in the project directory
-  #    - setup_remote_docker # required to run 'docker' command
-  #    - run: docker build -t fuzzylabs/website:$CIRCLE_BUILD_NUM .
   build:
     docker:
       - image: google/cloud-sdk
@@ -35,9 +29,9 @@ jobs:
             docker tag ${PROJECT_NAME} ${GOOGLE_REGISTRY_REGION}/${GOOGLE_PROJECT_ID}/${PROJECT_NAME}:${CIRCLE_SHA1}
             gcloud auth print-access-token | docker login -u oauth2accesstoken --password-stdin https://${GOOGLE_REGISTRY_REGION}
             docker push ${GOOGLE_REGISTRY_REGION}/${GOOGLE_PROJECT_ID}/${PROJECT_NAME}:${CIRCLE_SHA1}
-      #- run: 
-      #    name: Deploy to Kubernetes
-      #    command: |
-      #      envsubst < ${HOME}/project/k8s.yml > ${HOME}/patched_k8s.yml
-      #      kubectl apply -f ${HOME}/patched_k8s.yml
-      #      kubectl rollout status deployment/${PROJECT_NAME}
+      - run: 
+          name: Deploy to Kubernetes
+          command: |
+            envsubst < ${HOME}/project/k8s.yml > ${HOME}/patched_k8s.yml
+            kubectl apply -f ${HOME}/patched_k8s.yml
+            kubectl rollout status deployment/${PROJECT_NAME}
