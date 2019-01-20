@@ -15,6 +15,7 @@ jobs:
       - GOOGLE_PROJECT_ID: "euphoric-effect-228622"
       - GOOGLE_COMPUTE_ZONE: "us-east1-b"
       - GOOGLE_CLUSTER_NAME: "standard-cluster-1"
+      - GOOGLE_REGISTRY_REGION: "gcr.io"
     steps:
       - checkout
       - run: 
@@ -31,9 +32,9 @@ jobs:
           name: Docker build and push
           command: |
             docker build -t ${PROJECT_NAME} .
-            docker tag ${PROJECT_NAME} gcr.io/${GOOGLE_PROJECT_ID}/${PROJECT_NAME}:${CIRCLE_SHA1}
-            gcloud auth print-access-token | docker login -u oauth2accesstoken --password-stdin https://eu.gcr.io
-            docker push eu.gcr.io/${GOOGLE_PROJECT_ID}/${PROJECT_NAME}:${CIRCLE_SHA1}
+            docker tag ${PROJECT_NAME} ${GOOGLE_REGISTRY_REGION}/${GOOGLE_PROJECT_ID}/${PROJECT_NAME}:${CIRCLE_SHA1}
+            gcloud auth print-access-token | docker login -u oauth2accesstoken --password-stdin https://${GOOGLE_REGISTRY_REGION}
+            docker push ${GOOGLE_REGISTRY_REGION}/${GOOGLE_PROJECT_ID}/${PROJECT_NAME}:${CIRCLE_SHA1}
       #- run: 
       #    name: Deploy to Kubernetes
       #    command: |
