@@ -6,10 +6,10 @@ jobs:
       - image: google/cloud-sdk
     environment:
       - PROJECT_NAME: "website"
-      - GOOGLE_PROJECT_ID: "euphoric-effect-228622"
-      - GOOGLE_COMPUTE_ZONE: "us-east1-b"
-      - GOOGLE_CLUSTER_NAME: "standard-cluster-1"
-      - GOOGLE_REGISTRY_REGION: "gcr.io"
+      - GOOGLE_PROJECT_ID: "fuzzylabs"
+      - GOOGLE_COMPUTE_ZONE: "eu-west2"
+      - GOOGLE_CLUSTER_NAME: "fuzzylabs"
+      - GOOGLE_REGISTRY_REGION: "eu.gcr.io"
     steps:
       - checkout
       - run: 
