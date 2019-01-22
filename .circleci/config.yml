@@ -7,7 +7,7 @@ jobs:
     environment:
       - PROJECT_NAME: "website"
       - GOOGLE_PROJECT_ID: "fuzzylabs"
-      - GOOGLE_COMPUTE_ZONE: "eu-west2"
+      - GOOGLE_COMPUTE_ZONE: "europe-west2"
       - GOOGLE_CLUSTER_NAME: "fuzzylabs"
       - GOOGLE_REGISTRY_REGION: "eu.gcr.io"
     steps:
