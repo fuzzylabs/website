@@ -4,6 +4,7 @@ jobs:
   build:
     docker:
       - image: google/cloud-sdk
+      - image: cibuilds/hugo:latest
     environment:
       - PROJECT_NAME: "website"
       - GOOGLE_PROJECT_ID: "fuzzylabs"
@@ -22,6 +23,9 @@ jobs:
             gcloud --quiet config set compute/zone ${GOOGLE_COMPUTE_ZONE}
             gcloud --quiet container clusters get-credentials ${GOOGLE_CLUSTER_NAME}
       - setup_remote_docker
+      - run:
+          name: Hugo static build
+          command: hugo --config="hugo/config.toml" -s hugo -d $PWD/public -b "/website"
       - run: 
           name: Docker build and push
           command: |
