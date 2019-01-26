@@ -4,11 +4,11 @@
       <div class="col-md-2">
         <h6 class="text-uppercase font-weight-bold">Fuzzy Labs</h6>
         <ul class="link-list">
-          <li><a href="#">What we do</a></li>
-          <li><a href="#">Our Approach</a></li>
-          <li><a href="#">The Team</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="{{ "services" | absURL }}">What we do</a></li>
+          <li><a href="{{ "methods" | absURL }}">Our Approach</a></li>
+          <li><a href="{{ "team" | absURL }}">The Team</a></li>
+          <li><a href="{{ "contact" | absURL }}">Contact</a></li>
+          <li><a href="{{ "blog" | absURL }}">Blog</a></li>
         </ul>
       </div>
       <div class="col-md-3">
@@ -43,6 +43,7 @@
         </div>
       </div>
     </div>
+  </div>
 </footer>
 
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{{ "vendor/bootstrap/js/bootstrap.bundle.min.js" | absURL }}"></script>
