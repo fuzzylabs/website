@@ -6,6 +6,14 @@ This is the Fuzzy Labs website. We use [Hugo](https://gohugo.io) to generate sta
 
 ## Build:
 
+### Generate static content with Hugo
+
+```
+hugo --config="hugo/config.toml" -s hugo -d $PWD/public
+```
+
+### Build Docker image
+
 ```
 docker build . -t fuzzylabs.ai:latest
 ```

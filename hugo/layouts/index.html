@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{ partial "head.html" . }}
+
+  <body>
+    {{ partial "navigation.html" . }}
+
+    <!-- begin main content -->
+    <section class="section home-section" style="background-image: url('images/slide-1.jpg')">
+      <div class="container">
+        <div class="row" style="height: 850px">
+          <div class="col-md-12 align-items-center ml-auto d-flex">
+            <div style="max-width: 440px">
+              <h2>Pragmatic AI</h2>
+              <p class="home-textbox text-justify">We help organisations deploy AI. Our passion for software plus our experience in distributed computing, data analytics, machine learning and smart devices drives us to build great things.</p>
+              <a href="services.html" class="btn btn-light">Learn More about what we do</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section home-section-two" style="background-image: url('images/slide-2.jpg')">
+      <div class="container">
+        <div class="row" style="height: 850px">
+          <div class="col-md-12 align-items-center ml-auto d-flex">
+            <div style="max-width: 440px">
+              <h2>DevOps first</h2>
+              <p class="home-textbox text-justify">Everything we do begins with DevOps. Docker, Kubernetes and Google Compute Engine are our tools of choice.</p>
+              <p><a href="approach.html" class="btn btn-dark">Our Approach</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end main content -->
+
+    {{ partial "footer.html" }}
+  </body>
+</html>
