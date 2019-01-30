@@ -5,7 +5,9 @@
   <body>
     {{ partial "navigation.html" . }}
 
-    {{ .Content }}
+    <div class="container">
+      {{ .Content }}
+    </div>
 
     {{ partial "footer.html" }}
   </body>

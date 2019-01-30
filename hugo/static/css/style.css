@@ -58,9 +58,29 @@ body {
 .home-section-three {
   background-position: right;
   background-repeat: no-repeat;
-  background-color: #d9dbdd;
+  background-color: #e6e8eb;
   color: #000;
-  height: 1024px;
+  height: 650px;
+  padding: 0;
+  margin: 0;
+}
+
+.home-section-four {
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #f5f5f5;
+  color: #000;
+  height: 650px;
+  padding: 0;
+  margin: 0;
+}
+
+.home-section-five {
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  color: #000;
+  height: 600px;
   padding: 0;
   margin: 0;
 }
@@ -157,4 +177,14 @@ ul.link-list li {
   opacity: 0.7;
   color: white;
   text-decoration: none;
+}
+
+.services-block {
+  background: #d1d6da;
+  padding: 60px 20px;
+  margin-bottom: 40px;
+}
+.services-block .services-icon {
+  margin-bottom: 10px;
+  font-size: 60px
 }

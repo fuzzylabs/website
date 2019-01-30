@@ -13,7 +13,6 @@
             <div style="max-width: 440px">
               <h2>Pragmatic AI</h2>
               <p class="home-textbox text-justify">We help organisations deploy AI. Our passion for software plus our experience in distributed computing, data analytics, machine learning and smart devices drives us to build great things.</p>
-              <a href="{{ "services" | absURL }}" class="btn btn-light">Learn More about what we do</a>
             </div>
           </div>
         </div>
@@ -27,12 +26,69 @@
             <div style="max-width: 440px">
               <h2>DevOps first</h2>
               <p class="home-textbox text-justify">Everything we do begins with DevOps. Docker, Kubernetes and Google Compute Engine are our tools of choice.</p>
-              <p><a href="{{ "approach" | absURL }}" class="btn btn-dark">Our Approach</a></p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section id="services" class="home-section-three">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12" style="padding-top: 50px; padding-bottom: 50px">
+            <h1>Our services</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          {{ range .Site.Data.services.services}}
+          <article class="col-md-4 col-sm-6 col-xs-12">
+            <div class="services-block text-center">
+              <div class="services-icon text-center">
+                <i class="{{ .icon }}"></i>
+              </div>
+              <h3>{{ .title }}</h3>
+              <p>{{ .description }}</p>
+            </div>
+          </article>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+
+    <section id="approach" class="home-section-four">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12" style="padding-top: 50px; padding-bottom: 50px">
+            <h1>Our Approach to Software Delivery</h1>
+          </div>
+        </div>
+
+        <div class="row">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="home-section-five">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12" style="padding-top: 50px; padding-bottom: 50px">
+            <h1>Let's Talk</h1>
+            <h3>We love to talk tech - do you?</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <p>Our favourite topics for conversation are DevOps, AI, and machine learning. We'd love to discuss your needs and aspirations, and to see how Fuzzy Labs can help.</p>
+            <p><b>Email Us:</b> <a href="mailto:talk@fuzzylabs.tech">talk@fuzzylabs.tech</a></p>
+            <p><b>Call Us:</b> +44 0000000000</p>
+            <p><b>Meet Us:</b> Our home is Manchester, England. If you're nearby, then let's get a brew together.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- end main content -->
 
     {{ partial "footer.html" }}
