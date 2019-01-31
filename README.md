@@ -26,6 +26,12 @@ docker build . -t fuzzylabs.ai:latest
 docker run -p 80:80 fuzzylabs.ai
 ```
 
+## Clean
+
+```
+rm -rf public
+```
+
 ## Local Hugo test server
 
 After [installing Hugo](https://gohugo.io/getting-started/installing):

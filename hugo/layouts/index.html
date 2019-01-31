@@ -11,32 +11,20 @@
         <div class="row" style="height: 850px">
           <div class="col-md-12 align-items-center ml-auto d-flex">
             <div style="max-width: 440px">
-              <h2>Pragmatic AI</h2>
-              <p class="home-textbox text-justify">We help organisations deploy AI. Our passion for software plus our experience in distributed computing, data analytics, machine learning and smart devices drives us to build great things.</p>
+              <h1 style="padding-bottom: 125px">AI for everybody</h1>
+              <h2 style="padding-bottom: 50px">We believe that it should be simple to deploy AI so that you can do more with your data</h2>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section home-section-two" style="background-image: url('images/slide-2.jpg')">
-      <div class="container">
-        <div class="row" style="height: 850px">
-          <div class="col-md-12 align-items-center ml-auto d-flex">
-            <div style="max-width: 440px">
-              <h2>DevOps first</h2>
-              <p class="home-textbox text-justify">Everything we do begins with DevOps. Docker, Kubernetes and Google Compute Engine are our tools of choice.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="services" class="home-section-three">
+    <section id="services" class="home-section-three" style="background-image: url('images/slide-2.jpg')">
       <div class="container text-center">
         <div class="row">
           <div class="col-md-12" style="padding-top: 50px; padding-bottom: 50px">
-            <h1>Our services</h1>
+            <h1>What we do</h1>
+            <h2>We build data platforms properly. That means easy to understand, scaling to demand, and portable from test to production, in the cloud and at the edge.</h2>
           </div>
         </div>
 
@@ -48,7 +36,6 @@
                 <i class="{{ .icon }}"></i>
               </div>
               <h3>{{ .title }}</h3>
-              <p>{{ .description }}</p>
             </div>
           </article>
           {{ end }}
@@ -60,11 +47,19 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-md-12" style="padding-top: 50px; padding-bottom: 50px">
-            <h1>Our Approach to Software Delivery</h1>
+            <h1>Our Approach</h1>
           </div>
         </div>
 
         <div class="row">
+          {{ range .Site.Data.approach.principles}}
+          <article class="col-md-6 col-sm-6 col-xs-6">
+            <div class="principles-block text-center">
+              <h3>{{ .title }}</h3>
+              <p>{{ .description }}</p>
+            </div>
+          </article>
+          {{ end }}
         </div>
       </div>
     </section>
@@ -72,18 +67,21 @@
     <section id="contact" class="home-section-five">
       <div class="container text-center">
         <div class="row">
-          <div class="col-md-12" style="padding-top: 50px; padding-bottom: 50px">
+          <div class="col-md-12" style="padding-top: 50px">
             <h1>Let's Talk</h1>
             <h3>We love to talk tech - do you?</h3>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-md-12">
-            <p>Our favourite topics for conversation are DevOps, AI, and machine learning. We'd love to discuss your needs and aspirations, and to see how Fuzzy Labs can help.</p>
-            <p><b>Email Us:</b> <a href="mailto:talk@fuzzylabs.tech">talk@fuzzylabs.tech</a></p>
-            <p><b>Call Us:</b> +44 0000000000</p>
-            <p><b>Meet Us:</b> Our home is Manchester, England. If you're nearby, then let's get a brew together.</p>
+          <div class="col-md-3">
+          </div>
+          <div class="col-md-6">
+            <p>Our favourite topics for conversation are DevOps, AI, and machine learning.<br/>We'd love to discuss your aspirations and see how Fuzzy Labs can help.</p>
+            <p><b>Email Us:</b> <a href="mailto:talk@fuzzylabs.tech">talk@fuzzylabs.ai</a></p>
+            <p><b>Meet Us:</b> Our home is Manchester, England. If you're nearby, let's get a brew together.</p>
+          </div>
+          <div class="col-md-3">
           </div>
         </div>
       </div>

@@ -9,6 +9,10 @@ body {
   }
 }
 
+h1 {
+  font-size: 3.5rem;
+}
+
 .logo-rectangle {
   height: 22px;
   padding: 0;
@@ -48,8 +52,8 @@ body {
 .home-section-two {
   background-position: right;
   background-repeat: no-repeat;
-  background-color: #e8e9ea;
-  color: #000;
+  background-color: #333f48;
+  color: #fff;
   height: 1024px;
   padding: 0;
   margin: 0;
@@ -70,7 +74,7 @@ body {
   background-repeat: no-repeat;
   background-color: #f5f5f5;
   color: #000;
-  height: 650px;
+  height: 800px;
   padding: 0;
   margin: 0;
 }
@@ -78,9 +82,9 @@ body {
 .home-section-five {
   background-position: right;
   background-repeat: no-repeat;
-  background-color: #fff;
+  background-color: #e6e8eb;
   color: #000;
-  height: 600px;
+  height: 400px;
   padding: 0;
   margin: 0;
 }
@@ -180,11 +184,16 @@ ul.link-list li {
 }
 
 .services-block {
-  background: #d1d6da;
   padding: 60px 20px;
   margin-bottom: 40px;
 }
 .services-block .services-icon {
   margin-bottom: 10px;
   font-size: 60px
+}
+
+.principles-block {
+  background: #e0e0e0;
+  padding: 60px 20px;
+  margin-bottom: 40px;
 }
