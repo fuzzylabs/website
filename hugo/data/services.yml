@@ -1,9 +1,7 @@
 services:
-  - icon: fas fa-brain
-    title: Kubernetes
-    
-  - icon: fas fa-cogs
-    title: Google Cloud
-    
-  - icon: fas fa-chalkboard-teacher
-    title: Kubeflow
+  - icon: kubernetes.png
+     
+  - icon: kubeflow.svg
+     
+  - icon: docker.svg
+
