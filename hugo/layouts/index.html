@@ -28,16 +28,17 @@
           </div>
         </div>
 
-        <div class="row">
-          {{ range .Site.Data.services.services}}
-          <article class="col-md-4 col-sm-6 col-xs-12">
-            <div class="services-block text-center">
-              <div class="services-icon text-center">
-                <img src="images/{{ .icon }}" width="80px"/>
-              </div>
-            </div>
-          </article>
-          {{ end }}
+        <div class="row" style="padding-bottom: 50px">
+          <div class="col-md-4">
+            <img src="images/kubernetes.png" width="80px"/>
+          </div>
+          <div class="col-md-4">
+            <img src="images/kubeflow.svg" width="80px"/>
+          </div>
+          <div class="col-md-4">
+            <img src="images/docker.svg" width="80px"/>
+          </div>
+          </div>
         </div>
       </div>
     </section>

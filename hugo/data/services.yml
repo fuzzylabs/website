@@ -1,7 +1,0 @@
-services:
-  - icon: kubernetes.png
-     
-  - icon: kubeflow.svg
-     
-  - icon: docker.svg
-
