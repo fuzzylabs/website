@@ -1,0 +1,3 @@
+baseURL = "" # This is best left blank, so URLs still work locally
+languageCode = "en-GB"
+title = "Fuzzy Labs"
