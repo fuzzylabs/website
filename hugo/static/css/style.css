@@ -35,54 +35,44 @@ body {
   color: #77b2af;
 }
 
-.home-section {
+.section-why {
   background-position: right;
   background-repeat: no-repeat;
   background-color: #333f48;
   color: #fff;
-
   padding: 0;
   margin: 0;
+  min-height: 700px;
 }
 
-.home-section-two {
-  background-position: right;
-  background-repeat: no-repeat;
-  background-color: #333f48;
-  color: #fff;
-
-  padding: 0;
-  margin: 0;
-}
-
-.home-section-three {
+.section-what {
   background-position: right;
   background-repeat: no-repeat;
   background-color: #e6e8eb;
   color: #000;
-
   padding: 0;
   margin: 0;
+  min-height: 700px;
 }
 
-.home-section-four {
+.section-how {
   background-position: right;
   background-repeat: no-repeat;
   background-color: #f5f5f5;
   color: #000;
-
   padding: 0;
   margin: 0;
+  min-height: 700px;
 }
 
-.home-section-five {
+.section-contact {
   background-position: right;
   background-repeat: no-repeat;
   background-color: #e6e8eb;
   color: #000;
-
   padding: 0;
   margin: 0;
+  min-height: 700px;
 }
 
 .home-textbox {
@@ -191,5 +181,4 @@ ul.link-list li {
 .principles-block {
   padding: 60px 20px;
   margin-bottom: 40px;
-
 }
