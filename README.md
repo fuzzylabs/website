@@ -9,7 +9,7 @@ This is the Fuzzy Labs website. We use [Hugo](https://gohugo.io) to generate sta
 ### Generate static content with Hugo
 
 ```
-hugo --config="hugo/config.toml" -s hugo -d $PWD/public -b "/"
+hugo --config="hugo/config.toml" -s hugo -d $PWD/public
 ```
 
 ### Build Docker image
