@@ -25,7 +25,7 @@ jobs:
       - setup_remote_docker
       - run:
           name: Hugo static build
-          command: hugo --config="hugo/config.toml" -s hugo -d $PWD/public
+          command: hugo --config="hugo/config.toml" -s hugo -d $PWD/public -b "/"
       - run: 
           name: Docker build and push
           command: |
