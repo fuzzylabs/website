@@ -9,10 +9,8 @@ This is the Fuzzy Labs website. We use [Hugo](https://gohugo.io) to generate sta
 ### Generate static content with Hugo
 
 ```
-hugo --config="hugo/config.toml" -s hugo -d $PWD/public -b "/website"
+hugo --config="hugo/config.toml" -s hugo -d $PWD/public
 ```
-
-*n.b. the `-b "/website"` option is a workaround to ensure URLs include the /website prefix which we're using until production-readiness*
 
 ### Build Docker image
 
