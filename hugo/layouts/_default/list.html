@@ -1,4 +1,5 @@
 {{ define "main" }}
+
 <section class="section section-blog" style="background-image: url('../images/slide-1.jpg')">
   <div class="container">
     <div class="row" style="height: 200px">
@@ -13,8 +14,10 @@
 
 <section class="section blog-content" style="padding-top: 20px; padding-bottom: 50px">
   <div class="container">
-    <h2>{{ .Title }}</h2>
-    {{ .Content }}
+    {{ range .Pages.ByPublishDate.Reverse }}
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <p>How design sprints can help you test a new idea in just 5 days</p>
+    {{ end }}
   </div>
 </section>
 
