@@ -4,19 +4,21 @@
   <div class="container">
     <div class="row" style="height: 200px">
       <div class="col-md-12 align-items-center ml-auto d-flex">
-        <div style="max-width: 440px">
-          <h1>Fuzzy Labs Blog</h1>
+        <div>
+          <h1 style="color: #48a7aa">Fuzzy Labs Blog</h1>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section blog-content" style="padding-top: 20px; padding-bottom: 50px">
+<section class="section blog-content" style="padding-top: 70px; padding-bottom: 100px">
   <div class="container">
     {{ range .Pages.ByPublishDate.Reverse }}
-    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <h2 style="padding-top: 30px"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
     <p>How design sprints can help you test a new idea in just 5 days</p>
+    <p><i>Posted by Matt Squire on {{ dateFormat "Monday, January 2, 2006" .Date }}</i></p>
+    <hr/>
     {{ end }}
   </div>
 </section>

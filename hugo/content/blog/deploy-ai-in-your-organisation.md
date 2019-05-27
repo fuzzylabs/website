@@ -4,18 +4,7 @@ date: 2019-01-12T22:14:57-06:00
 tags: ["business", "design-sprint"]
 draft: false
 ---
-Deploying AI in your business
-=============================
-
-How design sprints can help you test a new idea in just 5 days
-
-* * * * *
-
-### Deploying AI in Your Business {#9b33 .graf .graf--h3 .graf--leading .graf--title name="9b33"}
-
-#### How design sprints can help you test a new idea in just 5 days {#299e .graf .graf--h4 .graf-after--h3 .graf--subtitle name="299e"}
-
-### A bookseller with a problem {#195e .graf .graf--h3 .graf-after--h4 name="195e"}
+# A bookseller with a problem {#195e .graf .graf--h3 .graf-after--h4 name="195e"}
 
 So you’ve heard AI is revolutionising your life, your business and your
 cats. In boardrooms around the world there’s talk of ‘AI strategy’ and a
@@ -51,10 +40,9 @@ Seth isn’t convinced.
 
 ![](https://cdn-images-1.medium.com/max/800/1*gejeBAG1aRDFWOL8Uxz3dg.png)
 
-[Machine Learning gone
-wrong — https://xkcd.com/1838](https://xkcd.com/1838/)
+[Machine Learning gone wrong — https://xkcd.com/1838](https://xkcd.com/1838/)
 
-### The design sprint {#73a2 .graf .graf--h3 .graf-after--figure name="73a2"}
+# The design sprint
 
 We want to build something that’s genuinely useful to the business;
 anything else would be a waste of time and money. The business problem
@@ -85,19 +73,19 @@ email replies. For most of the week no electronic devices are allowed.
 ![](https://cdn-images-1.medium.com/max/800/1*O68ulH1qJQAGOsPDOw7xwQ.jpeg)
 
 Sprint: how to solve big problems and test new ideas in just five days
-page 17. Jake Knapp, John Zeratsky, Braden Kowitz 2016.
+page 17. Jake Knapp, John Zeratsky, Braden Kowitz 2016.
 
-### Monday {#14bb .graf .graf--h3 .graf-after--figure name="14bb"}
+## Monday
 
-#### Map out the problem and choose a target to focus attention on. {#c516 .graf .graf--h4 .graf-after--h3 name="c516"}
+*Map out the problem and choose a target to focus attention on*
 
 First a long-term goal is agreed. Next the team maps out the problem
 space, before narrowing it down to a specific target. An important part
 of the process is capturing information from experts.
 
-### Tuesday {#e3ce .graf .graf--h3 .graf-after--p name="e3ce"}
+## Tuesday
 
-#### Sketch out competing solutions. {#1952 .graf .graf--h4 .graf-after--h3 name="1952"}
+*Sketch out competing solutions*
 
 Following Monday’s sessions the team knows what their target problem is.
 Everybody takes part in solution sketching, because each person has a
@@ -105,9 +93,9 @@ unique perspective. Team members are encouraged to seek inspiration from
 a variety of places — sometimes the best solutions come from a different
 industry. Solutions are drawn with pen and paper.
 
-### Wednesday {#fce6 .graf .graf--h3 .graf-after--p name="fce6"}
+## Wednesday
 
-#### Decide on the best solution {#e2f4 .graf .graf--h4 .graf-after--h3 name="e2f4"}
+*Decide on the best solution*
 
 The competing solutions developed on Tuesday are anonymous, so
 presentation and language is key to making them self-explanatory. On
@@ -116,18 +104,18 @@ gallery. Out of these the team members choose the most interesting ideas
 and concepts. The designated ‘decider’ chooses the solution which will
 ultimately be used for prototyping.
 
-### Thursday {#7e2c .graf .graf--h3 .graf-after--p name="7e2c"}
+## Thursday
 
-#### Prototype a solution {#e5e3 .graf .graf--h4 .graf-after--h3 name="e5e3"}
+*Prototype a solution*
 
 Often software prototypes eschew good engineering practice for the sake
 of speed, then the ‘prototype’ becomes production. Here prototyping has
 a singular purpose: to capture useful feedback from users. No code
 needed; the prototype can consist of crudely mocked-up user interfaces.
 
-### Friday {#4b80 .graf .graf--h3 .graf-after--p name="4b80"}
+## Friday
 
-#### Validate the solution {#7771 .graf .graf--h4 .graf-after--h3 name="7771"}
+*Validate the solution*
 
 Throughout the week there are a few things happening in the background,
 among which is the recruitment of ‘customers’ to participate in
@@ -142,7 +130,7 @@ her to perform some tasks using the prototype and to think aloud while
 doing so. Afterwards the customer can provide further feedback on the
 prototype and the experience of using it.
 
-### The happiness engine {#6089 .graf .graf--h3 .graf-after--p name="6089"}
+# The happiness engine
 
 *Fun fact*: you’re about 850 words into this story, and I’m nearly
 finished, so bear with me. For an imaginary company like Sahara the
@@ -174,7 +162,7 @@ simple prototype and a set of testable hypotheses that tell Sahara what
 they should do next. Think of this as the first step towards something
 smarter.
 
-### What’s next? {#14e9 .graf .graf--h3 .graf-after--p name="14e9"}
+# What’s next?
 
 There’s undoubtedly a great deal of hype surrounding artificial
 intelligence. While it’s an exciting field to work in it’s important to

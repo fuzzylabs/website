@@ -1,3 +1,0 @@
----
-title: Fuzzy Labs Blog
----

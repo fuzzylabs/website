@@ -3,8 +3,9 @@
   <div class="container">
     <div class="row" style="height: 200px">
       <div class="col-md-12 align-items-center ml-auto d-flex">
-        <div style="max-width: 440px">
-          <h1>Fuzzy Labs Blog</h1>
+        <div>
+          <h1 style="color: #48a7aa">Fuzzy Labs Blog</h1>
+          <h2>{{ .Title }}</h2>
         </div>
       </div>
     </div>
@@ -13,7 +14,6 @@
 
 <section class="section blog-content" style="padding-top: 20px; padding-bottom: 50px">
   <div class="container">
-    <h2>{{ .Title }}</h2>
     {{ .Content }}
   </div>
 </section>
