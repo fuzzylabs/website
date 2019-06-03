@@ -21,7 +21,7 @@
       {{ end }}
 
       <div class="col-sm blog-grid" style="background: linear-gradient(rgba(16, 29, 57, 0.45), rgba(16, 29, 57, 0.45)), url('{{ .Description }}'); background-position: center; background-size: cover; background-repeat: no-repeat">
-        <a href="">
+        <a href="{{ .RelPermalink }}">
           <h1>{{ .Title }}</h1>
           <p class="text-bottom">
             <small>
