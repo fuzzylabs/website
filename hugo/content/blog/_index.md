@@ -1,0 +1,3 @@
+---
+title: "A Fuzzy Journal"
+---

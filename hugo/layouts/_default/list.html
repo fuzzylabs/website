@@ -5,21 +5,41 @@
     <div class="row" style="height: 200px">
       <div class="col-md-12 align-items-center ml-auto d-flex">
         <div>
-          <h1 style="color: #48a7aa">Fuzzy Labs Blog</h1>
+          <h1 style="color: #48a7aa">{{ .Title }}</h1>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section blog-content" style="padding-top: 70px; padding-bottom: 100px">
-  <div class="container">
-    {{ range .Pages.ByPublishDate.Reverse }}
-    <h2 style="padding-top: 30px"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-    <p>How design sprints can help you test a new idea in just 5 days</p>
-    <p><i>Posted by Matt Squire on {{ dateFormat "Monday, January 2, 2006" .Date }}</i></p>
-    <hr/>
-    {{ end }}
+<section class="section blog-content">
+  <div class="container" style="margin-top: 80px; margin-bottom: 80px">
+      {{ range $index, $page := .Pages.ByPublishDate.Reverse }}
+
+      {{ if eq (mod $index 3) 0 }}
+      <div class="row">
+      {{ end }}
+
+      <div class="col-sm blog-grid" style="background: linear-gradient(rgba(16, 29, 57, 0.45), rgba(16, 29, 57, 0.45)), url('{{ .Description }}'); background-position: center; background-size: cover; background-repeat: no-repeat">
+        <a href="">
+          <h1>{{ .Title }}</h1>
+          <p class="text-bottom">
+            <small>
+              <span>{{ div .FuzzyWordCount 250 }} min read</span><br/>
+              <time><i class="far fa-clock"></i>  {{ dateFormat "January 2, 2006" .Date }}</time>
+              <span><i class="fas fa-user"></i>  Matt Squire</span>
+            </small>
+          </p>
+        </a>
+      </div>
+
+      {{ if eq (mod $index 3) 2 }}
+      </div>
+      {{ end }}
+
+
+      {{ end }}
+
   </div>
 </section>
 

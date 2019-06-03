@@ -305,3 +305,33 @@ ul.link-list li {
 .blog-content .highlighted {
   background: #7DFFB3;
 }
+
+.blog-grid {
+  margin: 12px;
+  padding: 26px;
+  width: 370px;
+  height: 270px;
+  color: #fff;
+}
+
+.blog-grid time {
+  padding-right: 10px;
+}
+
+.blog-grid h1 {
+  font-size: 28px;
+  color: #fff;
+}
+
+.blog-grid a {
+  color: #fff;
+}
+
+.blog-grid a:hover {
+  text-decoration: none;
+}
+
+.text-bottom {
+  position: absolute;
+  bottom: 0;
+}

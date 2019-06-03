@@ -1,10 +1,12 @@
 ---
 title: "Deploying AI in your business"
-date: 2019-01-12T22:14:57-06:00
+description: "How to test new ideas using design sprints"
+date: 2019-05-07T00:00:00
 tags: ["business", "design-sprint"]
+description: "https://cdn-images-1.medium.com/max/960/1*O68ulH1qJQAGOsPDOw7xwQ.jpeg"
 draft: false
 ---
-# A bookseller with a problem {#195e .graf .graf--h3 .graf-after--h4 name="195e"}
+# A bookseller with a problem
 
 So you’ve heard AI is revolutionising your life, your business and your
 cats. In boardrooms around the world there’s talk of ‘AI strategy’ and a
