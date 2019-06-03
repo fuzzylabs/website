@@ -1,3 +1,6 @@
+---
+title: AI for Good
+---
 When we came up with our slogan 'AI for everybody' we didn't do this as just a marketing ploy. Whilst we are a commercial business, we didn't want to focus our efforts on purely working with commercial customers.
 
 We genuinely believe and care that AI should be used in a positive way to benefit the lives of as many people as possible. To that end, Fuzzy Labs are committed to investing 20% of our time in non commercial work that makes effective use of AI on projects that encourage positive social change. These projects will promote the ethical side of AI and show that it isn't scary. Robots aren't going to (completely) take over!
