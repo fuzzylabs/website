@@ -42,11 +42,8 @@ body {
 .section-blog {
   background-position: right;
   background-repeat: no-repeat;
-  background-color: #101d39;
-  color: #fff;
   padding: 0;
   margin: 0;
-  min-height: 200px;
 }
 
 .section-why {
@@ -260,27 +257,16 @@ ul.link-list li {
   letter-spacing: -.003em;
 }
 
-.blog-content h1 {
-  font-size: 48px;
-  text-align: left;
-  margin-bottom: 8px;
-}
-
-.blog-content h2 {
-  font-size: 26px;
-  font-weight: 700;
-  padding: 0;
-  margin: 56px 0 -13px -1.883px;
-  text-align: left;
-  line-height: 34.5px;
-  letter-spacing: -0.45px;
-}
-
 .blog-content p {
   margin-top: 21px;
   font-size: 21px;
   letter-spacing: -0.03px;
   line-height: 1.58;
+}
+
+.blog-content img {
+  padding: 50px;
+  max-width: 700px;
 }
 
 .blog-content blockquote {
@@ -309,13 +295,16 @@ ul.link-list li {
 .blog-grid {
   margin: 12px;
   padding: 26px;
-  width: 370px;
-  height: 270px;
+  height: 400px;
   color: #fff;
 }
 
 .blog-grid time {
-  padding-right: 10px;
+  padding-right: 15px;
+}
+
+.blog-grid i {
+  padding-right: 8px;
 }
 
 .blog-grid h1 {

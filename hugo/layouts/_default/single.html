@@ -1,19 +1,19 @@
 {{ define "main" }}
-<section class="section section-blog" style="background-image: url('../images/slide-1.jpg')">
-  <div class="container">
-    <div class="row" style="height: 200px">
+<section class="section section-blog">
+  <div class="container" style="padding-top: 20px; padding-right: 120px; padding-left: 120px">
+    <div class="row">
       <div class="col-md-12 align-items-center ml-auto d-flex">
         <div>
-          <h1 style="color: #48a7aa">Fuzzy Labs Blog</h1>
-          <h2>{{ .Title }}</h2>
+          <h1 style="color: #48a7aa">{{ .Title }}</h1>
+          <h3>{{ .Description }}</h3>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section blog-content" style="padding-top: 20px; padding-bottom: 50px">
-  <div class="container">
+<section class="section blog-content" style="padding-bottom: 50px">
+  <div class="container" style="padding-right: 120px; padding-left: 120px">
     {{ .Content }}
   </div>
 </section>

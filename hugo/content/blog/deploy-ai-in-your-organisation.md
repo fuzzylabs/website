@@ -3,11 +3,10 @@ title: "Deploying AI in your business"
 description: "How to test new ideas using design sprints"
 date: 2019-05-07T00:00:00
 tags: ["business", "design-sprint"]
-description: "https://cdn-images-1.medium.com/max/960/1*O68ulH1qJQAGOsPDOw7xwQ.jpeg"
+image: "https://cdn-images-1.medium.com/max/960/1*O68ulH1qJQAGOsPDOw7xwQ.jpeg"
+author: "Matt Squire"
 draft: false
 ---
-# A bookseller with a problem
-
 So you’ve heard AI is revolutionising your life, your business and your
 cats. In boardrooms around the world there’s talk of ‘AI strategy’ and a
 new industry of consultants has popped up overnight.
@@ -40,7 +39,9 @@ the whole thing done in a Jupyter notebook in about eight weeks.
 
 Seth isn’t convinced.
 
+<center>
 ![](https://cdn-images-1.medium.com/max/800/1*gejeBAG1aRDFWOL8Uxz3dg.png)
+</center>
 
 [Machine Learning gone wrong — https://xkcd.com/1838](https://xkcd.com/1838/)
 
@@ -72,7 +73,9 @@ diversity as it mitigates bad assumptions. To ensure no time is wasted,
 Seth tells the team to cancel other meetings and set up out-of-office
 email replies. For most of the week no electronic devices are allowed.
 
+<center>
 ![](https://cdn-images-1.medium.com/max/800/1*O68ulH1qJQAGOsPDOw7xwQ.jpeg)
+</center>
 
 Sprint: how to solve big problems and test new ideas in just five days
 page 17. Jake Knapp, John Zeratsky, Braden Kowitz 2016.
