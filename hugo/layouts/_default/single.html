@@ -1,14 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-  {{ partial "head.html" . }}
-
-  <body>
-    {{ partial "navigation.html" . }}
-
-    <div class="container">
-      {{ .Content }}
+{{ define "main" }}
+<section class="section section-blog">
+  <div class="container" style="padding-top: 20px; padding-right: 120px; padding-left: 120px">
+    <div class="row">
+      <div class="col-md-12 align-items-center ml-auto d-flex">
+        <div>
+          <h1 style="color: #48a7aa">{{ .Title }}</h1>
+          <h3>{{ .Description }}</h3>
+        </div>
+      </div>
     </div>
+  </div>
+</section>
 
-    {{ partial "footer.html" }}
-  </body>
-</html>
+<section class="section blog-content" style="padding-bottom: 50px">
+  <div class="container" style="padding-right: 120px; padding-left: 120px">
+    {{ .Content }}
+  </div>
+</section>
+
+{{ end }}
