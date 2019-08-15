@@ -1,8 +1,17 @@
 # Introduction
 
-This is the Fuzzy Labs website. We use [Hugo](https://gohugo.io) to generate static HTML -- [CircleCI](https://circleci.com) to build and push the content to a Google Cloud Storage Bucket.
+This is the [Fuzzy Labs](http://fuzzylabs.ai) website. We use [Hugo](https://gohugo.io) to generate static HTML and [CircleCI](https://circleci.com) to build and push the content to a Google Cloud Storage Bucket.
 
 # Usage
+
+First [install Hugo](https://gohugo.io/getting-started/installing). Check that Hugo is installed correctly with `hugo version` which should output something like `Hugo Static Site Generator v0.56.3 linux/amd64 <etc...>`.
+
+## Local Hugo test server
+
+```
+cd hugo
+hugo server
+```
 
 ## Build
 
@@ -18,16 +27,23 @@ hugo --config="hugo/config.toml" -s hugo -d $PWD/public
 rm -rf public
 ```
 
-## Local Hugo test server
+# Editing content
 
-After [installing Hugo](https://gohugo.io/getting-started/installing):
+## Creating a new page
+
+Content lives in the [content](hugo/content) directory. Create a new Markdown file for your content and include the following front matter:
 
 ```
-cd hugo
-hugo server
+---
+title: ...
+description: ...
+draft: false
+---
 ```
 
-## Publish to Google Cloud Storage Bucket
+# Deployment
+
+## Publishing to Google Cloud Storage Bucket
 
 https://cloud.google.com/storage/docs/hosting-static-website
 
