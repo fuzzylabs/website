@@ -4,7 +4,7 @@ draft: false
 ---
 We deliver end-to-end software solutions that put AI at the centre. Built on the Google Cloud Platform using modern technology, our solutions are reliable, scalable and agile.
 
-# Marketing
+## Marketing
 
 Successful marketing depends on reaching people and cultivating relationships. Today's consumers interact with businesses across a wide range of Internet-connected devices, and every interaction generates data.
 
@@ -17,29 +17,37 @@ AI helps us make sense of this data:
 
 <a href="/downloads/ai-in-marketing.pdf"><button type="button" class="btn btn-primary">Learn more about AI in marketing</button></a>
 
-# Business Process Automation
+## Business Process Automation
 
-By putting AI in the right places we can automate the most laborious parts of a business process, freeing up humans to work on more challenging areas:
+In many businesses a lot of time is spent on processing documents and inputting or copying data. By putting AI in the right places we can automate the most laborious parts these business processes.
 
 * **Optical character recognition** extracts the text from a paper document so that it can be stored and used for further processing.
 * **Text analysis** enables us to automatically understand the content of a document like a letter or an email and decide what to do with it.
 * **Entity analysis** looks for key information in a document such as a name, address or reference number.
-* **Image and media analysis** can categorise and extract key information from photos, videos and audio.
 
-# Recruitment
+Here's a demo of the process in action:
+
+<center><iframe src="https://www.youtube.com/embed/Y1u72UluaPs?showinfo=0&rel=0&theme=light" width="800" height="600" frameborder="0"></iframe></center>
+
+## Business intelligence
+
+AI enables a pro-active approach to business intelligence. AI-driven decision making relies on a combination of historical data, machine learning and real-time reporting.
+
+* **Intelligent insights** help you determine your key customers or highlight problems in your supply chain.
+* **Business intelligence reporting** using tools like Google Data Studio and Looker to build sophisticated real-time dashboards.
+
+## Recruitment
 
 The ability to anticipate an employer's needs gives recruitment agents an edge. By combining many data sources it's possible to build a sophisticated picture of the employment market in order to discover the skills and roles that a business needs and the best people to fill them.
 
+## Edge Computing and IoT
 
-
-# Edge Computing and IoT
-
-Nowadays people increasingly interact with AI through mobile devices like phones and watches, as well as smart sensors and home automation systems. All of these things can be managed from the cloud but we also want enable these devices to make their own decisions and continue to operate when an Internet connection isn't available.
+AI is everywhere. Your calendar reads your email so it can update when you book a flight or a hotel, your photos app understands what’s in your photos. We have fitness trackers that give us tailored advice and smart assistants in our homes. To make all this possible we need to bring AI to consumer devices.
 
 * **Mobile and wearable technology**: by using mobile-optimised machine learning models we can put AI directly into smart phone apps and wearables such as smart watches.
-* **Smart sensors** can be used to monitor and automated a wide range of processes. For example monitoring equipment in a factory or crops on a farm.
+* **Smart sensors** can be used to monitor and automate equipment in a factory or crops on a farm.
 
-# Open Source
+## Open Source
 
 We use open source software to build our solutions. Some of the technologies we use include Go, Python, Terraform, Docker, Tensorflow, and Jupyter.
 

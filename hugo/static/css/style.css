@@ -24,6 +24,10 @@ h1 {
   background-color: #48a7aa;
 }
 
+.btn-primary:active {
+  background-color: #48a7aa;
+}
+
 .logo-rectangle {
   height: 22px;
   padding: 0;
@@ -276,24 +280,17 @@ ul.link-list li {
   padding: 0 20px 20px 20px;
 }
 
-.blog-content {
-  font-family: Georgia,Cambria,"Times New Roman",Times,serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 21px;
-  line-height: 1.58;
-  letter-spacing: -.003em;
+
+.blog-content h2 {
+  padding-top: 15px;
+}
+
+.blog-content h1 {
+  padding-top: 15px;
 }
 
 .blog-content p {
-  margin-top: 21px;
-  font-size: 21px;
-  letter-spacing: -0.03px;
-  line-height: 1.58;
-}
-
-.blog-content h2 {
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 .blog-content img {
