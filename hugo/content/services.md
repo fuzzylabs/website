@@ -19,7 +19,7 @@ AI helps us make sense of this data:
 
 ## Business Process Automation
 
-In many businesses a lot of time is spent on processing documents and inputting or copying data. By putting AI in the right places we can automate the most laborious parts these business processes.
+In many businesses a lot of time is spent on processing documents and inputting or copying data. By putting AI in the right places we can automate the most laborious parts of these business processes.
 
 * **Optical character recognition** extracts the text from a paper document so that it can be stored and used for further processing.
 * **Text analysis** enables us to automatically understand the content of a document like a letter or an email and decide what to do with it.
