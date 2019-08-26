@@ -13,6 +13,7 @@ body {
 h1 {
   font-size: 24pt;
   font-weight: 900;
+  color: #48a7aa;
 }
 
 a {
@@ -118,6 +119,7 @@ a:hover {
 }
 
 .section-contact {
+  background-image: url('/images/slide-4.jpg');
   background-position: right top;
   background-repeat: no-repeat;
   background-color: #fff;
@@ -129,8 +131,8 @@ a:hover {
   font-size: 12pt;
 }
 
-.home-textbox {
-  font-size: 1.3125rem;
+.homepage-textbox {
+  max-width: 440px;
 }
 
 .align-items-center {
