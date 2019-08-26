@@ -96,7 +96,7 @@
         </div>
 
       </div>
-      
+
     </section>
 
     <section id="contact" class="section section-contact" style="background-image: url('images/slide-4.jpg')">
@@ -105,18 +105,36 @@
           <div class="col-md-12 align-items-center ml-auto d-flex">
             <div style="max-width: 440px">
               <h1 style="padding-bottom: 25px; padding-top: 50px; color: #48a7aa">Let's talk</h1>
-              <p style="padding-bottom: 25px">
-                Our favourite topics for conversation are AI, machine learning and devops. We'd love to discuss your aspirations and see how Fuzzy Labs can help.
-              </p>
-              <p>
-                <b>Tweet Us:</b> <a href="http://twitter.com/fuzzylabsai">@FuzzyLabsAI</a><br/>
-                <b>Email Us:</b> <a href="mailto:talk@fuzzylabs.tech">talk@fuzzylabs.ai</a>
-              </p>
-              <p><b>Meet Us:</b> Our home is The Tech Incubator, Oxford Road, Manchester, England, M1 7ED. If you're nearby, let's get a brew together.</p>
+              <p>We love to talk about AI. Drop us a message and we'll get back to you.</p>
+              <form method="post" action="https://formspree.io/talk@fuzzylabs.ai" role="form">
+                <div class="controls">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input id="email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" class="form-control" placeholder="Write you message here" rows="10" cols="90" required="required"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <input type="submit" class="btn btn-success btn-send" value="Send message">
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
+      <p>&nbsp;</p>
     </section>
 
     <!-- end main content -->
