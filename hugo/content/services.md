@@ -27,7 +27,7 @@ In many businesses a lot of time is spent on processing documents and inputting 
 
 Here's a demo of the process in action:
 
-<center><iframe src="https://www.youtube.com/embed/Y1u72UluaPs?showinfo=0&rel=0&theme=light" width="800" height="600" frameborder="0"></iframe></center>
+<center><iframe class="video" src="https://www.youtube.com/embed/Y1u72UluaPs?showinfo=0&rel=0&theme=light" frameborder="0"></iframe></center>
 
 ## Business intelligence
 

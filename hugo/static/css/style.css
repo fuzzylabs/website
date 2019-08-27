@@ -4,12 +4,6 @@ body {
   font-size: 15pt;
 }
 
-@media (min-width: 992px) {
-  body {
-    padding-top: 56px;
-  }
-}
-
 h1 {
   font-size: 24pt;
   font-weight: 900;
@@ -244,42 +238,12 @@ ul.link-list li {
 }
 
 .blog-content h2 {
-  padding-top: 15px;
-}
-
-.blog-content h1 {
-  padding-top: 15px;
-}
-
-.blog-content p {
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .blog-content img {
   padding: 50px;
   max-width: 700px;
-}
-
-.blog-content blockquote {
-  font-size: 30px;
-  font-style: italic;
-  letter-spacing: -0.36px;
-  line-height: 44.4px;
-  overflow-wrap: break-word;
-  margin: 55px 0 33px 0;
-  color: rgba(0, 0, 0, 0.68);
-  padding: 0 0 0 50px;
-}
-
-.blog-content code {
-  font-size: 18px;
-  background: rgba(0,0,0,.05);
-  border-radius: 2px;
-  padding: 3px 5px;
-}
-
-.blog-content .highlighted {
-  background: #7DFFB3;
 }
 
 .blog-grid {
@@ -313,4 +277,15 @@ ul.link-list li {
 .text-bottom {
   position: absolute;
   bottom: 0;
+}
+
+.video {
+  width: 800px;
+  height: 600px;
+}
+@media screen and (max-width: 800px) {
+  .video {
+    width: 400px;
+    height: 300px;
+  }
 }
