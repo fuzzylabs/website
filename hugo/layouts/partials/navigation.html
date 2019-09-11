@@ -1,6 +1,6 @@
 <nav class="navbar fixed-top navbar-expand-lg">
   <div class="container">
-    <a class="navbar-brand" href="{{ "/" | absURL }}"><img class="logo-rectangle" src="{{ "images/logo.png" | absURL }}" alt="Fuzzy Labs"/></a>
+    <a class="navbar-brand" href="{{ "/" | absURL }}#home"><img class="logo-rectangle" src="{{ "images/logo.png" | absURL }}" alt="Fuzzy Labs"/></a>
 
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
       <span class="nav-menu-icon">
@@ -11,22 +11,22 @@
     <div class="collapse navbar-collapse" id="navbar-links">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link selected" href="{{ "/" | absURL }}">Home</a>
+          <a class="nav-link nav-link-in-page" href="{{ "/" | absURL }}#home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/services">What we do</a>
+          <a class="nav-link nav-link-in-page" href="{{ "/" | absURL }}#approach">Our Approach</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ "/" | absURL }}#approach">Our Approach</a>
+          <a class="nav-link nav-link-in-page" href="{{ "/" | absURL }}#contact">Let's Talk</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ "/" | absURL }}#contact">Let's Talk</a>
+          <a class="nav-link {{ if eq "Our Services" .Title }}selected{{ end }}" href="/services">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="http://medium.com/fuzzylabsai" target="new">Blog</a>
+          <a class="nav-link" href="http://medium.com/fuzzylabsai" target="_blank"> Blog <i class="fab fa-medium ml-1"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="http://github.com/fuzzylabs" target="new">Code</a>
+          <a class="nav-link" href="http://github.com/fuzzylabs" target="_blank">Code <i class="fab fa-github  ml-1"></i> </a>
         </li>
       </ul>
     </div>

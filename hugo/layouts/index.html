@@ -2,46 +2,33 @@
 <html lang="en">
   {{ partial "head.html" . }}
 
-  <body>
+  <body id="home">
     {{ partial "navigation.html" . }}
 
     <!-- begin main content -->
-    <section class="section section-why">
+      <section class="section section-why">
       <div class="container">
-        <div class="row" style="height: 500px">
+        <div class="row" style="height: 600px">
           <div class="col-md-12 align-items-center ml-auto d-flex">
-            <div class="homepage-textbox">
-              <h1 style="padding-bottom: 25px">AI for everybody</h1>
-              <p style="padding-bottom: 50px">We believe it should be simple to deploy AI so you can do more with your data.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="services" class="section section-what">
-      <div class="container">
-        <div class="row" style="height: 150px">
-          <div class="col-md-12 align-items-center ml-auto d-flex">
-            <div class="homepage-textbox">
-              <h1 style="padding-bottom: 25px">What we do</h1>
+            <div class="col-md-5">
+              <h1>AI for everybody</h1>
+              <p>We believe it should be simple to deploy AI so you can do more with your data.</p>
               <p style="padding-bottom: 50px">We help organisations understand how they can use Artificial Intelligence and turn those ideas into production-ready AI solutions.</p>
-              <p><a href="/services"><button type="button" class="btn btn-primary">Learn more about our services</button></a></p>
+              <p><a href="/services"><button type="button" class="btn btn-secondary btn-lg">Learn more about our services</button></a></p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="approach" class="section section-how">
+    <section id="approach" class="section section-what">
       <div class="container">
-        <header class="section-header" style="padding-top: 50px; padding-bottom: 25px">
+        <header class="section-header" style="padding-top: 0px; padding-bottom: 25px">
           <h1>Our Approach</h1>
         </header>
-
         <div class="row">
 
-          <div class="col-md-3">
+          <div class="col-md-6 col-lg-3 principles-block-container">
             <div class="principles-block">
               <div class="img">
                 <img src="images/principles-simple.jpg" alt="" class="img-fluid">
@@ -54,7 +41,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-6 col-lg-3 principles-block-container">
             <div class="principles-block">
               <div class="img">
                 <img src="images/principles-automated.jpg" alt="" class="img-fluid">
@@ -67,7 +54,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-6 col-lg-3 principles-block-container">
             <div class="principles-block">
               <div class="img">
                 <img src="images/principles-ethical.jpg" alt="" class="img-fluid">
@@ -80,7 +67,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-6 col-lg-3 principles-block-container">
             <div class="principles-block">
               <div class="img">
                 <img src="images/principles-open.jpg" alt="" class="img-fluid">
@@ -95,25 +82,23 @@
           </div>
 
         </div>
-
       </div>
-
     </section>
 
     <section id="contact" class="section section-contact">
       <div class="container">
         <div class="row">
           <div class="col-md-12 align-items-center ml-auto d-flex">
-            <div style="max-width: 440px">
-              <h1 style="padding-bottom: 25px; padding-top: 50px; color: #48a7aa">Let's talk</h1>
-              <p>We love to talk about AI. Drop us a message and we'll get back to you.</p>
+            <div style="max-width: 440px" class="mb-5">
+              <h1 style="padding-top: 50px; color: #48a7aa">Let's talk</h1>
+              <p class="mb-4">We love to talk about AI. Drop us a message and we'll get back to you.</p>
               <form method="post" action="https://formspree.io/talk@fuzzylabs.ai" role="form">
                 <div class="controls">
                   <div class="row">
                     <div class="col-md-12">
                       <div class="form-group">
                         <label for="email">Email *</label>
-                        <input id="email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required">
+                        <input id="email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required">
                       </div>
                     </div>
                   </div>
@@ -122,11 +107,11 @@
                     <div class="col-md-12">
                       <div class="form-group">
                         <label for="message">Message *</label>
-                        <textarea id="message" name="message" class="form-control" placeholder="Write you message here" rows="10" cols="90" required="required"></textarea>
+                        <textarea id="message" name="message" class="form-control" placeholder="Write your message here" rows="10" cols="90" required="required"></textarea>
                       </div>
                     </div>
-                    <div class="col-md-12">
-                      <input type="submit" class="btn btn-success btn-send" value="Send message">
+                    <div class="col-md-12 mt-2">
+                      <input type="submit" class="btn btn-lg btn-secondary btn-send" value="Send message">
                     </div>
                   </div>
                 </div>
@@ -135,7 +120,6 @@
           </div>
         </div>
       </div>
-      <p>&nbsp;</p>
     </section>
 
     <!-- end main content -->
