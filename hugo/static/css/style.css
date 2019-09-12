@@ -352,6 +352,11 @@ ul.link-list li {
 }
 
 .manchester-digital {
-  float: right;
-  width: 70%
+  width: 50%
+}
+
+@media (min-width: 768px) {
+  .manchester-digital {
+    width: 100%
+  }
 }
