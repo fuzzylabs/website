@@ -3,25 +3,22 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: google/cloud-sdk
+      - image: circleci/node
     environment:
       - GOOGLE_PROJECT_ID: "fuzzylabs"
-      - GOOGLE_STORAGE_BUCKET_URL: "gs://www.fuzzylabs.ai"
     steps:
       - checkout
-      - run: 
-          name: Setup Google Cloud SDK
-          command: |
-            apt-get install -qq -y hugo
-            echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json
-            gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
-            gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
       - run:
           name: Hugo static build
-          command: hugo --config="hugo/config.toml" -s hugo -d $PWD/public
+          command: |
+            sudo apt-get install -qq -y hugo
+            hugo --config="hugo/config.toml" -s hugo -d $PWD/public
       - run:
-          name: Push content to bucket
-          command: gsutil -m cp -r public/* ${GOOGLE_STORAGE_BUCKET_URL}
+          name: Install Firebase Tools
+          command: npm install --prefix=./firebase-deploy firebase-tools
+      - run:
+          name: Deploy to Firebase
+          command: ./firebase-deploy/node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --project $GOOGLE_PROJECT_ID
 
 workflows:
   build_and_deploy:

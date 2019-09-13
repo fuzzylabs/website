@@ -1,6 +1,6 @@
 # Introduction
 
-This is the [Fuzzy Labs](http://fuzzylabs.ai) website. We use [Hugo](https://gohugo.io) to generate static HTML and [CircleCI](https://circleci.com) to build and push the content to a Google Cloud Storage Bucket.
+This is the [Fuzzy Labs](http://fuzzylabs.ai) website. We use [Hugo](https://gohugo.io) to generate static HTML and [CircleCI](https://circleci.com) to build and deploy the content to [Firebase Hosting](https://firebase.google.com/docs/hosting)
 
 # Usage
 
@@ -43,33 +43,18 @@ draft: false
 
 # Deployment
 
-## Publishing to Google Cloud Storage Bucket
+Commits to master will automatically be deployed to Firebase hosting by [CircleCI](.circleci/config.yml)
 
-https://cloud.google.com/storage/docs/hosting-static-website
+## Testing Firebase locally
 
-### Prerequisites
-
-- Create the bucket
+This serves from `public` so make sure that you've generated the static content via Hugo first.
 ```
-gsutil mb -l eu -p fuzzylabs -b on gs://www.fuzzylabs.ai
+firebase serve
 ```
 
-- Configure public access to all objects in the bucket
-```
-gsutil iam ch allUsers:objectViewer gs://www.fuzzylabs.ai
-```
-
-- Configure the `MainPageSuffix` for the bucket
-```
-gsutil web set -m index.html gs://www.fuzzylabs.ai
-```
-
-- Configure DNS
-
-Create a CNAME record to point www.fuzzylabs.ai at c.storage.googleapis.com.
-
-### Publish the content
+## Manually deploying to Firebase
 
 ```
-gsutil -m cp -r public/* gs://www.fuzzylabs.ai
+firebase login
+firebase deploy
 ```
