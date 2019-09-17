@@ -1,3 +1,3 @@
 ---
-title: "A Fuzzy Journal"
+title: "The AI Journal"
 ---
