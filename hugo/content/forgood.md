@@ -15,3 +15,5 @@ If you're interested in getting involved, if you have an idea or just want to kn
 ## Other resources
 
 There are many great organisations who promote ethical and responsible technology, including our friends at [AI for Good](https://www.aiforgood.co.uk) and [doteveryone](https://doteveryone.org.uk).
+
+We gave a talk on 'Doing Good with AI' at the <a href="https://www.manchesterdigital.com/post/manchester-digital/member-conference-and-summer-bbq" target="_blank" rel="noopener">Manchester Digital Member Conference.</a> Click [here](/downloads/doing-good-with-ai.pdf) to download the slides.
