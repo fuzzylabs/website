@@ -5,7 +5,7 @@
     <div class="row" style="height: 100px">
       <div class="col-md-12 align-items-center ml-auto d-flex">
         <div>
-          <h1 style="padding-top: 20px">{{ .Title }}</h1>
+          <h1 style="padding-top: 30px">{{ .Title }}</h1>
         </div>
       </div>
     </div>
@@ -22,17 +22,17 @@
 
 
       <div class="col-sm blog-grid">
-        <div class="image" style="background: url({{ .Params.image }}); background-position: center; background-size: cover; background-repeat: no-repeat">
-        </div>
         <a href="{{ .RelPermalink }}">
+          <div class="image" style="background: url({{ .Params.image }}); background-position: center; background-size: cover; background-repeat: no-repeat">
+          </div>
           <h1>{{ .Title }}</h1>
           <p>{{ .Description }}</p>
         </a>
         <p class="text-bottom">
           <small>
-            <time><i class="far fa-clock"></i>  {{ dateFormat "January 2, 2006" .Date }}</time>
-            <span><i class="fas fa-user"></i>  {{ .Params.author }}</span>
-            <span><i class="fab fa-readme"></i>{{ div .FuzzyWordCount 250 }} min read</span>
+            <time><i class="far fa-clock"></i>  {{ dateFormat "Jan 2, 2006" .Date }}</time>
+            <span><i class="fas fa-user"></i>  {{ .Params.author_name }}</span>
+            <span><i class="fab fa-readme"></i>{{ div .FuzzyWordCount 220 }} min read</span>
           </small>
         </p>
       </div>

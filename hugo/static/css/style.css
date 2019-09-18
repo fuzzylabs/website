@@ -301,6 +301,7 @@ ul.link-list li {
 .blog-grid {
   margin: 3px;
   height: 370px;
+  margin-bottom: 30px;
 }
 
 .blog-grid .image {
