@@ -1,6 +1,7 @@
 ---
 title: "What Even is AI?"
 description: "Oh no: it’s yet another ‘What is AI?’ blog!"
+metadescription: "Oh no: it’s yet another ‘What is AI?’ blog!"
 date: 2019-07-12T00:00:00
 tags: ["artificial intelligence", "machine learning", "neural networks", "computer science", "computer history"]
 image: "https://cdn-images-1.medium.com/max/2200/0*C1RgslMmyNbeBJTJ"

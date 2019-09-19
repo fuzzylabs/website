@@ -1,6 +1,7 @@
 ---
 title: "Deploying AI in your business"
 description: "How to test new ideas using design sprints"
+metadescription: "How to test new ideas using design sprints"
 date: 2019-05-07T00:00:00
 tags: ["business", "design-sprint"]
 image: "https://cdn-images-1.medium.com/max/960/1*O68ulH1qJQAGOsPDOw7xwQ.jpeg"

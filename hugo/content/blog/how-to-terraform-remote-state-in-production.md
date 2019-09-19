@@ -1,6 +1,7 @@
 ---
 title: "Terraform Remote State — The Road to Production"
 description: "Using HashiCorp’s new Remote State Management Service."
+metadescription: "Using HashiCorp’s new Remote State Management Service."
 date: 2019-07-02T00:00:00
 tags: ["DevOps", "Terraform", "Infrastructure As Code", "Hashicorp"]
 image: "https://cdn-images-1.medium.com/max/2560/1*WxHqGDHrucwN4Tnyzy3p5w.jpeg"
