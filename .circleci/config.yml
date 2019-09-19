@@ -12,7 +12,7 @@ jobs:
           name: Hugo static build
           command: |
             sudo apt-get install -qq -y hugo
-            hugo --config="hugo/config.toml" -s hugo -d $PWD/public
+            hugo --config="config.toml" -s hugo -d $PWD/public
       - run:
           name: Install Firebase Tools
           command: npm install --prefix=./firebase-deploy firebase-tools
