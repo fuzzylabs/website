@@ -14,7 +14,7 @@
 
 <section class="section blog-content">
   <div class="container" style="margin-bottom: 80px">
-      {{ range $index, $page := .Pages.ByPublishDate.Reverse }}
+      {{ range $index, $page := .Pages.ByDate.Reverse }}
 
       {{ if eq (mod $index 3) 0 }}
       <div class="row">
