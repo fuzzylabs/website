@@ -30,9 +30,9 @@
         </a>
         <p class="text-bottom">
           <small>
-            <time><i class="far fa-clock"></i>  {{ dateFormat "Jan 2, 2006" .Date }}</time>
+            <time><i class="far fa-star"></i>  {{ dateFormat "Jan 2, 2006" .Date }}</time>
             <span><i class="fas fa-user"></i>  {{ .Params.author_name }}</span>
-            <span><i class="fab fa-readme"></i>{{ div .FuzzyWordCount 220 }} min read</span>
+            <span><i class="far fa-clock"></i>{{ div .FuzzyWordCount 220 }} min read</span>
           </small>
         </p>
       </div>
