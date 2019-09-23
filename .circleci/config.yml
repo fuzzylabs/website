@@ -28,4 +28,3 @@ workflows:
             branches:
               only:
                 - master
-                - blog_updates
