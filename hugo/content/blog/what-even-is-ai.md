@@ -6,7 +6,7 @@ date: 2019-07-12T00:00:00
 tags: ["artificial intelligence", "machine learning", "neural networks", "computer science", "computer history"]
 image: "https://cdn-images-1.medium.com/max/2200/0*C1RgslMmyNbeBJTJ"
 author_name: "Matt Squire"
-author_thumbnail: "/images/matt.png"
+author_thumbnail: "/images/matt-square-thumb.jpg"
 author_description: "Co-Founder of Fuzzy Labs"
 layout: blog_post
 draft: false

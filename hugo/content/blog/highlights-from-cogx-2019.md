@@ -6,7 +6,7 @@ date: 2019-06-17T00:00:00
 tags: ["artificial intelligence", "conference"]
 image: "https://miro.medium.com/max/2048/1*AtN2LcN-dJMdHKqp4uRefQ.jpeg"
 author_name: "Matt Squire"
-author_thumbnail: "/images/matt.png"
+author_thumbnail: "/images/matt-square-thumb.jpg"
 author_description: "Co-Founder of Fuzzy Labs"
 layout: blog_post
 draft: false

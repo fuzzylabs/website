@@ -6,7 +6,7 @@ date: 2019-05-15T00:00:00
 tags: ["AIaaS", "Cloud"]
 image: "https://cdn-images-1.medium.com/max/960/1*yoYsWDcNrP39gK-efdEcwg.png"
 author_name: "Tom Stockton"
-author_thumbnail: "/images/tom.jpeg"
+author_thumbnail: "/images/tom-square-thumb.jpg"
 author_description: "Co-Founder of Fuzzy Labs"
 layout: blog_post
 draft: false

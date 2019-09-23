@@ -6,7 +6,7 @@ date: 2019-05-07T00:00:00
 tags: ["business", "design-sprint"]
 image: "https://cdn-images-1.medium.com/max/960/1*O68ulH1qJQAGOsPDOw7xwQ.jpeg"
 author_name: "Matt Squire"
-author_thumbnail: "/images/matt.png"
+author_thumbnail: "/images/matt-square-thumb.jpg"
 author_description: "Co-Founder of Fuzzy Labs"
 layout: blog_post
 draft: false
