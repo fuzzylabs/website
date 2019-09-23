@@ -1,0 +1,76 @@
+{{ define "main" }}
+<div class="main-content">
+  <div class="container">
+    <div class="row">
+      <!-- Sharing -->
+      <div class="col-md-2 pl-0">
+        {{- partial "share.html" . -}}
+      </div>
+
+      <!-- Post body -->
+      <div class="col-md-9 flex-first flex-md-unordered">
+        <div class="mainheading">
+          <!-- Post Title -->
+          <h1 class="posttitle">{{ .Title }}</h1>
+          <p class="lead">
+            {{ .Description }}
+          </p>
+
+          <!-- Author Box -->
+          <div class="row post-top-meta">
+            <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0 md-nopad-right">
+              <img class="author-thumb" src="{{ .Params.author_thumbnail | urlize | relURL}}" alt="{{ .Params.author_name }}">
+            </div>
+            <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left md-nopad-left">
+              <a target="_blank" class="link-dark">{{ .Params.author_name }}</a><br>
+              <span class="author-description">
+                {{ .Params.author_description }}<br>
+                <i class="far fa-star"></i>
+                {{ dateFormat "Jan 2, 2006" .Date }}
+                <i class="far fa-clock clock"></i>
+                {{ div .FuzzyWordCount 220 }} min read
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post Content -->
+        <div class="article-post">
+          {{ .Content}}
+        </div>
+
+        <!-- Post Tags -->
+        <div class="after-post-tags">
+          <ul class="tags">
+            {{ range .Params.tags }}
+            <li>
+              <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{.}}</a>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+        <!-- End Categories -->
+
+        <!-- Next and PrevPage inside current section -->
+        <div class="row PageNavigation d-flex justify-content-between" style="padding-bottom: 30px">
+          <div class="col-md-6">
+            {{with .NextInSection}}
+            <a class="d-block" href="{{.URL}}"> &laquo; {{.Title}}</a>
+            {{end}}
+          </div>
+          <div class="col-md-6">
+            {{with .PrevInSection}}
+            <a class="d-block text-lg-right" href="{{.URL}}">{{.Title}} &raquo;</a>
+            {{end}}
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <!-- End Next and PrevPage -->
+      </div>
+      <!-- End Post -->
+    </div>
+  </div>
+  <!-- End container -->
+</div>
+{{- partial "alertbar.html" . -}}
+{{ end }}

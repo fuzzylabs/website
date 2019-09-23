@@ -298,41 +298,43 @@ ul.link-list li {
   padding: 0 20px 20px 20px;
 }
 
-.blog-content h2 {
-  padding-top: 20px;
-}
-
-.blog-content img {
-  padding: 50px;
-  max-width: 700px;
-}
-
 .blog-grid {
-  margin: 12px;
-  padding: 26px;
-  height: 400px;
-  color: #fff;
+  margin: 3px;
+  height: 370px;
+  margin-bottom: 30px;
 }
 
-.blog-grid time {
-  padding-right: 15px;
+.blog-grid .image {
+  height: 200px;
+  width: 100%;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 4px;
+  margin-bottom: 20px;
 }
 
 .blog-grid i {
-  padding-right: 8px;
+  padding-right: 5px;
+  padding-left: 8px;
 }
 
 .blog-grid h1 {
-  font-size: 28px;
-  color: #fff;
+  font-weight: 600;
+  font-size: 22px;
+  color: rgba(0,0,0,.84);
+  margin-bottom: 12px;
+}
+
+.blog-grid p {
+  font-size: 17px;
+  color: rgba(0,0,0,.54);
+}
+
+.blog-grid small {
+  font-size: 14px;
 }
 
 .blog-grid a {
-  color: #fff;
-}
-
-.blog-grid a:hover {
-  text-decoration: none;
+  color: #000;
 }
 
 .text-bottom {

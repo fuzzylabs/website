@@ -1,10 +1,14 @@
 ---
 title: "The AI Arms Race in the Cloud"
 description: "How cloud providers are competing to offer AI for everybody"
+metadescription: "How cloud providers are competing to offer AI for everybody"
 date: 2019-05-15T00:00:00
 tags: ["AIaaS", "Cloud"]
 image: "https://cdn-images-1.medium.com/max/960/1*yoYsWDcNrP39gK-efdEcwg.png"
-author: "Tom Stockton"
+author_name: "Tom Stockton"
+author_thumbnail: "/images/tom.jpeg"
+author_description: "Co-Founder of Fuzzy Labs"
+layout: blog_post
 draft: false
 ---
 Take a guess: what’s the hottest tech role in 2019? According to a LinkedIn report the most promising job in the United States is data scientist; the ranking is based on salary, number of job openings and annual growth. The same report lists Cloud Computing and Artificial Intelligence as the two most in-demand ‘hard skills’.

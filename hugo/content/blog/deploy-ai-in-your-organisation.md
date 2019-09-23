@@ -1,12 +1,17 @@
 ---
 title: "Deploying AI in your business"
 description: "How to test new ideas using design sprints"
+metadescription: "How to test new ideas using design sprints"
 date: 2019-05-07T00:00:00
 tags: ["business", "design-sprint"]
 image: "https://cdn-images-1.medium.com/max/960/1*O68ulH1qJQAGOsPDOw7xwQ.jpeg"
-author: "Matt Squire"
+author_name: "Matt Squire"
+author_thumbnail: "/images/matt.png"
+author_description: "Co-Founder of Fuzzy Labs"
+layout: blog_post
 draft: false
 ---
+## A bookseller with a problem
 So you’ve heard AI is revolutionising your life, your business and your
 cats. In boardrooms around the world there’s talk of ‘AI strategy’ and a
 new industry of consultants has popped up overnight.
@@ -40,12 +45,12 @@ the whole thing done in a Jupyter notebook in about eight weeks.
 Seth isn’t convinced.
 
 <center>
-![](https://cdn-images-1.medium.com/max/800/1*gejeBAG1aRDFWOL8Uxz3dg.png)
+<img src="https://cdn-images-1.medium.com/max/800/1*gejeBAG1aRDFWOL8Uxz3dg.png" alt="" width="400"/>
+<p>[Machine Learning gone wrong — https://xkcd.com/1838](https://xkcd.com/1838/)</p>
 </center>
 
-[Machine Learning gone wrong — https://xkcd.com/1838](https://xkcd.com/1838/)
 
-# The design sprint
+## The design sprint
 
 We want to build something that’s genuinely useful to the business;
 anything else would be a waste of time and money. The business problem
@@ -80,7 +85,7 @@ email replies. For most of the week no electronic devices are allowed.
 Sprint: how to solve big problems and test new ideas in just five days
 page 17. Jake Knapp, John Zeratsky, Braden Kowitz 2016.
 
-## Monday
+### Monday
 
 *Map out the problem and choose a target to focus attention on*
 
@@ -88,7 +93,7 @@ First a long-term goal is agreed. Next the team maps out the problem
 space, before narrowing it down to a specific target. An important part
 of the process is capturing information from experts.
 
-## Tuesday
+### Tuesday
 
 *Sketch out competing solutions*
 
@@ -98,7 +103,7 @@ unique perspective. Team members are encouraged to seek inspiration from
 a variety of places — sometimes the best solutions come from a different
 industry. Solutions are drawn with pen and paper.
 
-## Wednesday
+### Wednesday
 
 *Decide on the best solution*
 
@@ -109,7 +114,7 @@ gallery. Out of these the team members choose the most interesting ideas
 and concepts. The designated ‘decider’ chooses the solution which will
 ultimately be used for prototyping.
 
-## Thursday
+### Thursday
 
 *Prototype a solution*
 
@@ -118,7 +123,7 @@ of speed, then the ‘prototype’ becomes production. Here prototyping has
 a singular purpose: to capture useful feedback from users. No code
 needed; the prototype can consist of crudely mocked-up user interfaces.
 
-## Friday
+### Friday
 
 *Validate the solution*
 
@@ -135,7 +140,7 @@ her to perform some tasks using the prototype and to think aloud while
 doing so. Afterwards the customer can provide further feedback on the
 prototype and the experience of using it.
 
-# The happiness engine
+## The happiness engine
 
 *Fun fact*: you’re about 850 words into this story, and I’m nearly
 finished, so bear with me. For an imaginary company like Sahara the
@@ -167,7 +172,7 @@ simple prototype and a set of testable hypotheses that tell Sahara what
 they should do next. Think of this as the first step towards something
 smarter.
 
-# What’s next?
+## What’s next?
 
 There’s undoubtedly a great deal of hype surrounding artificial
 intelligence. While it’s an exciting field to work in it’s important to
