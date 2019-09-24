@@ -150,8 +150,11 @@ a:hover {
   background: #f4f6fb;
 }
 
-@media screen and (max-width: 800px) {
+.section-services li:not(:last-child) {
+  margin-bottom: 20px;
+}
 
+@media screen and (max-width: 800px) {
   .section-blog,
   .section-why,
   .section-what,
