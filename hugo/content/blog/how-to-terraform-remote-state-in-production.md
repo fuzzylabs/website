@@ -1,5 +1,6 @@
 ---
-title: "Terraform Remote State — The Road to Production"
+title: "Terraform Remote State — The Road to Production | Blog | Fuzzy Labs"
+articletitle: "Terraform Remote State — The Road to Production"
 description: "Using HashiCorp’s new Remote State Management Service."
 metadescription: "Using HashiCorp’s new Remote State Management Service."
 date: 2019-07-02T00:00:00

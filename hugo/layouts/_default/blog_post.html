@@ -11,7 +11,7 @@
       <div class="col-md-9 flex-first flex-md-unordered">
         <div class="mainheading">
           <!-- Post Title -->
-          <h1 class="posttitle">{{ .Title }}</h1>
+          <h1 class="posttitle">{{ .Params.articletitle }}</h1>
           <p class="lead">
             {{ .Description }}
           </p>
@@ -55,12 +55,12 @@
         <div class="row PageNavigation d-flex justify-content-between" style="padding-bottom: 30px">
           <div class="col-md-6">
             {{with .NextInSection}}
-            <a class="d-block" href="{{.URL}}"> &laquo; {{.Title}}</a>
+            <a class="d-block" href="{{.URL}}"> &laquo; {{.Params.articletitle}}</a>
             {{end}}
           </div>
           <div class="col-md-6">
             {{with .PrevInSection}}
-            <a class="d-block text-lg-right" href="{{.URL}}">{{.Title}} &raquo;</a>
+            <a class="d-block text-lg-right" href="{{.URL}}">{{.Params.articletitle}} &raquo;</a>
             {{end}}
           </div>
           <div class="clearfix"></div>

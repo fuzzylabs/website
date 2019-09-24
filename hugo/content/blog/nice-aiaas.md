@@ -1,7 +1,8 @@
 ---
-title: "Nice AIaaS"
+title: "Nice AIaaS | Blog | Fuzzy Labs"
+articletitle: "Nice AIaaS"
 description: "Artificial Intelligence as a Service: what’s what"
-metadescription: "Artificial Intelligence as a Service: what’s what"
+metadescription: "What are Amazon, Google and Microsoft offering in terms of AI as a Service"
 date: 2019-06-03T00:00:00
 tags: ["AIaaS", "Cloud"]
 image: "https://cdn-images-1.medium.com/max/960/1*IRwsjIO6YFCRr6hG55gm9Q.png"

@@ -1,6 +1,6 @@
 ---
-title: Fuzzy Labs
+title: "AI for everybody | Do more with your data | Fuzzy Labs"
 draft: false
 type: page
-metadescription: "Fuzzy Labs, Artificial Intelligence solutions delivered on Google Cloud Platform in Manchester UK."
+metadescription: "We help you to deploy AI in your business. World class technical solutions delivered on the Google Cloud Platform. Consolidate your data and learn more from it. Manchester UK"
 ---

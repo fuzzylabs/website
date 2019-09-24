@@ -1,8 +1,9 @@
 ---
-title: AI for Good
+title: "AI for Good"
+articletitle: "AI for Good | Fuzzy Labs"
 description: Improving the world with AI
 draft: false
-metadescription: "Fuzzy Labs - Improving the world with AI"
+metadescription: "Improving the world with AI, we want to show that AI can create positive social change. Let's build an AI project for the community, by the community."
 ---
 We believe in *AI for everybody*, and part of that means using AI to benefit people's lives and to improve our communities. As well as ensuring that the things we build don't harm people or the environment, we also want to create things that make a difference to people.
 
