@@ -4,7 +4,7 @@ articletitle: "Deploying AI in your business"
 description: "How to test new ideas using design sprints"
 metadescription: "Learn quickly if AI will be valuable to your business using the design sprint method"
 date: 2019-05-07T00:00:00
-tags: ["business", "design-sprint"]
+tags: ["artificial intelligence"]
 image: "https://cdn-images-1.medium.com/max/960/1*O68ulH1qJQAGOsPDOw7xwQ.jpeg"
 author_name: "Matt Squire"
 author_thumbnail: "/images/matt-square-thumb.jpg"
