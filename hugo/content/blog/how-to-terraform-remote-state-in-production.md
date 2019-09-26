@@ -1,12 +1,13 @@
 ---
-title: "Terraform Remote State — The Road to Production"
+title: "Terraform Remote State — The Road to Production | Blog | Fuzzy Labs"
+articletitle: "Terraform Remote State — The Road to Production"
 description: "Using HashiCorp’s new Remote State Management Service."
 metadescription: "Using HashiCorp’s new Remote State Management Service."
 date: 2019-07-02T00:00:00
-tags: ["DevOps", "Terraform", "Infrastructure As Code", "Hashicorp"]
+tags: ["DevOps", "Cloud"]
 image: "https://cdn-images-1.medium.com/max/2560/1*WxHqGDHrucwN4Tnyzy3p5w.jpeg"
 author_name: "Tom Stockton"
-author_thumbnail: "/images/tom.jpeg"
+author_thumbnail: "/images/tom-square-thumb.jpg"
 author_description: "Co-Founder of Fuzzy Labs"
 layout: blog_post
 draft: false

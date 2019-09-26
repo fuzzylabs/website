@@ -5,7 +5,7 @@
     <div class="row" style="height: 100px">
       <div class="col-md-12 align-items-center ml-auto d-flex">
         <div>
-          <h1 style="padding-top: 30px">{{ .Title }}</h1>
+          <h1 style="padding-top: 30px">{{ .Params.articletitle }}</h1>
         </div>
       </div>
     </div>
@@ -25,9 +25,10 @@
         <a href="{{ .RelPermalink }}">
           <div class="image" style="background: url({{ .Params.image }}); background-position: center; background-size: cover; background-repeat: no-repeat">
           </div>
-          <h1>{{ .Title }}</h1>
+          <h1>{{ .Params.articletitle }}</h1>
           <p>{{ .Description }}</p>
         </a>
+        {{ if .Params.author_name }}
         <p class="text-bottom">
           <small>
             <time><i class="far fa-star"></i>  {{ dateFormat "Jan 2, 2006" .Date }}</time>
@@ -35,6 +36,7 @@
             <span><i class="far fa-clock"></i>{{ div .FuzzyWordCount 220 }} min read</span>
           </small>
         </p>
+        {{ end }}
       </div>
 
       {{ if eq (mod $index 3) 2 }}

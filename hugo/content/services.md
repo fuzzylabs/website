@@ -1,7 +1,8 @@
 ---
-title: Our Services
+title: "What AI can do for your Industry | Fuzzy Labs"
+articletitle: "Our Services"
 draft: false
 type: page
 layout: service
-metadescription: "Fuzzy Labs - what we do - AI in Marketing, AI in Financial Services, Business Intelligence, Business Process Automation, IoT"
+metadescription: "Use Artificial Intelligence to unlock extra value in Marketing, Fintech, Business Process Automation, Business Intelligence and IoT"
 ---

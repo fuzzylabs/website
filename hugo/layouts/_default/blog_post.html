@@ -1,21 +1,21 @@
 {{ define "main" }}
 <div class="main-content">
-  <!-- Begin Article
-       ================================================== -->
   <div class="container">
     <div class="row">
-      <!-- Post Share -->
+      <!-- Sharing -->
       <div class="col-md-2 pl-0">
         {{- partial "share.html" . -}}
       </div>
-      <!-- Post -->
+
+      <!-- Post body -->
       <div class="col-md-9 flex-first flex-md-unordered">
         <div class="mainheading">
           <!-- Post Title -->
-          <h1 class="posttitle">{{ .Title }}</h1>
+          <h1 class="posttitle">{{ .Params.articletitle }}</h1>
           <p class="lead">
             {{ .Description }}
           </p>
+
           <!-- Author Box -->
           <div class="row post-top-meta">
             <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0 md-nopad-right">
@@ -39,7 +39,7 @@
           {{ .Content}}
         </div>
 
-        <!-- Post Categories -->
+        <!-- Post Tags -->
         <div class="after-post-tags">
           <ul class="tags">
             {{ range .Params.tags }}
@@ -52,13 +52,17 @@
         <!-- End Categories -->
 
         <!-- Next and PrevPage inside current section -->
-        <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
-          {{with .NextInSection}}
-          <a class="d-block col-md-6" href="{{.URL}}"> &laquo; {{.Title}}</a>
-          {{end}}
-          {{with .PrevInSection}}
-          <a class="d-block col-md-6 text-lg-right" href="{{.URL}}">{{.Title}} &raquo;</a>
-          {{end}}
+        <div class="row PageNavigation d-flex justify-content-between" style="padding-bottom: 30px">
+          <div class="col-md-6">
+            {{with .NextInSection}}
+            <a class="d-block" href="{{.URL}}"> &laquo; {{.Params.articletitle}}</a>
+            {{end}}
+          </div>
+          <div class="col-md-6">
+            {{with .PrevInSection}}
+            <a class="d-block text-lg-right" href="{{.URL}}">{{.Params.articletitle}} &raquo;</a>
+            {{end}}
+          </div>
           <div class="clearfix"></div>
         </div>
         <!-- End Next and PrevPage -->
@@ -66,11 +70,7 @@
       <!-- End Post -->
     </div>
   </div>
-  <!-- End Article
-       ================================================== -->
-  {{ if .Params.comments }}
-  {{- partial "single-partials/comments.html" . -}}
-  {{ end }}
+  <!-- End container -->
 </div>
 {{- partial "alertbar.html" . -}}
 {{ end }}

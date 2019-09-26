@@ -1,12 +1,13 @@
 ---
-title: "The AI Arms Race in the Cloud"
+title: "The AI Arms Race in the Cloud | Blog | Fuzzy Labs"
+articletitle: "The AI Arms Race in the Cloud"
 description: "How cloud providers are competing to offer AI for everybody"
-metadescription: "How cloud providers are competing to offer AI for everybody"
+metadescription: "How Amazon, Google and Microsoft are competing to offer AI for everybody"
 date: 2019-05-15T00:00:00
-tags: ["AIaaS", "Cloud"]
+tags: ["artificial intelligence", "Cloud"]
 image: "https://cdn-images-1.medium.com/max/960/1*yoYsWDcNrP39gK-efdEcwg.png"
 author_name: "Tom Stockton"
-author_thumbnail: "/images/tom.jpeg"
+author_thumbnail: "/images/tom-square-thumb.jpg"
 author_description: "Co-Founder of Fuzzy Labs"
 layout: blog_post
 draft: false

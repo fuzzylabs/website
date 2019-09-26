@@ -9,9 +9,15 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Install Hugo
+          command: |
+            TEMP_DEB="$(mktemp)" &&
+            wget -O "$TEMP_DEB" 'https://github.com/gohugoio/hugo/releases/download/v0.58.3/hugo_0.58.3_Linux-64bit.deb' &&
+            sudo dpkg -i "$TEMP_DEB"
+            rm -f "$TEMP_DEB"
+      - run:
           name: Hugo static build
           command: |
-            sudo apt-get install -qq -y hugo
             hugo --config="hugo/config.toml" -s hugo -d $PWD/public
       - run:
           name: Install Firebase Tools
@@ -28,4 +34,3 @@ workflows:
             branches:
               only:
                 - master
-                - blog_updates
