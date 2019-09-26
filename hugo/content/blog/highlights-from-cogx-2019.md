@@ -4,7 +4,7 @@ articletitle: "Highlights from CogX 2019"
 description: "The Festival of AI and Emerging Technology"
 metadescription: "A Recap of The Festival of AI and Emerging Technology"
 date: 2019-06-17T00:00:00
-tags: ["artificial intelligence", "conference"]
+tags: ["artificial intelligence"]
 image: "https://miro.medium.com/max/2048/1*AtN2LcN-dJMdHKqp4uRefQ.jpeg"
 author_name: "Matt Squire"
 author_thumbnail: "/images/matt-square-thumb.jpg"
