@@ -4,23 +4,37 @@ description: Who are Fuzzy Labs?
 metadescription: "Who are Fuzzy Labs"
 draft: false
 ---
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 article-post">
+      <hr>
+      <p>Fuzzy Labs was co-Founded by Matt Squire and Tom Stockton in Manchester, UK, drawing on 35 years of combined commercial experience in writing and deploying world-class, modern, scalable software and data systems. We have worked with organisations including Disney Streaming Services, MoneySupermarket, Booking.com and McLaren.</p>
+      <hr>
+    </div>
+  </div>
+</div>
 
-Co-Founded by Matt Squire and Tom Stockton in the heart of Manchester, UK. We have 35 years commercial experience in writing and deploying world-class, modern, scalable software and data systems. We have worked with organisations including Disney Streaming Services, MoneySupermarket, Booking.com and McLaren.
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 article-post">
+      <a href="https://www.linkedin.com/in/tom-stockton-37a5644/"><img class="about-image" src="/images/tom-square-thumb.jpg"></a><h3>About Tom</h3>
 
-### About Tom
-<a href="https://www.linkedin.com/in/matt-squire-a19896125"><img src="/images/tom-square-thumb.jpg"></a>
+      <hr>
+      <p>With a background in DevOps and SRE, Tom not only has a wealth of experience engineering reliable production environments, but as the lead guitarist in his band, he's a literal DevOps rockstar.  He's worked with many prominent tech clients, most recently leading efforts to deploy large-scale data processing infrastructure in Kubernetes for Disney Streaming Services.</p>
 
-With a background in DevOps and SRE, Tom not only has a wealth of experience engineering reliable production environments, but as the lead guitarist in his band, he's a literal DevOps rockstar. He's worked with prominent tech clients including MoneySupermaket, Booking.com, McLaren and most recently Disney Streaming Services, where he lead efforts to deploy large-scale data processing infrastructure in Kubernetes.
+      <p>When he's not doing rockstar DevOps or building cool stuff in the cloud, Tom's a commited mountain biker with an intimidating training regime.</p>
 
-When he's not doing rockstar DevOps or building cool stuff in the cloud, Tom's a devoted mountain biker with an intimidating training regimen - but the dashcam footage on the descent makes it all worthwhile.
+      <p>Tom uses <a href="https://www.vim.org">Vim</a>.</p>
+    </div>
+    <div class="col-md-6 article-post">
+      <a href="https://www.linkedin.com/in/matt-squire-a19896125"><img class="about-image" src="/images/matt-square-thumb.jpg"></a><h3>About Matt</h3>
 
-Tom uses [Vim](https://www.vim.org).
+      <hr>
+      <p>Matt has spent his career building distributed and reactive software using Scala, Akka and Kafka in many domains including advertising, price comparison, biometrics, and IoT applications. His background is in natural computation, a field of computer science that studies how living things compute, to think about new ways to make machines smarter.</p>
 
-### About Matt
-<a href="https://www.linkedin.com/in/matt-squire-a19896125"><img src="/images/matt-square-thumb.jpg"></a>
+      <p>Before starting Fuzzy Labs Matt was technical team lead at Disney Streaming Services, where he worked on a machine learning project to predict customer happiness based on their experience of using the Disney+ platform. In his spare time he likes to dabble in building hardware, cooking curries, exploring mountains and learning Mandarin.</p>
 
-Matt has spent his career building distributed and reactive software using Scala, Akka and Kafka in many domains including advertising, price comparison, biometrics, and IoT applications. He's a fan of property-based testing, microservices, and message-driven architecture and he likes to use his background in natural computation, a field of computer science that studies how living things compute, to think about new ways to make machines smarter.
-
-Before starting Fuzzy Labs Matt was technical team lead at Disney Streaming Services, building Disney's video-on-demand service Disney+ where he worked on a machine learning project to predict when customers are happy or unhappy based on their experience of using the platform. Likes to dabble in a lot of things, including building hardware, cooking curries, exploring mountains and learning Mandarin.
-
-Matt uses [Emacs](https://www.gnu.org/s/emacs).
+      <p>Matt uses <a href="https://www.gnu.org/s/emacs">Emacs</a>.</p>
+    </div>
+  </div>
+</div>

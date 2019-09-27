@@ -365,3 +365,10 @@ ul.link-list li {
     width: 100%
   }
 }
+
+.about-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  align: left;
+}
