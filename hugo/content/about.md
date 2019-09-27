@@ -1,7 +1,8 @@
 ---
-title: About Us
-description: Who are Fuzzy Labs?
-metadescription: "Who are Fuzzy Labs"
+title: "About Us | Fuzzy Labs"
+articletitle: "Who are Fuzzy Labs?"
+description: ""
+metadescription: "Who are Fuzzy Labs?"
 draft: false
 ---
 <div class="container">

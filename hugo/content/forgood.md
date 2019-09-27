@@ -1,6 +1,6 @@
 ---
-title: "AI for Good"
-articletitle: "AI for Good | Fuzzy Labs"
+title: "AI for Good | Fuzzy Labs"
+articletitle: "AI for Good"
 description: Improving the world with AI
 draft: false
 metadescription: "Improving the world with AI, we want to show that AI can create positive social change. Let's build an AI project for the community, by the community."
