@@ -14,16 +14,16 @@
           <a class="nav-link nav-link-in-page" href="{{ "/" | absURL }}#home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-in-page" href="{{ "/" | absURL }}#approach">Our Approach</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-link-in-page" href="{{ "/" | absURL }}#contact">Let's Talk</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link {{ if eq "Our Services" .Title }}selected{{ end }}" href="/services">Services</a>
         </li>
         <li class="nav-item">
           <a class="nav-link {{ if eq "Blog" .Title }}selected{{ end }}" href="/blog">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {{ if eq "About" .Title }}selected{{ end }}" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-in-page" href="{{ "/" | absURL }}#contact">Let's Talk</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="http://github.com/fuzzylabs" target="_blank" rel="noopener">Code <i class="fab fa-github  ml-1"></i> </a>
