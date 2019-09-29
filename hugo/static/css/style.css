@@ -118,6 +118,16 @@ a:hover {
   color: #fff;
 }
 
+.section-marketing-splash {
+  min-height: 300px;
+  background-color: #101d39;
+  background-image: url('/images/marketing-splash.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-position: right 50%; background-size: 50%;
+  color: #fff;
+}
+
 .section-why {
   background-image: url('/images/slide-1.jpg');
   background-position: right top;
