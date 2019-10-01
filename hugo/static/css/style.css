@@ -108,6 +108,22 @@ a:hover {
   margin: 0;
 }
 
+.section-page-header {
+  min-height: 300px;
+  background-color: #101d39;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-position: right 50%;
+  background-size: 50%;
+  color: #fff;
+}
+
+.section-about-us {
+  background-image: url('/images/hacking.jpg');
+
+}
+
+
 .section-service-splash {
   min-height: 300px;
   background-color: #101d39;
@@ -170,7 +186,8 @@ a:hover {
   .section-why,
   .section-what,
   .section-marketing-splash,
-  .section-service-splash {
+  .section-service-splash,
+  .section-about-us {
     background-image: none!important;
   }
 }
