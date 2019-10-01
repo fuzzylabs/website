@@ -121,10 +121,11 @@ a:hover {
 .section-marketing-splash {
   min-height: 300px;
   background-color: #101d39;
-  background-image: url('/images/marketing-splash.png');
+  background-image: url('/images/artificial-intelligence-brain.jpg');
   background-position: right;
   background-repeat: no-repeat;
-  background-position: right 50%; background-size: 50%;
+  background-position: right 50%;
+  background-size: 50%;
   color: #fff;
 }
 
@@ -152,15 +153,15 @@ a:hover {
   min-height: 550px;
 }
 
-.section-services {
+.section-padded {
   padding: 70px 0;
 }
 
-.section-services:nth-of-type(even) {
+.section-padded:nth-of-type(even) {
   background: #f4f6fb;
 }
 
-.section-services li:not(:last-child) {
+.section-padded li:not(:last-child) {
   margin-bottom: 20px;
 }
 
