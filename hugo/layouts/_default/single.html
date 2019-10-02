@@ -1,9 +1,9 @@
 {{ define "main" }}
-<section class="section section-blog">
+<section class="section">
   <div class="container" style="padding-top: 20px">
     <div class="row">
       <div class="col-md-12 align-items-center ml-auto d-flex">
-        <div>
+        <div class="col-md-5">
           <h1>{{ .Params.articletitle }}</h1>
           <h3>{{ .Description }}</h3>
         </div>
@@ -12,7 +12,7 @@
   </div>
 </section>
 
-<section class="section blog-content" style="padding-bottom: 50px">
+<section class="section" style="padding-bottom: 50px">
   <div class="container">
     {{ .Content }}
   </div>

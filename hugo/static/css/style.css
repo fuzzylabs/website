@@ -108,6 +108,22 @@ a:hover {
   margin: 0;
 }
 
+.section-page-header {
+  min-height: 300px;
+  background-color: #101d39;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-position: right 50%;
+  background-size: 50%;
+  color: #fff;
+}
+
+.section-about-us {
+  background-image: url('/images/hacking.jpg');
+
+}
+
+
 .section-service-splash {
   min-height: 300px;
   background-color: #101d39;
@@ -115,6 +131,17 @@ a:hover {
   background-position: right;
   background-repeat: no-repeat;
   background-position: right 50%; background-size: 50%;
+  color: #fff;
+}
+
+.section-marketing-splash {
+  min-height: 300px;
+  background-color: #101d39;
+  background-image: url('/images/artificial-intelligence-brain.jpg');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-position: right 50%;
+  background-size: 50%;
   color: #fff;
 }
 
@@ -142,15 +169,15 @@ a:hover {
   min-height: 550px;
 }
 
-.section-services {
+.section-padded {
   padding: 70px 0;
 }
 
-.section-services:nth-of-type(even) {
+.section-padded:nth-of-type(even) {
   background: #f4f6fb;
 }
 
-.section-services li:not(:last-child) {
+.section-padded li:not(:last-child) {
   margin-bottom: 20px;
 }
 
@@ -158,7 +185,9 @@ a:hover {
   .section-blog,
   .section-why,
   .section-what,
-  .section-service-splash {
+  .section-marketing-splash,
+  .section-service-splash,
+  .section-about-us {
     background-image: none!important;
   }
 }
