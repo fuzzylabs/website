@@ -57,6 +57,7 @@ There are a few approaches to actually training the model itself. In particular 
 ![An architecture for making recommendations](https://cdn-images-1.medium.com/max/1600/1*hA0q_wUBNfitMtj8F4nKWg.png)
 
 The major components that go into it are:
+
 * Syncing Google Analytics data to Big Query. This needs run at a chosen time interval, say every day or every 6 hours.
 * Adding content and customer data to enrich recommendation results.
 * Training a recommendation model. Chose between any of the various successful approaches here. Model training occurs as part of a bigger analytics pipeline, so it's easy to experiment with different methods and see what works best.
