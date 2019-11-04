@@ -14,7 +14,7 @@ draft: false
 ---
 Lately I've taken to walking around Fuzzy Labs HQ with a breadboard taped to my shoe, pressure sensors embedded into an insole and a USB battery stuffed down my sock.
 
-It's unlikely to be the next fashion trend and I've been warned against wearing it to the airport, but this most amateur of electronics projects can stream data from the sensors to my phone and tells me something useful about my gait and posture.
+It's unlikely to be the next fashion trend and I've been warned against wearing it to the airport, but this most amateur of electronics projects can stream data from sensors to my phone and tell me something useful about how I use my feet.
 
 It's remarkable how much is possible for only a small cost. The idea that anybody can buy some off-the-shelf components and construct their own wearable fitness tracker with with home-grown machine learning models is a testament to how accessible the tech is. This truly is _AI (and IoT) for everybody_.
 
@@ -22,9 +22,9 @@ It's remarkable how much is possible for only a small cost. The idea that anybod
 
 ## Why build your own hardware?
 
-Being the unrepentant nerd that I am, the pure joy of the tech is reason enough. Another motivation comes from improving my own health and well-being. I've got a slightly unusual gait and somewhat poor posture all of which inevitably leads to aches and pains - all issues that I hope to correct with data.
+Being the unrepentant nerd that I am, the pure joy of the tech is reason enough. Another motivation comes from improving my own health and well-being. I've got a slightly unusual gait and somewhat poor posture all of which inevitably leads to aches and pains - issues that I hope to correct with data.
 
-Hardware isn't something Fuzzy Labs specialise in. Yet modern AI applications are intrinsically linked with the so-called Internet-of-things, with intelligence appearing in our phones, watches, and home automation systems. So while our business may be software, an understanding of the hardware that sits at the edge works is invaluable. The best way to understand something is to build it.
+Hardware isn't something Fuzzy Labs specialise in. Yet modern AI applications are intrinsically linked with the so-called Internet-of-things, with intelligence appearing in our phones, watches, and home automation systems. So while our business may be software, an understanding of the hardware that sits at the edge is invaluable, and the best way to understand something is to build it.
 
 ## How to put your shoes on the Internet
 
@@ -34,7 +34,7 @@ Attached to a foam insole are 6 pressure sensors. Each pressure sensor is a vari
 
 ![](https://cdn-images-1.medium.com/max/1600/1*RgAUYATGLMTmhqPjTznymw.jpeg)
 
-Each pressure sensor is connected to one of the ESP32's inputs via a voltage divider. In this case a voltage divider is simply a contraption we need so we can calculate the sensor resistance - which varies proportionally with pressure - against a known reference.
+Each pressure sensor is connected to one of the ESP32's inputs via a voltage divider. In this case a voltage divider is simply a contraption we need so we can calculate the sensor resistance against a known reference.
 
 Having built the prototype hardware we'll want to run some software on it. There are two ways to program an ESP32, in both cases using C++:
 
@@ -99,7 +99,7 @@ As a prototype, the hardware doesn't need to be particularly resilient or ergono
 
 This is all remarkably feasible. On the roadmap for this project is replacing the ESP32 and the big breadboard with a seweable electronics platform such as the [Arduino Lilypad](https://www.arduino.cc/en/Main/ArduinoBoardLilyPad).
 
-One difficulty remains with the battery, because traditional lithium ion batteries are famously prone to explosion when pierced, crushed, or used in a [Galaxy Note 7](https://en.wikipedia.org/wiki/Samsung_Galaxy_Note_7#Battery_faults). Thankfully there's promising research concerning  wearable batteries.
+One difficulty remains with the battery, because traditional lithium ion batteries are famously prone to explosion when pierced, crushed, or used in a [Galaxy Note 7](https://en.wikipedia.org/wiki/Samsung_Galaxy_Note_7#Battery_faults). Thankfully there's promising research concerning  [wearable batteries](https://iot.eetimes.com/new-high-energy-density-flexible-battery-for-wearables-announced).
 
 ## Contributing
 
@@ -111,8 +111,17 @@ We're grateful for the feedback we've received on social media, please keep it c
 
 We've recorded a couple of vlogs in which we discuss and demo the tech:
 
-* [Episode 1](https://www.youtube.com/watch?v=6LQiDVkvdR4)
-* [Episode 2](https://www.youtube.com/watch?v=sCAH1i5gpFc)
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" width="392" height="221" src="https://www.youtube.com/embed/6LQiDVkvdR4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+</div>
+
+<p>&nbsp;</p>
+
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" width="392" height="221" src="https://www.youtube.com/embed/sCAH1i5gpFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+</div>
 
 The source code is on Github here: [https://github.com/fuzzylabs/ai-for-your-feet](https://github.com/fuzzylabs/ai-for-your-feet).
 
