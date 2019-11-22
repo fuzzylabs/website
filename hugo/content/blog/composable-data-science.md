@@ -21,7 +21,7 @@ Jupyter notebooks are popular because they make it easy to experiment and to exp
 
 For data scientists Jupyter is a well-equipped laboratory, and a notebook is a collection of experiments. An experiment might tell us a good way to predict customer behaviour (for example) but we still need to turn that into a useful product.
 
-The code to accompany this blog is on Github [here](https://fuzzylabs/composable-data-science)
+The code to accompany this blog is on Github [here](https://github.com/fuzzylabs/composable-data-science)
 
 ## Mind the gap
 
