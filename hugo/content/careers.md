@@ -47,7 +47,7 @@ To learn more, take a look at our [Github](https://github.com/fuzzylabs), websit
 
 Don't worry, there's no HR department. If you'd like to work with us, send us a CV and, more importantly, a link to your Github (or Bitbucket, etc). If you've got a [Kaggle](https://kaggle.com) account, tech blog, cool side-project, or Instagram account for your cat/dog/etc, send us that too (optional).
 
-fuzzicians at fuzzylabs dot ai
+fuzzicians @ fuzzylabs . ai
 
 Interviews will be relaxed and informal. We'll get together to talk about the tech behind our current projects and then do a little pair-programming.
 
