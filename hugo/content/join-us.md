@@ -1,9 +1,9 @@
 ---
-title: "Careers | Fuzzy Labs"
-articletitle: "AI Careers at Fuzzy Labs"
+title: "Join Us | Fuzzy Labs"
+articletitle: "Fuzzicians Needed"
 draft: false
 metadescription: ""
-layout: careers
+layout: join-us
 ---
 As we approach our first full year at Fuzzy Labs, we're ready to hire more techies (or fuzzicians, as I'm insisting on saying).
 
