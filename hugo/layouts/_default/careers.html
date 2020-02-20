@@ -1,0 +1,34 @@
+{{ define "main" }}
+<div class="main-content">
+  <div class="container">
+    <div class="row">
+      <!-- Sharing -->
+      <div class="col-md-2 pl-0">
+
+      </div>
+
+      <!-- Post body -->
+      <div class="col-md-9 flex-first flex-md-unordered">
+        <div class="mainheading">
+          <!-- Post Title -->
+          <h1 class="posttitle">{{ .Params.articletitle }}</h1>
+          <p class="lead">
+            {{ .Description }}
+          </p>
+
+        </div>
+
+        <!-- Post Content -->
+        <div class="article-post">
+          {{ .Content}}
+        </div>
+
+
+      </div>
+      <!-- End Post -->
+    </div>
+  </div>
+  <!-- End container -->
+</div>
+{{- partial "alertbar.html" . -}}
+{{ end }}
