@@ -42,7 +42,7 @@ We’ve got a collection of distinct blocks of logic, so that’s a good start. 
 
 So this
 
-<script src="https://gist.github.com/archena/e5ba6d49ab40ed4ed460c58454bef48c.js"></script>
+<script src="https://gist.github.com/archena/483903090f81f1efec33cea54d9ec403.js"></script>
 
 Becomes
 
