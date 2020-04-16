@@ -169,6 +169,10 @@ a:hover {
   min-height: 550px;
 }
 
+.section-logos {
+  padding-top: 40px;
+}
+
 .section-padded {
   padding: 70px 0;
 }
@@ -410,7 +414,7 @@ ul.link-list li {
   max-width: 130px;
   height: 100%;
   position: relative;
-  padding-top: 75%;
+  padding-top: 70%;
   margin:auto;
 }
 
