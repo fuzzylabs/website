@@ -170,7 +170,9 @@ a:hover {
 }
 
 .section-logos {
-  padding: 40px 0 20px;
+  margin-top: 40px;
+  padding: 10px 0 60px;
+  background: #f9fafd;
 }
 
 .section-padded {
@@ -422,6 +424,12 @@ ul.link-list li {
   .logo-container {
     padding-top: 50%;
   }
+}
+
+@media (min-width: 992px) {
+    .logo-container {
+        padding-top: 30%;
+    }
 }
 
 
