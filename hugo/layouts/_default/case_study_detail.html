@@ -21,56 +21,28 @@
 <div class="main-content">
   <div class="container">
     <div class="row">
-
-      <!-- Post body -->
       <div class="col-md-9 flex-first flex-md-unordered">
-
         <div class="case-study-content">
           {{ .Content}}
         </div>
       </div>
-
     </div>
-
 
     <div class="row mb-4">
       <div class="col-12">
-
         <hr class="my-5">
         <h2>More case studies</h2>
       </div>
     </div>
     <div class="row mb-5">
       {{with .NextInSection}}
-      <div class="col-md-6">
-        <div class="px-2">
-          <div class="case-study-logo">
-            <img src="{{ .Params.image}}" class="case-study-logo__image"/>
-          </div>
-          <h4 class="h3 my-4">{{.Params.articletitle}}</h4>
-          <p>{{.Params.description}}</p>
-
-          <a class="btn btn-secondary btn-lg mt-3" href="{{.URL}}">View case study</a>
-        </div>
-      </div>
+      {{ partial "case_study.html" . }}
       {{end}}
       {{with .PrevInSection}}
-      <div class="col-md-6">
-        <div class="px-2">
-          <div class="case-study-logo">
-            <img src="{{ .Params.image}}" class="case-study-logo__image"/>
-          </div>
-          <h2 class="h3 my-4">{{.Params.articletitle}}</h2>
-          <p>{{.Params.description}}</p>
-          <a class="btn btn-secondary btn-lg mt-3" href="{{.URL}}">View case study</a>
-        </div>
-      </div>
+      {{ partial "case_study.html" . }}
       {{end}}
-
-      <!-- End Post -->
     </div>
   </div>
-  <!-- End container -->
 </div>
 {{- partial "alertbar.html" . -}}
 {{ end }}

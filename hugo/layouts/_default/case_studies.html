@@ -23,37 +23,9 @@
 <section class="section-padded">
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-        <div class="px-2">
-          <div class="case-study-logo">
-            <img src="/images/logos/regital-logo.svg" class="case-study-logo__image"/>
-          </div>
-
-
-          <h2 class="h3 my-4">Regital</h2>
-          <p class="">Regital, a digital agency specialising in programmatic marketing, asked us
-            to help speed up their reporting processes.</p>
-
-          <a class="btn btn-secondary btn-lg mt-3" href="/case-studies/regital">View case study</a>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="px-2">
-
-          <div style="background:#101d39; padding-bottom: 50%; position: relative; margin-bottom: 16px;">
-            <img src="/images/logos/xpertrule-logo.svg"
-                 style="position: absolute; left:50%; top: 50%; transform: translate(-50%,-50%) ;width: 20%;"/>
-          </div>
-
-          <h2 class="h3 my-4">XpertRule</h2>
-          <div class="">
-            <p class="">Reducing benefit claim and Council Tax processing time for XpertRule by automating the classification of
-              supporting evidence.</p>
-          </div>
-
-          <a class="btn btn-secondary btn-lg mt-3" href="/case-studies/xpertrule">View case study</a>
-        </div>
-      </div>
+{{ range $index, $page := .Pages.ByTitle }}
+      {{ partial "case_study.html" . }}
+{{ end }}
     </div>
   </div>
 </section>

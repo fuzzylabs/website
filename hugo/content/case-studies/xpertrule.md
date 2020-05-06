@@ -5,6 +5,8 @@ description: "Reducing benefit claim and Council Tax processing time by automati
 image: "/images/logos/xpertrule-logo.svg"
 metadescription: ""
 layout: case_study_detail
+company: XpertRule
+blurb: Reducing benefit claim and Council Tax processing time for XpertRule by automating the classification of supporting evidence.
 draft: false
 ---
 

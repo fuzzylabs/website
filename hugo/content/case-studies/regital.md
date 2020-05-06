@@ -5,6 +5,8 @@ description: "Better business intelligence with BigQuery."
 image: "/images/logos/regital-logo.svg"
 metadescription: ""
 layout: case_study_detail
+company: Regital
+blurb: Regital, a digital agency specialising in programmatic marketing, asked us to help speed up their reporting processes.
 draft: false
 ---
 
