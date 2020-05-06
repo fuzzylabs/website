@@ -475,6 +475,13 @@ ul.link-list li {
    margin-bottom: 16px;
  }
 
+@media (min-width: 768px) {
+  .case-studies-header {
+    background: url(/images/case-studies/meeting.jpg) 96% center no-repeat;
+    background-size: 45%
+  }
+}
+
 
 
 .case-study-logo__image {
