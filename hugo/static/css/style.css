@@ -4,7 +4,7 @@ html {
 body {
   padding-top: 54px;
   font-family: Asap;
-  font-size: 15pt;
+  font-size: 17px;
 }
 
 ul { padding-left: 22px;}
@@ -41,6 +41,7 @@ a:hover {
 
 
 .btn-secondary {
+  color: #fff;
   background-color: #48a7aa;
   border: none;
 }
@@ -119,7 +120,7 @@ a:hover {
 }
 
 .section-about-us {
-  background-image: url('/images/hacking.jpg');
+    background-image: url('/images/hacking.jpg');
 
 }
 
@@ -218,7 +219,6 @@ a:hover {
   padding-top: 25px;
   margin: 0;
   min-height: 450px;
-  font-size: 16px;
 }
 
 .homepage-textbox {
@@ -239,7 +239,6 @@ footer {
   background-color: #101d39;
   color: #fff;
   padding: 50px 0 0 0;
-  font-size: 12pt;
 }
 
 footer a {
