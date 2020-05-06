@@ -24,43 +24,49 @@
 
       <!-- Post body -->
       <div class="col-md-9 flex-first flex-md-unordered">
-        <div class="">
 
-
-
-        <!-- Post Content -->
         <div class="case-study-content">
           {{ .Content}}
         </div>
-
-        <!-- Post Tags -->
-        <div class="after-post-tags">
-          <ul class="tags">
-            {{ range .Params.tags }}
-            <li>
-              <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{.}}</a>
-            </li>
-            {{ end }}
-          </ul>
-        </div>
-        <!-- End Categories -->
-
-        <!-- Next and PrevPage inside current section -->
-        <div class="row PageNavigation d-flex justify-content-between" style="padding-bottom: 30px">
-          <div class="col-md-6">
-            {{with .NextInSection}}
-            <a class="d-block" href="{{.URL}}"> &laquo; {{.Params.articletitle}}</a>
-            {{end}}
-          </div>
-          <div class="col-md-6">
-            {{with .PrevInSection}}
-            <a class="d-block text-lg-right" href="{{.URL}}">{{.Params.articletitle}} &raquo;</a>
-            {{end}}
-          </div>
-          <div class="clearfix"></div>
-        </div>
-        <!-- End Next and PrevPage -->
       </div>
+
+    </div>
+
+
+    <div class="row">
+      <div class="col-12">
+
+        <hr class="my-5">
+        <h2>More case studies</h2>
+      </div>
+    </div>
+    <div class="row mb-5">
+      {{with .NextInSection}}
+      <div class="col-md-6">
+        <div class="px-2">
+          <div class="case-study-logo">
+            <img src="{{ .Params.image}}" class="case-study-logo__image"/>
+          </div>
+          <h4 class="h3 my-4">{{.Params.articletitle}}</h4>
+          <p>{{.Params.description}}</p>
+
+          <a class="btn btn-secondary btn-lg mt-3" href="{{.URL}}">View case study</a>
+        </div>
+      </div>
+      {{end}}
+      {{with .PrevInSection}}
+      <div class="col-md-6">
+        <div class="px-2">
+          <div class="case-study-logo">
+            <img src="{{ .Params.image}}" class="case-study-logo__image"/>
+          </div>
+          <h2 class="h3 my-4">{{.Params.articletitle}}</h2>
+          <p>{{.Params.description}}</p>
+          <a class="btn btn-secondary btn-lg mt-3" href="{{.URL}}">View case study</a>
+        </div>
+      </div>
+      {{end}}
+
       <!-- End Post -->
     </div>
   </div>
