@@ -17,7 +17,7 @@
           <a class="nav-link {{ if eq "service" .Layout }}selected{{ end }}" href="/services">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{ if eq "case_studies" .Layout }}selected{{ end }}" href="/case-studies">Case Studies</a>
+          <a class="nav-link {{ if or ( eq "case_studies" .Layout) ( eq "case_study_detail" .Layout) }}selected{{ end }}" href="/case-studies">Case Studies</a>
         </li>
         <li class="nav-item">
           <a class="nav-link {{ if or ( eq "blog_post" .Layout) (eq "list" .Layout) }}selected{{ end }}" href="/blog">Blog</a>
