@@ -469,6 +469,7 @@ ul.link-list li {
 /* Case Studies */
 
 .case-study-logo {
+  display: block;
    background: #101d39;
    padding-bottom: 50%;
    position: relative;
