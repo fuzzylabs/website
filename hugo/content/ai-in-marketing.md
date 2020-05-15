@@ -34,4 +34,5 @@ section2Heading: "Find out how Fuzzy Labs can help"
 section2Description: "<p>We can make sense of your customer data and help you power up your marketing. We'd love to start a conversation with you.</p>"
 section2ButtonText: "Get in touch today <i class='fa fa-comments ml-2'></i>"
 section2ButtonLink: "/#contact"
+sectionCardsActive: "true"
 ---
