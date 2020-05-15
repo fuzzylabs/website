@@ -1,0 +1,97 @@
+{{ define "main" }}
+<section class="section section-marketing-splash" style="background-image: url({{ .Params.heroImage }});">
+    <div class="container">
+        <div class="row" style="height: 600px">
+            <div class="col-md-12 align-items-center ml-auto d-flex">
+                <div class="col-md-6">
+                    <h1>{{ .Params.heroTitle }}</h1>
+                    {{ .Params.heroDescription | safeHTML }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-padded">
+    <div class="container">
+        <div class="row">
+            <h2>{{ .Params.section1Heading }}</h2>
+            {{ .Params.section1Description | safeHTML }}
+            <p style="margin-top: 30px;">
+                <a href="{{ .Params.section1ButtonLink }}" class="btn btn-secondary btn-lg">{{ .Params.section1ButtonText | safeHTML }}</a>
+            </p>
+        </div>
+    </div>
+</section>
+<section id="approach" class="section-padded">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 ">
+                <h2>{{ .Params.cardsHeading }}</h2>
+                {{ .Params.cardsDescription | safeHTML }}
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6 col-lg-3 principles-block-container">
+                <div class="principles-block">
+                    <div class="img">
+                        <img src="{{ .Params.card1Image }}" alt="" class="img-fluid">
+                        <div class="icon"><i class="fas {{ .Params.card1Icon }}"></i></div>
+                    </div>
+                    <h2>{{ .Params.card1Heading }}</h2>
+                    <p>
+                        {{ .Params.card1Description }}
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 principles-block-container">
+                <div class="principles-block">
+                    <div class="img">
+                        <img src="{{ .Params.card2Image }}" alt="" class="img-fluid">
+                        <div class="icon"><i class="fas {{ .Params.card2Icon }}"></i></div>
+                    </div>
+                    <h2>{{ .Params.card2Heading }}</h2>
+                    <p>
+                        {{ .Params.card2Description }}
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 principles-block-container">
+                <div class="principles-block">
+                    <div class="img">
+                        <img src="{{ .Params.card3Image }}" alt="" class="img-fluid">
+                        <div class="icon"><i class="fas {{ .Params.card3Icon }}"></i></div>
+                    </div>
+                    <h2>{{ .Params.card3Heading }}</h2>
+                    <p>
+                        {{ .Params.card3Description }}
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 principles-block-container">
+                <div class="principles-block">
+                    <div class="img">
+                        <img src="{{ .Params.card4Image }}" alt="" class="img-fluid">
+                        <div class="icon"><i class="fas {{ .Params.card4Icon }}"></i></div>
+                    </div>
+                    <h2>{{ .Params.card4Heading }}</h2>
+                    <p>
+                        {{ .Params.card4Description }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-padded">
+    <div class="container">
+        <div class="row">
+            <h2>{{ .Params.section2Heading }}</h2>
+            {{ .Params.section2Description | safeHTML }}
+            <p style="margin-top: 30px;">
+                <a href="{{ .Params.section2ButtonLink }}" class="btn btn-secondary btn-lg">{{ .Params.section2ButtonText | safeHTML }}</a>
+            </p>
+        </div>
+    </div>
+</section>
+{{ end }}
