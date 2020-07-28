@@ -1,8 +1,8 @@
 ---
-title: "The Battle of the OCR Engines - Tesseract vs Google | Blog | Fuzzy Labs"
+title: "The Battle of the OCR Engines - Tesseract vs Google Vision | Blog | Fuzzy Labs"
 articletitle: "The Battle of the OCR Engines"
-description: "Tesseract vs Google"
-metadescription: "The Battle of the OCR Engines - Tesseract vs Google"
+description: "Tesseract vs Google Vision"
+metadescription: "The Battle of the OCR Engines - Tesseract vs Google Vision"
 date: 2020-07-23T00:00:00
 tags: ["artificial intelligence", "image processing", "optical character recognition"]
 image: "https://cdn-images-1.medium.com/max/2000/1*YYmQ_VPoGpzveXOudJvEUw.png"
