@@ -13,7 +13,7 @@ layout: blog_post
 draft: false
 ---
 
-*The code is available at [GitHub](https://github.com/fuzzylabs/computational-delicacies-jupyter/blob/master/ocr/ocr.ipynb)*
+*The code is available on [GitHub](https://github.com/fuzzylabs/jupyter-delicacies/blob/master/ocr/ocr.ipynb)*
 
 Let’s say you want to extract some information from paper prescriptions (to perform some trend analysis afterwards, or to simply check if the prescription is valid against a database; the exact reasons may vary and are not too important here). You could type them into a computer database manually and call it a day. But it gets tedious if the number of those to type in becomes large, and the time is precious. This is when Optical Character Recognition (OCR) techniques may come in handy.
 
@@ -39,7 +39,7 @@ Google Vision, on the other hand, does not provide as much control over its conf
 
 ## Into the first example
 
-*N.B. the full recognised text results are not provided here, for the sake of keeping the article readable. However, the reader is encouraged to play around with [the notebook](https://github.com/fuzzylabs/computational-delicacies-jupyter/blob/master/ocr/ocr.ipynb) provided and see full results for themselves.*
+*N.B. the full recognised text results are not provided here, for the sake of keeping the article readable. However, the reader is encouraged to play around with [the notebook](https://github.com/fuzzylabs/jupyter-delicacies/blob/master/ocr/ocr.ipynb) provided and see full results for themselves.*
 
 Starting with our first example: a scanned prescription for amoxicillin (kind of antibiotic). We will first look at how the methods described above handle this form as is.
 
@@ -93,4 +93,4 @@ In conclusion, even though Tesseract Single Column provides a nice layout, I wou
 
 In this short blog post, we’ve compared how Tesseract OCR and Google Vision perform on two specific tasks, but this is by no means an exhaustive overview. When employing OCR, you need to consider the nature of the images you are working with, and experiment with different OCR models to find one that is the most suitable for their application. Additionally,  the real-world data might not be as clean as the examples above, therefore some pre-processing steps might be required for recognition to be successful. And finally, even though this step is out of the scope of this post, it is worth mentioning, that after the recognition some post-processing might be required, such as removal of the extra characters, or spell-checking (it depends on what the further analysis is).
 
-[The notebook](https://github.com/fuzzylabs/computational-delicacies-jupyter/blob/master/ocr/ocr.ipynb) with the code producing the results for the examples in this post is available. The readers are highly encouraged to give it a try and experiment with their sample data.
+[The notebook](https://github.com/fuzzylabs/jupyter-delicacies/blob/master/ocr/ocr.ipynb) with the code producing the results for the examples in this post is available. The readers are highly encouraged to give it a try and experiment with their sample data.
