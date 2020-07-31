@@ -1,8 +1,8 @@
 ---
-title: "Simple Object Detection with OpenCV | Blog | Fuzzy Labs"
-articletitle: "Simple Object Detection with OpenCV"
+title: "Checkbox Detection with OpenCV | Blog | Fuzzy Labs"
+articletitle: "Checkbox Detection with OpenCV"
 description: "Detecting checkboxes on printed forms"
-metadescription: "Simple Object Detection with OpenCV"
+metadescription: "Checkbox Detection with OpenCV"
 date: 2020-07-28T00:00:00
 tags: ["artificial intelligence", "image processing", "object detection"]
 image: "https://cdn-images-1.medium.com/max/2000/1*3x143vS_ju2T06YsPjJqPw.png"
