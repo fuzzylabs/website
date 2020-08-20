@@ -13,6 +13,7 @@ layout: blog_post
 draft: false
 ---
 Itching to turn our exercise into data, last year the Fuzzy Labs team embarked upon a project to put sensors in our trainers (sneakers, for Americans out there), and connect our shoes to the Internet of 'things' - because that's what we're like.
+
 Our ultimate aim is to build an open-source platform for combining AI models with wearable hardware. The prototype hardware is described in a [previous blog post](https://fuzzylabs.ai/blog/ai-for-your-feet) - although we've since moved to the newer, sleeker Arduino Nano IOT in place of the bulkier ESP32 for a marginally less ugly-looking form factor.
 
 In this article I'll demonstrate some sample data collected by the device and perform rudimentary time-series analysis, finally rendering the results using the Dash Framework.
