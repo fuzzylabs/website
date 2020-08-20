@@ -444,3 +444,13 @@ ul.link-list li {
   transform: translate(-50%,-50%);
   filter:saturate(0) ;
 }
+
+
+/* -- Landing template -- */
+.section__landing-image {
+    height: 630px;
+    background-attachment: static;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

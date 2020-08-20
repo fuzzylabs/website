@@ -1,0 +1,45 @@
+---
+title: "AI for Marketing | Fuzzy Labs"
+description: ""
+draft: false
+type: page
+layout: landing
+metadescription: "Customer experience matters in marketing. Get to know your customer better, by applying AI where it really counts. Boost campaign performance, speed up ROI and do so much more with your data."
+sections:
+ - type: "intro"
+   backgroundicon: "topright"
+   heading: "AI for marketing"
+   description: "<p>Customer experience matters in marketing. Get to know your customer better, by applying AI where it really counts. Boost campaign performance, speed up ROI and do so much more with your data.</p>"
+ - type: "image"
+   image: "https://placehold.it/1000x1000"
+ - type: "textblock"
+   heading: "Let's do this:"
+   subheading: "<p>We develop powerful AI tools, to help marketers get closer to their customers.</p>"
+   copy: "<h3>Applying AI in marketing – why it matters</h3> <p>Knowledge is power, and data is our thing. The right AI solution will transform not just how you understand and communicate with your customers, but also improve efficiency throughout the whole business.</p><p>We work with marketing teams to deploy AI at every level; to organise data, improve insights, identify and optimise opportunities for sales and growth. Get smarter AI systems integrated and working for you faster, to completely transform your customer acquisition and retention.</p>"
+   background: "/images/bg-arrows.png"
+   backgroundalign: "right"
+ - type: "cards"
+   columns: "3"
+   heading: "AI in marketing can help:"
+   cards:
+    - image: "/images/marketing-hyper-personalisation.jpg"
+      heading: "Organise and analyse customer data faster"
+      description: "We build data warehousing systems, to aggregate and unify data from multiple sources. Sales, marketing, supply chain  – AI can connect the lot."
+      buttoncopy: "Read more about data warehousing"
+      buttonlink: "/"
+    - image: "/images/marketing-hyper-personalisation.jpg"
+      heading: "Understand your customers better"
+      description: "Get deeper insights in customer segmentation using AI. When you know ‘who’ your most valuable audience are, AI can predict ‘how’ best to reach them - to target campaigns, convert more sales, and reduce cost to serve."
+      buttoncopy: "Read more about customer segmentation"
+      buttonlink: "/"
+    - image: "/images/marketing-hyper-personalisation.jpg"
+      heading: "Get the right message, right channel, right time"
+      description: "Personalisation is the future of marketing. Our intelligent recommendation engine AI systems allow hyper-personalisation in marketing, to drive brand loyalty, reduce churn, and increase engagement, through smarter automation."
+      buttoncopy: "Read more about personalisation"
+      buttonlink: "/"
+ - type: "imagecopy"
+   imagealign: "left"
+   image: "https://placehold.it/400x600"
+   heading: "Our approach"
+   description: "<p>We believe that AI should be for everyone. We work with some pretty clever technologies, but Fuzzy Labs believe in keeping things simple. We don’t assume any prior knowledge of AI, and work with all kinds of business and marketing teams on building and integrating AI systems from the really simple, to the really complex.</p><p>Whether you have a lot of data, or very little, we can help you get started with AI to improve your marketing for rapid results. A three phase process means that however you choose to work with us, short or long term, our solutions are quick to deploy.</p>"
+---

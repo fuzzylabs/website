@@ -1,0 +1,354 @@
+{{ define "main" }}
+<style>
+.section__landing-intro {
+    padding: 40px 0;
+    background: #145C81;
+    color: #fff;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+@media(min-width: 1200px) {
+    .section__landing-intro.background-icon--topright:before {
+        content: '';
+        display: block;
+        width: 400px;
+        height: 400px;
+        transform: rotate(-45deg);
+        background: #10769C;
+        position: absolute;
+        border-radius: 30px;
+        right: -210px;
+        top: -150px;
+    }
+    .section__landing-intro.background-icon--topleft:before {
+        content: '';
+        display: block;
+        width: 400px;
+        height: 400px;
+        transform: rotate(-45deg);
+        background: #10769C;
+        position: absolute;
+        border-radius: 30px;
+        left: -290px;
+        top: -90px;
+    }
+}
+
+.section__landing-intro h1 {
+    font-family: Sora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    color: #fff;
+}
+
+.section__landing-intro h1:after {
+    content: '';
+    width: 38px;
+    height: 5px;
+    background: #7ADBBA;
+    display: block;
+    margin: 40px auto 0;
+}
+
+.section__landing-image {
+    height: 630px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.rounded-card {
+    border-radius: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.rounded-card__content {
+    padding: 25px 35px;
+    color: #101D39;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.rounded-card__heading {
+    font-family: Sora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.rounded-card__description {
+    font-family: Asap;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    flex: 1;
+}
+
+.rounded-card__link {
+    font-family: Asap;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    color: #101D39;
+
+}
+
+.heading-withblock .copy {
+    font-family: Sora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    color: #145C81;
+    z-index: 2;
+    position: relative;
+}
+
+.heading-withblock > span {
+    position: relative;
+}
+
+.heading-withblock > span:after {
+    content: '';
+    display: block;
+    background: #F0FDF8;
+    width: calc(100% + 20px);
+    height: 30px;
+    left: -10px;
+    bottom: -10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.section__landing-cards {
+    padding: 100px 0;
+}
+
+.section__landing-cards .rounded-card {
+    height: 100%;
+}
+
+.section__landing-cards .row {
+    margin: 0 -12px;
+}
+
+.section__landing-cards .row > [class^="col-"] {
+    padding: 0 12px;
+}
+
+.section__landing-imagecopy {
+    padding: 100px 0;
+    background: url(/images/bg-imagecopy.png) no-repeat center;
+    font-size: 18px;
+    line-height: 26px;
+    color: #101D39;
+}
+
+.section__landing-imagecopy img {
+    width: 100%;
+    margin: 30px auto;
+}
+
+.section__landing-imagecopy .row {
+    margin: 0 -40px;
+}
+
+.section__landing-imagecopy .row > [class^="col-"] {
+    padding: 0 40px;
+}
+
+.section__landing-heading {
+    font-family: Sora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    color: #145C81;
+}
+
+.section__landing-textblock {
+    padding: 100px 0;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    font-size: 18px;
+    line-height: 24px;
+    color: #101D39;
+
+}
+
+.section__landing-textblock.background--right {
+    background-position: 100% 0;
+}
+
+.section__landing-textblock .section__landing-textblock-content {
+    background: #ECF9FE;
+    padding: 45px;
+}
+
+.section__landing-textblock .section__landing-textblock-content h3 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.section__landing-textblock .heading-withblock span {
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.section__landing-textblock .heading-withblock span:after {
+    background: #fff;
+}
+
+.section__landing-textblock .row {
+    margin: 0 -50px;
+}
+
+.section__landing-textblock .row > [class^="col-"] {
+    padding: 0 50px;
+}
+
+.section__landing-textblock-subheading {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    color: #145C81;
+}
+</style>
+    {{ range .Params.sections }}
+        {{ if eq .type "intro" }}
+            <section class="section section__landing-intro background-icon--{{ .backgroundicon }}">
+                <div class="container">
+                    <div class="row" style="height: 600px">
+                        <div class="col-12 align-items-center ml-auto d-flex">
+                            <div class="text-center">
+                                {{ if .heading }}
+                                    <h1>{{ .heading }}</h1>
+                                {{ end }}
+                                {{ if .description }}
+                                    {{ .description | safeHTML }}
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        {{ else if eq .type "image" }}
+            <section class="section__landing-image" style="background-image: url({{ .image }});"></section>
+        {{ else if eq .type "imagecopy" }}
+            <section class="section__landing-imagecopy">
+                <div class="container">
+                    <div class="row align-items-center">
+                        {{ $.Scratch.Set "imagealign" "" }}
+                        {{if eq .imagealign "right"}}
+                            {{ $.Scratch.Set "imagealign" " order-lg-last" }}
+                        {{ end }}
+                        <div class='col-lg-6{{ $.Scratch.Get "imagealign" }}'>
+                            <img src="{{ .image }}" alt="{{ .heading }}" class="imagecopy__image">
+                        </div>
+                        <div class="col-lg-6">
+                            {{ if .heading }}
+                                <h2 class="section__landing-heading">{{ .heading }}</h2>
+                            {{ end }}
+                            {{ if .description }}
+                                {{ .description | safeHTML }}
+                            {{ end }}
+                            {{ if and .buttonText .buttonLink }}
+                                <p style="margin-top: 30px;">
+                                    <a href="{{ .buttonLink }}" class="btn btn-secondary btn-lg">{{ .buttonText | safeHTML }}</a>
+                                </p>
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        {{ else if eq .type "textblock" }}
+            <section class="section__landing-textblock background--{{ .backgroundalign }}" style="background-image: url({{ .background }});">
+                <div class="container">
+                    <div class="section__landing-textblock-content">
+                        <div class="row">
+                            {{ if .heading }}
+                                <div class="col-12">
+                                    <h2 class="heading-withblock"><span><span class="copy">{{ .heading }}</span></span></h2>
+                                </div>
+                            {{ end }}
+                            <div class="col-lg-6">
+                                {{ if .subheading }}
+                                    <div class="section__landing-textblock-subheading">{{ .subheading | safeHTML }}</div>
+                                {{ end }}
+                            </div>
+                            <div class="col-lg-6">
+                                {{ if .copy }}
+                                    {{ .copy | safeHTML }}
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        {{ else if eq .type "cards" }}
+            <section class="section__landing-cards">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 ">
+                            {{ if .heading }}
+                                <h2 class="heading-withblock"><span><span class="copy">{{ .heading }}</span></span></h2>
+                            {{ end }}
+                            {{ .description | safeHTML }}
+                        </div>
+                    </div>
+                    {{if eq .columns "4"}}
+                        {{ $.Scratch.Set "columns" "col-md-6 col-lg-3" }}
+                    {{ else if eq .columns "3" }}
+                        {{ $.Scratch.Set "columns" "col-lg-4" }}
+                    {{ else if eq .columns "2" }}
+                        {{ $.Scratch.Set "columns" "col-md-6" }}
+                    {{ else }}
+                        {{ $.Scratch.Set "columns" "col-12" }}
+                    {{end}}
+                    {{ if .cards }}
+                        <div class="row mt-4">
+                            {{ range .cards }}
+                                <div class='{{ $.Scratch.Get "columns" }}'>
+                                    <div class="rounded-card">
+                                        <div class="rounded-card__img">
+                                            <img src="{{ .image }}" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="rounded-card__content">
+                                            {{ if .heading }}
+                                                <h2 class="rounded-card__heading">{{ .heading }}</h2>
+                                            {{ end }}
+                                            {{ if .description }}
+                                                <p class="rounded-card__description">
+                                                    {{ .description }}
+                                                </p>
+                                            {{ end }}
+                                            {{ if and .buttoncopy .buttonlink }}
+                                                <a href="{{ .buttonlink }}" class="rounded-card__link">{{ .buttoncopy }}</a>
+                                            {{ end }}
+                                        </div>
+                                    </div>
+                                </div>
+                            {{ end }}
+                        </div>
+                    {{ end }}
+                </div>
+            </section>
+        {{ end }}
+    {{ end }}
+{{ end }}
