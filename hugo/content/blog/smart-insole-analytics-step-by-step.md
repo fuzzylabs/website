@@ -63,7 +63,7 @@ Using the pressure sensors, we'd like to calculate two metrics:
 
 Walking, jogging, running, etc. happen to be repetitive activities. As a result, the graph of pressure over time is more-or-less periodic. We can use the peaks or maxima of this graph to represent steps.
 
-The trouble is, we have multiple pressure sensors, each with their own graph. Naïvely we could pick one of these sensors to use a basis for counting steps. We'll use any value within 25% of the maximum pressure to count a step.
+The trouble is, we have multiple pressure sensors, each with their own graph. Naïvely we could pick one of these sensors to use a basis for counting steps, let's say the first one, which is connected to the heel. Then we'll count any value within 25% of the maximum pressure as one step.
 
 ```python
 def count_steps_naive(dataframe):
@@ -75,11 +75,11 @@ def count_steps_naive(dataframe):
     return matching_rows[column].count()
 ```
 
-With this approach there are a number of problems. First, we can't assume that every footstep will reach the same maximum pressure reading, so we must adapt our threshold in order to get a more realistic measurement. A more significant problem is that we're not taking all of sensors into account and furthermore, the sensor readings can be a little bit noisy, which can lead to false-positives while counting steps.
+With this approach there are a number of problems, but the most significant is that we're not taking into account all of sensors and furthermore, the sensor readings can be a little bit noisy, which can lead to false-positives while counting steps.
 
 A better method can be found in [A comparative study of smart insole on real-world step count](https://ieeexplore.ieee.org/document/7405425) *(Feng Lin et al, 2015 IEEE Signal Processing in Medicine and Biology Symposium)*.
 
-The authors first calculate the average pressure across all sensors:
+The authors first calculate the average pressure across all sensors. We'll do the same, calculating the mean with `axis=1` so that we get a time series with one column that represents the average of all sensors for each point in time.
 
 ```python
 p_avg = pressure_data.mean(axis=1)
@@ -87,7 +87,7 @@ p_avg = pressure_data.mean(axis=1)
 
 ![](https://cdn-images-1.medium.com/max/1600/1*e1YVnlMvuRlUznp07IqL1g.png)
 
-And then the rate of change (differential of average pressure):
+Next they calculate the rate of change, or differential of average pressure as it's called in the paper:
 
 ```python
 p_diff = p_avg.diff()
@@ -95,7 +95,7 @@ p_diff = p_avg.diff()
 
 ![](https://cdn-images-1.medium.com/max/1600/1*FusgiIIk9l9U2lnDUQQwVw.png)
 
-Finally, the authors chose two threshold parameters, which are discovered by experimentation. In the paper, they use γ and Γ, but we'll just call these parameters `low_threshold` and `high_threshold`. Here's the enhanced step counting function:
+Finally, the authors choose two threshold parameters, which are discovered by experimentation. In the paper, they use γ and Γ, but we'll just call these parameters `low_threshold` and `high_threshold`. Here's the enhanced step counting function:
 
 ```python
 def count_steps(dataframe, low_threshold = 0, high_threshold = 4):
@@ -113,15 +113,15 @@ def count_steps(dataframe, low_threshold = 0, high_threshold = 4):
     return step_count
 ```
 
-Deviating from the paper I've used different values for the low and high thresholds. This is because the range of measurements differ on this device.
+Deviating from the paper I've used different values for the low and high thresholds due to differences in the measurements range on this hardware.
 
-Note that as we're only using one insole, we need to multiply by 2 to get the true step count using this method.
+Note that as we're only using one insole, we need to multiply the result by 2 to get the true step count using either of these methods.
 
 ### Cadence
 
-A common metric used in running, jogging and similar activities is cadence. This is measured in strides or steps per minute.
+Armed with our step counting function we can go on to implement a common metric used in running, jogging and similar activities, *cadence*.
 
-People of different heights will have different stride lengths, and therefore they will require a different number of steps in order to cover the same distance. So if we're using cadence to compare two runners, we have to normalise for height first.
+Cadence is measured in strides or steps per minute. People of different heights will have different stride lengths, and therefore they will require a different number of steps in order to cover the same distance, so if we're using cadence to compare two runners, we have to know their height too, but for our purposes we'll ignore that detail.
 
 To calculate cadence with Pandas we'll simply invoke the step counter and divide by the exercise duration in seconds:
 
@@ -142,6 +142,26 @@ So far we've been working in Jupyter to visualise and experiment with data, but 
 ![](https://cdn-images-1.medium.com/max/1600/1*4c2LDPiGGD9nwZCHPmOdOw.png)
 
 With Dash we can drop in the code that we already wrote in Jupyter. The only additional work is in laying out the dashboard and turning the graphs into Plotly graphs (instead of the matplotlib based graphs that Pandas generates).
+
+As an example, here's how we can turn our pressure sensor plot from earlier into a Plotly graph:
+
+```python
+import plotly.graph_objs as go
+pressure_plots = []
+for sensor in ["p1", "p2", "p3"]:
+    series = dataframe[sensor]
+    scatter = go.Scatter(x = dataframe.index,
+                         y = series,
+                         name = f"Sensor {sensor}",
+                         opacity = 0.4)
+    pressure_plots.append(scatter)
+pressure_figure = go.Figure(
+    data = pressure_plots,
+    layout = go.Layout(
+        title = "Pressure timeseries"
+    )
+)
+```
 
 I'll write a longer blog on the use of Dash, but here are a few important things to keep in mind when building dashboards:
 
