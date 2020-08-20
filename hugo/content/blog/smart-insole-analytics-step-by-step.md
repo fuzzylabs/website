@@ -1,6 +1,6 @@
 ---
 title: "Smart Insole Analytics step-by-step | Blog | Fuzzy Labs"
-articletitle: "Smart Insole Analytics"
+articletitle: "Smart Insole Analytics step-by-step"
 description: "Exercise time-series modelling using Dash and Pandas"
 metadescription: "Exercise time-series modelling using Dash and Pandas"
 date: 2020-08-19T00:00:00
