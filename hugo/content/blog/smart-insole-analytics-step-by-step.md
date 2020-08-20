@@ -5,7 +5,7 @@ description: "Exercise time-series modelling using Dash and Pandas"
 metadescription: "Exercise time-series modelling using Dash and Pandas"
 date: 2020-08-19T00:00:00
 tags: ["artificial intelligence", "iot"]
-image: "https://cdn-images-1.medium.com/max/1600/1*0eiUm9kpBo1Vy08wUbM76Q.jpeg"
+image: "https://cdn-images-1.medium.com/max/1600/1*ZlW2oRfHFA2wUWXv0Ar0OQ.png"
 author_name: "Matt Squire"
 author_thumbnail: "/images/matt-square-thumb.jpg"
 author_description: "Co-Founder of Fuzzy Labs"
