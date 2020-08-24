@@ -12,6 +12,7 @@ sections:
    description: "<p>Customer experience matters in marketing. Get to know your customer better, by applying AI where it really counts. Boost campaign performance, speed up ROI and do so much more with your data.</p>"
  - type: "image"
    image: "https://placehold.it/1000x1000"
+   overlay: top
  - type: "textblock"
    heading: "Let's do this:"
    subheading: "<p>We develop powerful AI tools, to help marketers get closer to their customers.</p>"
@@ -42,4 +43,11 @@ sections:
    image: "https://placehold.it/400x600"
    heading: "Our approach"
    description: "<p>We believe that AI should be for everyone. We work with some pretty clever technologies, but Fuzzy Labs believe in keeping things simple. We don’t assume any prior knowledge of AI, and work with all kinds of business and marketing teams on building and integrating AI systems from the really simple, to the really complex.</p><p>Whether you have a lot of data, or very little, we can help you get started with AI to improve your marketing for rapid results. A three phase process means that however you choose to work with us, short or long term, our solutions are quick to deploy.</p>"
+ - type: "copy"
+   imagealign: "right"
+   copy: "<p>We’re completely transparent about the way we work, using both off the shelf technologies along with more bespoke and custom-built solutions. It’s a cost-effective approach, whatever your budget.</p>"
+ - type: "footer"
+   heading: "AI for your marketing..."
+   description: "We’d love to chat about how our AI solutions could help improve your marketing."
+   whitecopy: "Have a question about how AI could work for you? <br>Give us a shout using the form below."
 ---

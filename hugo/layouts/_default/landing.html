@@ -5,8 +5,8 @@
     background: #145C81;
     color: #fff;
     font-weight: 500;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 30px;
     position: relative;
     overflow: hidden;
 }
@@ -42,8 +42,8 @@
     font-family: Sora;
     font-style: normal;
     font-weight: bold;
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 30px;
+    line-height: 35px;
     color: #fff;
 }
 
@@ -56,12 +56,53 @@
     margin: 40px auto 0;
 }
 
+@media(min-width: 768px) {
+    .section__landing-intro {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .section__landing-intro h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+}
+
 .section__landing-image {
-    height: 630px;
-    background-attachment: fixed;
+    height: 400px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+@media(min-width: 768px) {
+    .section__landing-image {
+        height: 630px;
+        background-attachment: fixed;
+        position: relative;
+    }
+
+    .section__landing-image:before {
+        content: '';
+        display: none;
+        background: url(/images/arrow-overlay.png) no-repeat center;
+        background-size: 100% 100%;
+        width: 469px;
+        height: 840px;
+        position: absolute;
+        left: 0;
+        top: -420px;
+        z-index: 100;
+    }
+
+    .section__landing-image__overlay--top:before {
+        display: block;
+    }
+
+    .section__landing-image__overlay--middle:before {
+        top: 0;
+        display: block;
+    }
 }
 
 .rounded-card {
@@ -73,12 +114,22 @@
     flex-direction: column;
 }
 
+.rounded-card__img img {
+    width: 100%;
+}
+
 .rounded-card__content {
-    padding: 25px 35px;
+    padding: 25px;
     color: #101D39;
     flex: 1;
     display: flex;
     flex-direction: column;
+}
+
+@media(min-width: 768px) {
+    .rounded-card__content {
+        padding: 25px 35px;
+    }
 }
 
 .rounded-card__heading {
@@ -136,11 +187,22 @@
 }
 
 .section__landing-cards {
-    padding: 100px 0;
+    padding: 20px 0;
+}
+
+.section__landing-cards-main .row > [class^="col-"] {
+    margin-bottom: 30px;
+}
+
+@media(min-width: 992px) {
+    .section__landing-cards {
+        padding: 100px 0;
+    }
 }
 
 .section__landing-cards .rounded-card {
     height: 100%;
+    margin-bottom: 30px;
 }
 
 .section__landing-cards .row {
@@ -152,11 +214,17 @@
 }
 
 .section__landing-imagecopy {
-    padding: 100px 0;
+    padding: 50px 0;
     background: url(/images/bg-imagecopy.png) no-repeat center;
     font-size: 18px;
     line-height: 26px;
-    color: #101D39;
+    color: #145C81;
+}
+
+@media(min-width: 992px) {
+    .section__landing-imagecopy {
+        padding: 100px 0;
+    }
 }
 
 .section__landing-imagecopy img {
@@ -176,19 +244,32 @@
     font-family: Sora;
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 30px;
+    line-height: 40px;
     color: #145C81;
 }
 
+
+@media(min-width: 768px) {
+    .section__landing-heading {
+        font-size: 36px;
+        line-height: 44px;
+    }
+}
+
 .section__landing-textblock {
-    padding: 100px 0;
+    padding: 50px 0;
     background-repeat: no-repeat;
     background-size: 50% auto;
     font-size: 18px;
     line-height: 24px;
     color: #101D39;
+}
 
+@media(min-width: 992px) {
+    .section__landing-textblock {
+        padding: 100px 0;
+    }
 }
 
 .section__landing-textblock.background--right {
@@ -197,7 +278,7 @@
 
 .section__landing-textblock .section__landing-textblock-content {
     background: #ECF9FE;
-    padding: 45px;
+    padding: 25px;
 }
 
 .section__landing-textblock .section__landing-textblock-content h3 {
@@ -207,8 +288,7 @@
 }
 
 .section__landing-textblock .heading-withblock span {
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 30px;
 }
 
 .section__landing-textblock .heading-withblock span:after {
@@ -225,10 +305,295 @@
 
 .section__landing-textblock-subheading {
     font-weight: 500;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 22px;
+    line-height: 30px;
     color: #145C81;
 }
+
+.section__landing-copy {
+    padding: 50px 0;
+    color: #145C81;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.section__landing-copy a {
+    text-decoration: underline;
+    color: #145C81;
+    font-weight: bold;
+}
+
+@media(min-width: 768px) {
+    .section__landing-copy {
+        font-size: 28px;
+    }
+
+    .section__landing-textblock .heading-withblock span {
+        font-size: 48px;
+        line-height: 60px;
+    }  
+
+    .section__landing-textblock-subheading {
+        font-size: 32px;
+        line-height: 40px;
+    } 
+
+    .section__landing-textblock .section__landing-textblock-content {
+        padding: 45px;
+    } 
+}
+
+@media(min-width: 992px) {
+    .section__landing-copy {
+        padding: 100px 0;
+        margin: 0 0 50px;
+        position: relative;
+    }
+
+    .section__landing-copy:after {
+        content: '';
+        display: block;
+        width: 25vw;
+        height: 100%;
+        background: url(/images/bg-arrows.png) left center;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .section__landing-copy.section__landing-copy--bg-left:after {
+        right: auto;
+        left: 0;
+        background-position: right center;
+    }
+}
+
+.section__landing-footer {
+    overflow: hidden;
+}
+
+.section__landing-footer-top {
+    background: #7ADBBA;
+    color: #145C81;
+    padding: 50px 0 0;
+    position: relative;
+}
+
+.section__landing-footer-top a,
+.section__landing-footer-middle a {
+    font-weight: bold;
+    color: #145C81;
+    text-decoration: underline
+}
+
+.section__landing-footer-top .container,
+.section__landing-footer-middle .container {
+    position: relative;
+    z-index: 2;
+}
+
+.section__landing-footer-top:after {
+    content: '';
+    width: 0; 
+    height: 0; 
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    border-top: 5vw solid #7ADBBA;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.section__landing-footer-top .container {
+    max-width: 940px;
+}
+
+.section__landing-footer-top-heading {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Sora;
+}
+
+.section__landing-footer-top-heading:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #fff;
+    margin-top: 18px;
+}
+
+.section__landing-footer-top-description {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+.section__landing-footer-middle {
+    font-size: 20px;
+    color: #145C81;
+    font-weight: 500;
+    padding: 7vw 0 0;
+    position: relative;
+}
+
+@media(min-width: 768px) {
+    .section__landing-footer-top-heading {
+        font-size: 44px;
+    }
+
+    .section__landing-footer-top-description,
+    .section__landing-footer-middle {
+        font-size: 30px;
+    }
+}
+
+.section__landing-footer-middle:after {
+    content: '';
+    width: 0; 
+    height: 0; 
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    border-top: 5vw solid #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.section__landing-footer-bottom {
+    background: #ECF9FE;
+    padding: 7vw 0 100px;
+}
+
+.section__landing-footer-bottom .heading-withblock > span:after {
+    background: #fff;
+}
+
+.form-styling .row {
+    margin: 0;
+}
+
+.form-styling .row [class^="col-"] {
+    padding: 0;
+}
+
+.form-styling input,
+.form-styling textarea {
+    background: transparent;
+    padding: 20px;
+    border: 0;
+    font-size: 13px;
+    color: #145C81;
+    border-bottom: 2px solid #000;
+    width: 100%;
+}
+
+.form-styling input::placeholder,
+.form-styling textarea::placeholder {
+    color: #145C81;
+}
+
+.form-styling textarea {
+    height: 120px;
+}
+
+.form-styling input:focus,
+.form-styling textarea:focus {
+    border: 0 !important;
+    border-bottom: 2px solid #000 !important;
+    outline: 0 !important;
+}
+
+.form-styling__radios {
+    border-bottom: 2px solid #000;
+    padding: 0 0 10px 20px;
+}
+
+.form-styling__radios-label {
+    font-size: 13px;
+    color: #145C81;
+    margin-right: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-styling__radios .form-styling__radio {
+    font-size: 13px;
+    color: #145C81;
+    margin-right: 20px;
+    display: block;
+}
+
+.form-styling__radio input {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    padding: 0;
+    vertical-align: middle;
+    border: 0;
+    margin-right: 5px;
+}
+
+.form-styling__checkbox {
+    font-size: 13px;
+    color: #145C81;
+    padding: 20px 0 20px 20px;
+}
+
+.form-styling__checkbox input {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    padding: 0;
+    vertical-align: middle;
+    border: 0;
+    margin-right: 5px;
+}
+
+.form-styling__small {
+    font-size: 10px;
+    margin: 20px 0;
+}
+
+.form-styling button {
+    background: ;
+    border: 0;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    cursor: pointer;
+    padding: 10px 50px 10px 10px;
+    background: url(/images/chevron.png) #37A8B2 no-repeat right 10px center;
+    background-size: auto 50%;
+}
+
+@media(min-width: 768px) {
+    .form-styling__fieldset .col-md-6:nth-child(even) {
+        border-left: 2px solid #000;
+    }
+
+    .form-styling__radios-label {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+
+    .form-styling__radios .form-styling__radio {
+        display: inline-block;
+    }
+}
+
+@media(min-width: 992px) {
+    .form-styling__button-wrapper {
+        text-align: right;
+    }
+}
+
+
+
 </style>
     {{ range .Params.sections }}
         {{ if eq .type "intro" }}
@@ -249,7 +614,7 @@
                 </div>
             </section>
         {{ else if eq .type "image" }}
-            <section class="section__landing-image" style="background-image: url({{ .image }});"></section>
+            <section class="section__landing-image section__landing-image__overlay--{{ .overlay }}" style="background-image: url({{ .image }});"></section>
         {{ else if eq .type "imagecopy" }}
             <section class="section__landing-imagecopy">
                 <div class="container">
@@ -312,41 +677,139 @@
                             {{ .description | safeHTML }}
                         </div>
                     </div>
-                    {{if eq .columns "4"}}
-                        {{ $.Scratch.Set "columns" "col-md-6 col-lg-3" }}
-                    {{ else if eq .columns "3" }}
-                        {{ $.Scratch.Set "columns" "col-lg-4" }}
-                    {{ else if eq .columns "2" }}
-                        {{ $.Scratch.Set "columns" "col-md-6" }}
-                    {{ else }}
-                        {{ $.Scratch.Set "columns" "col-12" }}
-                    {{end}}
-                    {{ if .cards }}
-                        <div class="row mt-4">
-                            {{ range .cards }}
-                                <div class='{{ $.Scratch.Get "columns" }}'>
-                                    <div class="rounded-card">
-                                        <div class="rounded-card__img">
-                                            <img src="{{ .image }}" alt="" class="img-fluid">
+                    <div class="section__landing-cards-main">
+                        {{if eq .columns "4"}}
+                            {{ $.Scratch.Set "columns" "col-md-6 col-lg-3" }}
+                        {{ else if eq .columns "3" }}
+                            {{ $.Scratch.Set "columns" "col-lg-4" }}
+                        {{ else if eq .columns "2" }}
+                            {{ $.Scratch.Set "columns" "col-md-6" }}
+                        {{ else }}
+                            {{ $.Scratch.Set "columns" "col-12" }}
+                        {{end}}
+                        {{ if .cards }}
+                            <div class="row mt-4">
+                                {{ range .cards }}
+                                    <div class='{{ $.Scratch.Get "columns" }}'>
+                                        <div class="rounded-card">
+                                            <div class="rounded-card__img">
+                                                <img src="{{ .image }}" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="rounded-card__content">
+                                                {{ if .heading }}
+                                                    <h2 class="rounded-card__heading">{{ .heading }}</h2>
+                                                {{ end }}
+                                                {{ if .description }}
+                                                    <p class="rounded-card__description">
+                                                        {{ .description }}
+                                                    </p>
+                                                {{ end }}
+                                                {{ if and .buttoncopy .buttonlink }}
+                                                    <a href="{{ .buttonlink }}" class="rounded-card__link">{{ .buttoncopy }}</a>
+                                                {{ end }}
+                                            </div>
                                         </div>
-                                        <div class="rounded-card__content">
-                                            {{ if .heading }}
-                                                <h2 class="rounded-card__heading">{{ .heading }}</h2>
-                                            {{ end }}
-                                            {{ if .description }}
-                                                <p class="rounded-card__description">
-                                                    {{ .description }}
-                                                </p>
-                                            {{ end }}
-                                            {{ if and .buttoncopy .buttonlink }}
-                                                <a href="{{ .buttonlink }}" class="rounded-card__link">{{ .buttoncopy }}</a>
-                                            {{ end }}
+                                    </div>
+                                {{ end }}
+                            </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </section>
+        {{ else if eq .type "copy" }}
+            <section class="section__landing-copy section__landing-copy--bg-{{ .imagealign }} ">
+                <div class="container">
+                    <div class="row">
+                        {{if eq .imagealign "left"}}
+                            <div class="col-lg-9 offset-lg-3">
+                        {{ else }}
+                            <div class="col-lg-9">
+                        {{ end }}
+                        {{ .copy | safeHTML }}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        {{ else if eq .type "footer" }}
+            <section class="section__landing-footer">
+                <div class="section__landing-footer-top text-center">
+                    <div class="container">
+                        {{ if .heading }}
+                            <h2 class="section__landing-footer-top-heading">{{ .heading }}</h2>
+                        {{ end }}
+                        {{ if .description }}
+                            <div class="section__landing-footer-top-description">
+                                {{ .description | safeHTML }}
+                            </div>
+                        {{ end }}
+                    </div>
+                </div>
+                <div class="section__landing-footer-middle text-center">
+                    <div class="container">
+                        {{ if .whitecopy }}
+                            <div class="section__landing-footer-middle-description">
+                                {{ .whitecopy | safeHTML }}
+                            </div>
+                        {{ end }}
+                    </div>
+                </div>
+                <div class="section__landing-footer-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <h2 class="heading-withblock"><span><span class="copy">Get in touch</span></span></h2>
+                            </div>
+                            <div class="col-lg-8">
+                                <form method="post" action="https://formspree.io/talk@fuzzylabs.ai" role="form" class="form-styling">
+                                    <fieldset class="form-styling__fieldset">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <input type="text" name="fname" placeholder="First name*" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" name="lname" placeholder="Last name*" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="email" name="email" placeholder="Email address*" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" name="phone" placeholder="Phone number">
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <textarea name="message" placeholder="Message"></textarea>
+                                    <div class="form-styling__radios">
+                                        <span class="form-styling__radios-label">I'm interested in...</span>
+                                        <label class="form-styling__radio">
+                                            <input type="radio" name="interest" value="XXXXXXXXXXXXX">
+                                            XXXXXXXXXXXXX
+                                        </label>
+                                        <label class="form-styling__radio">
+                                            <input type="radio" name="interest" value="XXXXXXXXXXXXX">
+                                            XXXXXXXXXXXXX
+                                        </label>
+                                        <label class="form-styling__radio">
+                                            <input type="radio" name="interest" value="XXXXXXXXXXXXX">
+                                            XXXXXXXXXXXXX
+                                        </label>
+                                    </div>
+                                    <label class="form-styling__checkbox">
+                                        <input type="checkbox" name="signup" value="Yes">
+                                        I'd like to recieve the occasional article/news item
+                                    </label>
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-8">
+                                            <p class="form-styling__small">By submitting this form, I can confirm I have read and accepted Fuzzy Labs’ privacy policy</p>
+                                        </div>
+                                        <div class="col-lg-4 form-styling__button-wrapper">
+                                            <button type="submit">Send</button>
                                         </div>
                                     </div>
                                 </div>
-                            {{ end }}
+                              </form>
+                            </div>
                         </div>
-                    {{ end }}
+                    </div>
                 </div>
             </section>
         {{ end }}
