@@ -462,20 +462,20 @@ ul.link-list li {
     .section__landing-intro.background-icon--topright:before {
         content: '';
         display: block;
-        width: 400px;
-        height: 400px;
+        width: 200px;
+        height: 350px;
         transform: rotate(-45deg);
         background: #10769C;
         position: absolute;
         border-radius: 30px;
-        right: -210px;
-        top: -150px;
+        right: -160px;
+        top: 0px;
     }
     .section__landing-intro.background-icon--topleft:before {
         content: '';
         display: block;
-        width: 400px;
-        height: 400px;
+        width: 200px;
+        height: 350px;
         transform: rotate(-45deg);
         background: #10769C;
         position: absolute;
@@ -505,12 +505,12 @@ ul.link-list li {
 
 @media(min-width: 768px) {
     .section__landing-intro {
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 20px;
+        line-height: 28px;
     }
 
     .section__landing-intro h1 {
-        font-size: 48px;
+        font-size: 32px;
         line-height: 60px;
     }
 }
@@ -524,7 +524,7 @@ ul.link-list li {
 
 @media(min-width: 768px) {
     .section__landing-image {
-        height: 630px;
+        height: 400px;
         background-attachment: fixed;
         position: relative;
     }
@@ -534,11 +534,11 @@ ul.link-list li {
         display: none;
         background: url(/images/arrow-overlay.png) no-repeat center;
         background-size: 100% 100%;
-        width: 469px;
-        height: 840px;
+        width: 202px;
+        height: 362px;
         position: absolute;
         left: 0;
-        top: -420px;
+        top: -180px;
         z-index: 100;
     }
 
@@ -563,11 +563,13 @@ ul.link-list li {
 
 .rounded-card__img img {
     width: 100%;
+    max-height: 250px;
+    object-fit: cover;
 }
 
 .rounded-card__content {
     padding: 25px;
-    color: #101D39;
+    color: #145C81;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -583,26 +585,26 @@ ul.link-list li {
     font-family: Sora;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 28px;
 }
 
 .rounded-card__description {
     font-family: Asap;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 26px;
-    flex: 1;
+    font-size: 16px;
+    line-height: 24px;
+    flex: 0;
 }
 
 .rounded-card__link {
-    font-family: Asap;
+    font-family: Sora;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
-    line-height: 26px;
-    color: #101D39;
+    font-size: 16px;
+    line-height: 24px;
+    color: #145C81;
 
 }
 
@@ -610,7 +612,7 @@ ul.link-list li {
     font-family: Sora;
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 44px;
     color: #145C81;
     z-index: 2;
@@ -643,7 +645,7 @@ ul.link-list li {
 
 @media(min-width: 992px) {
     .section__landing-cards {
-        padding: 100px 0;
+        padding: 50px 0;
     }
 }
 
@@ -663,9 +665,10 @@ ul.link-list li {
 .section__landing-imagecopy {
     padding: 50px 0;
     background: url(/images/bg-imagecopy.png) no-repeat center;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 24px;
     color: #145C81;
+    background-size: 100%;
 }
 
 @media(min-width: 992px) {
@@ -699,7 +702,7 @@ ul.link-list li {
 
 @media(min-width: 768px) {
     .section__landing-heading {
-        font-size: 36px;
+        font-size: 28px;
         line-height: 44px;
     }
 }
@@ -708,9 +711,9 @@ ul.link-list li {
     padding: 50px 0;
     background-repeat: no-repeat;
     background-size: 50% auto;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
-    color: #101D39;
+    color: #145C81;
 }
 
 @media(min-width: 992px) {
@@ -724,13 +727,15 @@ ul.link-list li {
 }
 
 .section__landing-textblock .section__landing-textblock-content {
+    border-radius: 15px;
     background: #ECF9FE;
     padding: 25px;
 }
 
 .section__landing-textblock .section__landing-textblock-content h3 {
-    font-size: 18px;
-    line-height: 24px;
+    font-family: Sora;
+    font-size: 16px;
+    line-height: 26px;
     font-weight: bold;
 }
 
@@ -772,17 +777,17 @@ ul.link-list li {
 
 @media(min-width: 768px) {
     .section__landing-copy {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .section__landing-textblock .heading-withblock span {
-        font-size: 48px;
+        font-size: 28px;
         line-height: 60px;
     }  
 
     .section__landing-textblock-subheading {
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 20px;
+        line-height: 28px;
     } 
 
     .section__landing-textblock .section__landing-textblock-content {
@@ -840,7 +845,6 @@ ul.link-list li {
 }
 
 .section__landing-footer-top:after {
-    content: '';
     width: 0; 
     height: 0; 
     border-left: 50vw solid transparent;
@@ -854,6 +858,7 @@ ul.link-list li {
 
 .section__landing-footer-top .container {
     max-width: 940px;
+    padding-bottom: 40px;
 }
 
 .section__landing-footer-top-heading {
@@ -882,18 +887,18 @@ ul.link-list li {
     font-size: 20px;
     color: #145C81;
     font-weight: 500;
-    padding: 7vw 0 0;
+    padding: 4vw 0 0;
     position: relative;
 }
 
 @media(min-width: 768px) {
     .section__landing-footer-top-heading {
-        font-size: 44px;
+        font-size: 28px;
     }
 
     .section__landing-footer-top-description,
     .section__landing-footer-middle {
-        font-size: 30px;
+        font-size: 24px;
     }
 }
 
@@ -1014,7 +1019,7 @@ ul.link-list li {
     line-height: 24px;
     cursor: pointer;
     padding: 10px 50px 10px 10px;
-    background: url(/images/chevron.png) #37A8B2 no-repeat right 10px center;
+    background: url(/images/chevron.png) #7ADBBA no-repeat right 10px center;
     background-size: auto 50%;
 }
 

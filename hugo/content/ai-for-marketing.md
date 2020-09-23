@@ -11,7 +11,7 @@ sections:
    heading: "AI for marketing"
    description: "<p>Customer experience matters in marketing. Get to know your customer better, by applying AI where it really counts. Boost campaign performance, speed up ROI and do so much more with your data.</p>"
  - type: "image"
-   image: "https://placehold.it/1000x1000"
+   image: "/images/marketing-peacock.jpg"
    overlay: top
  - type: "textblock"
    heading: "Let's do this:"
@@ -23,12 +23,12 @@ sections:
    columns: "3"
    heading: "AI in marketing can help:"
    cards:
-    - image: "/images/marketing-hyper-personalisation.jpg"
+    - image: "/images/chris-liverani-dBI_My696Rk-unsplash.jpg"
       heading: "Organise and analyse customer data faster"
       description: "We build data warehousing systems, to aggregate and unify data from multiple sources. Sales, marketing, supply chain  – AI can connect the lot."
       buttoncopy: "Read more about data warehousing"
       buttonlink: "/"
-    - image: "/images/marketing-hyper-personalisation.jpg"
+    - image: "/images/marketing-sentiment-analysis.jpg"
       heading: "Understand your customers better"
       description: "Get deeper insights in customer segmentation using AI. When you know ‘who’ your most valuable audience are, AI can predict ‘how’ best to reach them - to target campaigns, convert more sales, and reduce cost to serve."
       buttoncopy: "Read more about customer segmentation"
@@ -40,7 +40,7 @@ sections:
       buttonlink: "/"
  - type: "imagecopy"
    imagealign: "left"
-   image: "https://placehold.it/400x600"
+   image: "/images/AdobeStock_95645389_Preview.jpeg"
    heading: "Our approach"
    description: "<p>We believe that AI should be for everyone. We work with some pretty clever technologies, but Fuzzy Labs believe in keeping things simple. We don’t assume any prior knowledge of AI, and work with all kinds of business and marketing teams on building and integrating AI systems from the really simple, to the really complex.</p><p>Whether you have a lot of data, or very little, we can help you get started with AI to improve your marketing for rapid results. A three phase process means that however you choose to work with us, short or long term, our solutions are quick to deploy.</p>"
  - type: "copy"

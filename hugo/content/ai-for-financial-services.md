@@ -11,8 +11,8 @@ sections:
    heading: "AI for financial services"
    description: "<p>AI works at every level in financial services - improving the customer experience, automating processes and managing compliance and risk. For both the front and back office, the right AI tools transform efficiency, and power better decision making. Complex problem or simple process: we’ve got the right AI tools for the job.</p>"
  - type: "image"
-   image: "https://placehold.it/1000x1000"
-   overlay: none
+   image: "/images/financial-zebra-crossing.jpg"
+   overlay: top
  - type: "textblock"
    heading: "Let's do this:"
    subheading: "<p>We build and deploy intelligent automation for financial services, to transform efficiency in both the front and back office.</p>"
@@ -45,7 +45,7 @@ sections:
       buttonlink: "/"
  - type: "imagecopy"
    imagealign: "left"
-   image: "https://placehold.it/400x600"
+   image: "/images/financial-street.png"
    heading: "Our approach to AI for financial services"
    description: "<p>We get it – so much is possible with AI in finance, but changing course can be a long process. Implementing new technologies may also require radical shifts in culture, people, skills and approach, which doesn’t happen overnight.</p><p>Our philosophy at Fuzzy Labs is always to keep things as straightforward as possible. We work with you to get clear on where you want to be, then roadmap simple steps on how to put in place the right AI solution and get there, faster, whatever the appetite for innovation.</p><p>From simply testing a quick automation hypothesis, through to implementing a complete end-to-end in house solution, we scale our approach to give you the biggest and best result for your budget.</p>"
  - type: "copy"
