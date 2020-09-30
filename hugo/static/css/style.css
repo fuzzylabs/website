@@ -314,7 +314,7 @@ ul.link-list li {
 }
 
 .principles-block i {
-  font-size: 36px;
+  font-size: 32px;
   line-height: 1;
   color: #fff;
   transition: 0.3s;
@@ -462,14 +462,14 @@ ul.link-list li {
     .section__landing-intro.background-icon--topright:before {
         content: '';
         display: block;
-        width: 400px;
-        height: 400px;
+        width: 200px;
+        height: 200px;
         transform: rotate(-45deg);
         background: #10769C;
         position: absolute;
         border-radius: 30px;
-        right: -210px;
-        top: -150px;
+        right: -100px;
+        top: 20px;
     }
     .section__landing-intro.background-icon--topleft:before {
         content: '';
@@ -505,13 +505,13 @@ ul.link-list li {
 
 @media(min-width: 768px) {
     .section__landing-intro {
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 22px;
+        line-height: 32px;
     }
 
     .section__landing-intro h1 {
-        font-size: 48px;
-        line-height: 60px;
+        font-size: 32px;
+        line-height: 44px;
     }
 }
 
@@ -534,11 +534,11 @@ ul.link-list li {
         display: none;
         background: url(/images/arrow-overlay.png) no-repeat center;
         background-size: 100% 100%;
-        width: 469px;
-        height: 840px;
+        width: 202px;
+        height: 362px;
         position: absolute;
         left: 0;
-        top: -420px;
+        top: -181px;
         z-index: 100;
     }
 
@@ -583,16 +583,16 @@ ul.link-list li {
     font-family: Sora;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 15px;
+    line-height: 23px;
 }
 
 .rounded-card__description {
     font-family: Asap;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 15px;
+    line-height: 23px;
     flex: 1;
 }
 
@@ -600,8 +600,8 @@ ul.link-list li {
     font-family: Asap;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 15px;
+    line-height: 23px;
     color: #101D39;
 
 }
@@ -610,11 +610,15 @@ ul.link-list li {
     font-family: Sora;
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 32px;
     line-height: 44px;
     color: #145C81;
     z-index: 2;
     position: relative;
+}
+
+.heading-withblock.heading-withblock--white > span:after {
+    background-color: #fff;
 }
 
 .heading-withblock > span {
@@ -635,6 +639,7 @@ ul.link-list li {
 
 .section__landing-cards {
     padding: 20px 0;
+    background: #F5F5F5;
 }
 
 .section__landing-cards-main .row > [class^="col-"] {
@@ -662,7 +667,7 @@ ul.link-list li {
 
 .section__landing-imagecopy {
     padding: 50px 0;
-    background: url(/images/bg-imagecopy.png) no-repeat center;
+    /*background: url(/images/bg-imagecopy.png) no-repeat center;*/
     font-size: 18px;
     line-height: 26px;
     color: #145C81;
@@ -671,12 +676,14 @@ ul.link-list li {
 @media(min-width: 992px) {
     .section__landing-imagecopy {
         padding: 100px 0;
+        background: url(/images/arrow.png) no-repeat left center;
     }
 }
 
 .section__landing-imagecopy img {
     width: 100%;
     margin: 30px auto;
+    border-radius: 12px;
 }
 
 .section__landing-imagecopy .row {
@@ -699,7 +706,7 @@ ul.link-list li {
 
 @media(min-width: 768px) {
     .section__landing-heading {
-        font-size: 36px;
+        font-size: 32px;
         line-height: 44px;
     }
 }
@@ -717,6 +724,16 @@ ul.link-list li {
     .section__landing-textblock {
         padding: 100px 0;
     }
+}
+
+.section__landing-textblock-main {
+    background-size: auto 70%;
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+.section__landing-textblock-main .container {
+    max-width: 800px;
 }
 
 .section__landing-textblock.background--right {
@@ -770,19 +787,46 @@ ul.link-list li {
     font-weight: bold;
 }
 
+.heading-withunderline {
+    font-weight: bold;
+    color: #101D39;
+}
+
+.heading-withunderline.heading-withunderline--left:after {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.heading-withunderline:after {
+    content: '';
+    width: 39px;
+    height: 3px;
+    display: block;
+    margin: 40px auto;
+    background-color: #7ADBBA;
+}
+
+.heading-withunderline--green:after {
+    background-color: #7ADBBA;
+}
+
+.section__landing-textblock-top {
+    padding-bottom: 50px;
+}
+
 @media(min-width: 768px) {
     .section__landing-copy {
-        font-size: 28px;
+        font-size: 22px;
     }
 
     .section__landing-textblock .heading-withblock span {
-        font-size: 48px;
-        line-height: 60px;
+        font-size: 32px;
+        line-height: 44px;
     }  
 
     .section__landing-textblock-subheading {
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 22px;
+        line-height: 32px;
     } 
 
     .section__landing-textblock .section__landing-textblock-content {
@@ -859,7 +903,7 @@ ul.link-list li {
 .section__landing-footer-top-heading {
     display: inline-block;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 32px;
     font-family: Sora;
 }
 
@@ -887,13 +931,9 @@ ul.link-list li {
 }
 
 @media(min-width: 768px) {
-    .section__landing-footer-top-heading {
-        font-size: 44px;
-    }
-
     .section__landing-footer-top-description,
     .section__landing-footer-middle {
-        font-size: 30px;
+        font-size: 22px;
     }
 }
 
@@ -913,6 +953,15 @@ ul.link-list li {
 .section__landing-footer-bottom {
     background: #ECF9FE;
     padding: 7vw 0 100px;
+}
+
+.section__landing-footer-bottom form {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section__landing-footer-bottom .heading-withblock {
+    margin: 20px 0 50px;
 }
 
 .section__landing-footer-bottom .heading-withblock > span:after {
@@ -1010,11 +1059,11 @@ ul.link-list li {
     border: 0;
     border-radius: 4px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 24px;
     cursor: pointer;
     padding: 10px 50px 10px 10px;
-    background: url(/images/chevron.png) #37A8B2 no-repeat right 10px center;
+    background: url(/images/chevron.png) #7ADBBA no-repeat right 10px center;
     background-size: auto 50%;
 }
 

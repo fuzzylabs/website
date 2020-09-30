@@ -1,4 +1,5 @@
 {{ define "main" }}
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     {{ range .Params.sections }}
         {{ if eq .type "intro" }}
             <section class="section section__landing-intro background-icon--{{ .backgroundicon }}">
@@ -27,12 +28,13 @@
                         {{if eq .imagealign "right"}}
                             {{ $.Scratch.Set "imagealign" " order-lg-last" }}
                         {{ end }}
-                        <div class='col-lg-6{{ $.Scratch.Get "imagealign" }}'>
+                        <div class="col-xl-1"></div>
+                        <div class='col-xl-6{{ $.Scratch.Get "imagealign" }}'>
                             <img src="{{ .image }}" alt="{{ .heading }}" class="imagecopy__image">
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-xl-5">
                             {{ if .heading }}
-                                <h2 class="section__landing-heading">{{ .heading }}</h2>
+                                <h2 class="heading-withunderline heading-withunderline--left">{{ .heading }}</h2>
                             {{ end }}
                             {{ if .description }}
                                 {{ .description | safeHTML }}
@@ -47,21 +49,21 @@
                 </div>
             </section>
         {{ else if eq .type "textblock" }}
-            <section class="section__landing-textblock background--{{ .backgroundalign }}" style="background-image: url({{ .background }});">
-                <div class="container">
-                    <div class="section__landing-textblock-content">
-                        <div class="row">
-                            {{ if .heading }}
-                                <div class="col-12">
-                                    <h2 class="heading-withblock"><span><span class="copy">{{ .heading }}</span></span></h2>
-                                </div>
-                            {{ end }}
-                            <div class="col-lg-6">
-                                {{ if .subheading }}
-                                    <div class="section__landing-textblock-subheading">{{ .subheading | safeHTML }}</div>
-                                {{ end }}
-                            </div>
-                            <div class="col-lg-6">
+            <section class="section__landing-textblock">
+                <div class="section__landing-textblock-top text-center">
+                    <div class="container">
+                        {{ if .heading }}
+                            <h2 class="heading-withunderline heading-withunderline--green" data-aos="fade-up" data-aos-duration="1000">{{ .heading }}</h2>
+                        {{ end }}
+                        {{ if .subheading }}
+                            <div class="section__landing-textblock-subheading" data-aos="fade-up" data-aos-duration="1000">{{ .subheading | safeHTML }}</div>
+                        {{ end }}
+                    </div>
+                </div>
+                <div class="section__landing-textblock-main" style="background-image: url({{ .background }});">
+                    <div class="container">
+                        <div class="section__landing-textblock-content">
+                            <div data-aos="fade-up">
                                 {{ if .copy }}
                                     {{ .copy | safeHTML }}
                                 {{ end }}
@@ -74,9 +76,9 @@
             <section class="section__landing-cards">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 ">
+                        <div class="col-12 text-center">
                             {{ if .heading }}
-                                <h2 class="heading-withblock"><span><span class="copy">{{ .heading }}</span></span></h2>
+                                <h2 class="heading-withblock heading-withblock--white"><span><span class="copy">{{ .heading }}</span></span></h2>
                             {{ end }}
                             {{ .description | safeHTML }}
                         </div>
@@ -137,7 +139,7 @@
         {{ else if eq .type "footer" }}
             <section class="section__landing-footer">
                 <div class="section__landing-footer-top text-center">
-                    <div class="container">
+                    <div class="container" data-aos="fade-up" data-aos-duration="1000">
                         {{ if .heading }}
                             <h2 class="section__landing-footer-top-heading">{{ .heading }}</h2>
                         {{ end }}
@@ -149,9 +151,9 @@
                     </div>
                 </div>
                 <div class="section__landing-footer-middle text-center">
-                    <div class="container">
+                    <div class="container" data-aos="fade-up" data-aos-duration="1000">
                         {{ if .whitecopy }}
-                            <div class="section__landing-footer-middle-description">
+                            <div class="section__landing-footer-middle-description" data-aos="fade-up">
                                 {{ .whitecopy | safeHTML }}
                             </div>
                         {{ end }}
@@ -159,63 +161,60 @@
                 </div>
                 <div class="section__landing-footer-bottom">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <h2 class="heading-withblock"><span><span class="copy">Get in touch</span></span></h2>
-                            </div>
-                            <div class="col-lg-8">
-                                <form method="post" action="https://formspree.io/talk@fuzzylabs.ai" role="form" class="form-styling">
-                                    <fieldset class="form-styling__fieldset">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <input type="text" name="fname" placeholder="First name*" required>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <input type="text" name="lname" placeholder="Last name*" required>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <input type="email" name="email" placeholder="Email address*" required>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <input type="text" name="phone" placeholder="Phone number">
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                    <textarea name="message" placeholder="Message"></textarea>
-                                    <div class="form-styling__radios">
-                                        <span class="form-styling__radios-label">I'm interested in...</span>
-                                        <label class="form-styling__radio">
-                                            <input type="radio" name="interest" value="XXXXXXXXXXXXX">
-                                            XXXXXXXXXXXXX
-                                        </label>
-                                        <label class="form-styling__radio">
-                                            <input type="radio" name="interest" value="XXXXXXXXXXXXX">
-                                            XXXXXXXXXXXXX
-                                        </label>
-                                        <label class="form-styling__radio">
-                                            <input type="radio" name="interest" value="XXXXXXXXXXXXX">
-                                            XXXXXXXXXXXXX
-                                        </label>
+                        <h2 class="heading-withblock text-center" data-aos="fade-up" data-aos-duration="1000"><span><span class="copy">Get in touch</span></span></h2>
+                        <form method="post" action="https://formspree.io/talk@fuzzylabs.ai" role="form" class="form-styling" data-aos="fade-up" data-aos-duration="1000">
+                            <fieldset class="form-styling__fieldset">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" name="fname" placeholder="First name*" required>
                                     </div>
-                                    <label class="form-styling__checkbox">
-                                        <input type="checkbox" name="signup" value="Yes">
-                                        I'd like to recieve the occasional article/news item
-                                    </label>
-                                    <div class="row align-items-center">
-                                        <div class="col-lg-8">
-                                            <p class="form-styling__small">By submitting this form, I can confirm I have read and accepted Fuzzy Labs’ privacy policy</p>
-                                        </div>
-                                        <div class="col-lg-4 form-styling__button-wrapper">
-                                            <button type="submit">Send</button>
-                                        </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="lname" placeholder="Last name*" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" name="email" placeholder="Email address*" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="phone" placeholder="Phone number">
                                     </div>
                                 </div>
-                              </form>
+                            </fieldset>
+                            <textarea name="message" placeholder="Message"></textarea>
+                            <div class="form-styling__radios">
+                                <span class="form-styling__radios-label">I'm interested in...</span>
+                                <label class="form-styling__radio">
+                                    <input type="radio" name="interest" value="XXXXXXXXXXXXX">
+                                    XXXXXXXXXXXXX
+                                </label>
+                                <label class="form-styling__radio">
+                                    <input type="radio" name="interest" value="XXXXXXXXXXXXX">
+                                    XXXXXXXXXXXXX
+                                </label>
+                                <label class="form-styling__radio">
+                                    <input type="radio" name="interest" value="XXXXXXXXXXXXX">
+                                    XXXXXXXXXXXXX
+                                </label>
                             </div>
-                        </div>
+                            <label class="form-styling__checkbox">
+                                <input type="checkbox" name="signup" value="Yes">
+                                I'd like to recieve the occasional article/news item
+                            </label>
+                            <div class="row align-items-center">
+                                <div class="col-lg-8">
+                                    <p class="form-styling__small">By submitting this form, I can confirm I have read and accepted Fuzzy Labs’ privacy policy</p>
+                                </div>
+                                <div class="col-lg-4 form-styling__button-wrapper">
+                                    <button type="submit">Send</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </section>
         {{ end }}
     {{ end }}
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 {{ end }}
