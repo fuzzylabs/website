@@ -727,7 +727,7 @@ ul.link-list li {
 }
 
 .section__landing-textblock-main {
-    background-size: auto 70%;
+    background-size: auto 200px;
     background-repeat: repeat-x;
     background-position: center;
 }

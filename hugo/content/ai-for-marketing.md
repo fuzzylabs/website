@@ -40,7 +40,7 @@ sections:
       buttonlink: "/"
  - type: "imagecopy"
    imagealign: "right"
-   image: "https://placehold.it/433x512"
+   image: "/imagesZ/AdobeStock_95645389_Preview.jpeg"
    heading: "Our approach"
    description: "<p>We believe that AI should be for everyone. We work with some pretty clever technologies, but Fuzzy Labs believe in keeping things simple. We don’t assume any prior knowledge of AI, and work with all kinds of business and marketing teams on building and integrating AI systems from the really simple, to the really complex.</p><p>Whether you have a lot of data, or very little, we can help you get started with AI to improve your marketing for rapid results. A three phase process means that however you choose to work with us, short or long term, our solutions are quick to deploy.</p>"
  - type: "copy"
@@ -51,3 +51,4 @@ sections:
    description: "We’d love to chat about how our AI solutions could help improve your marketing."
    whitecopy: "<strong>Have a question about how AI could work for you? <br>Give us a shout using the form below.</strong>"
 ---
+
