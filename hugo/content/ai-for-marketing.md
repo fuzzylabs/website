@@ -11,7 +11,7 @@ sections:
    heading: "AI for marketing"
    description: "<p>Customer experience matters in marketing. Get to know your customer better, by applying AI where it really counts. Boost campaign performance, speed up ROI and do so much more with your data.</p>"
  - type: "image"
-   image: "https://placehold.it/1000x1000"
+   image: "/images/marketing-peacock.jpg"
    overlay: top
  - type: "textblock"
    heading: "Let's do this"
