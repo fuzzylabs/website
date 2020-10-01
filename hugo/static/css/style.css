@@ -3,7 +3,7 @@ html {
 }
 body {
   padding-top: 54px;
-  font-family: Asap;
+  font-family: Sora;
   font-size: 15pt;
 }
 
@@ -503,6 +503,10 @@ ul.link-list li {
         left: -290px;
         top: -90px;
     }
+
+    .section__landing-intro {
+        padding: 90px 0 100px;
+    }
 }
 
 .section__landing-intro h1 {
@@ -544,7 +548,6 @@ ul.link-list li {
 
 @media(min-width: 768px) {
     .section__landing-image {
-        height: 630px;
         background-attachment: fixed;
         position: relative;
     }
@@ -608,7 +611,7 @@ ul.link-list li {
 }
 
 .rounded-card__description {
-    font-family: Asap;
+    font-family: Sora;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -617,7 +620,7 @@ ul.link-list li {
 }
 
 .rounded-card__link {
-    font-family: Asap;
+    font-family: Sora;
     font-style: normal;
     font-weight: bold;
     font-size: 15px;
@@ -657,9 +660,17 @@ ul.link-list li {
     z-index: 1;
 }
 
+.section {
+    font-family: Sora;
+}
+
 .section__landing-cards {
     padding: 20px 0;
     background: #F5F5F5;
+}
+
+.section__landing-cards .container {
+    max-width: 1360px;
 }
 
 .section__landing-cards-main .row > [class^="col-"] {
@@ -668,7 +679,7 @@ ul.link-list li {
 
 @media(min-width: 992px) {
     .section__landing-cards {
-        padding: 100px 0;
+        padding: 65px 0;
     }
 }
 
@@ -695,7 +706,7 @@ ul.link-list li {
 
 @media(min-width: 992px) {
     .section__landing-imagecopy {
-        padding: 100px 0;
+        padding: 65px 0;
         background: url(/images/arrow.png) no-repeat left center;
     }
 }
@@ -742,11 +753,21 @@ ul.link-list li {
 
 @media(min-width: 992px) {
     .section__landing-textblock {
-        padding: 100px 0;
+        padding: 70px 0;
     }
 }
 
 .section__landing-textblock-main {
+    position: relative;
+}
+
+.section__landing-textblock-main-bg {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    z-index: 1;
     background-size: auto 200px;
     background-repeat: repeat-x;
     background-position: center;
@@ -763,6 +784,9 @@ ul.link-list li {
 .section__landing-textblock .section__landing-textblock-content {
     background: #ECF9FE;
     padding: 25px;
+    border-radius: 12px;
+    z-index: 2;
+    position: relative;
 }
 
 .section__landing-textblock .section__landing-textblock-content h3 {
@@ -856,7 +880,7 @@ ul.link-list li {
 
 @media(min-width: 992px) {
     .section__landing-copy {
-        padding: 100px 0;
+        padding: 65px 0;
         margin: 0 0 50px;
         position: relative;
     }
@@ -886,7 +910,7 @@ ul.link-list li {
 .section__landing-footer-top {
     background: #7ADBBA;
     color: #145C81;
-    padding: 50px 0 0;
+    padding: 50px 0;
     position: relative;
 }
 
@@ -901,19 +925,6 @@ ul.link-list li {
 .section__landing-footer-middle .container {
     position: relative;
     z-index: 2;
-}
-
-.section__landing-footer-top:after {
-    content: '';
-    width: 0; 
-    height: 0; 
-    border-left: 50vw solid transparent;
-    border-right: 50vw solid transparent;
-    border-top: 5vw solid #7ADBBA;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1;
 }
 
 .section__landing-footer-top .container {
@@ -946,8 +957,12 @@ ul.link-list li {
     font-size: 20px;
     color: #145C81;
     font-weight: 500;
-    padding: 7vw 0 0;
+    padding: 40px 0 0;
     position: relative;
+}
+
+.section__landing-footer-middle-description {
+    font-weight: bold;
 }
 
 @media(min-width: 768px) {

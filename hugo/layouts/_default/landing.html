@@ -4,7 +4,7 @@
         {{ if eq .type "intro" }}
             <section class="section section__landing-intro background-icon--{{ .backgroundicon }}">
                 <div class="container">
-                    <div class="row" style="height: 600px">
+                    <div class="row">
                         <div class="col-12 align-items-center ml-auto d-flex">
                             <div class="text-center">
                                 {{ if .heading }}
@@ -53,17 +53,18 @@
                 <div class="section__landing-textblock-top text-center">
                     <div class="container">
                         {{ if .heading }}
-                            <h2 class="heading-withunderline heading-withunderline--green" data-aos="fade-up" data-aos-duration="1000">{{ .heading }}</h2>
+                            <h2 class="heading-withunderline heading-withunderline--green">{{ .heading }}</h2>
                         {{ end }}
                         {{ if .subheading }}
-                            <div class="section__landing-textblock-subheading" data-aos="fade-up" data-aos-duration="1000">{{ .subheading | safeHTML }}</div>
+                            <div class="section__landing-textblock-subheading">{{ .subheading | safeHTML }}</div>
                         {{ end }}
                     </div>
                 </div>
-                <div class="section__landing-textblock-main" style="background-image: url({{ .background }});">
+                <div class="section__landing-textblock-main">
+                    <div class="section__landing-textblock-main-bg" style="background-image: url({{ .background }});" data-aos="fade-up" data-aos-duration="1000"></div>
                     <div class="container">
                         <div class="section__landing-textblock-content">
-                            <div data-aos="fade-up">
+                            <div>
                                 {{ if .copy }}
                                     {{ .copy | safeHTML }}
                                 {{ end }}
@@ -85,7 +86,7 @@
                     </div>
                     <div class="section__landing-cards-main">
                         {{if eq .columns "4"}}
-                            {{ $.Scratch.Set "columns" "col-md-6 col-lg-3" }}
+                            {{ $.Scratch.Set "columns" "col-lg-6 col-xl-3" }}
                         {{ else if eq .columns "3" }}
                             {{ $.Scratch.Set "columns" "col-lg-4" }}
                         {{ else if eq .columns "2" }}
@@ -106,9 +107,7 @@
                                                     <h2 class="rounded-card__heading">{{ .heading }}</h2>
                                                 {{ end }}
                                                 {{ if .description }}
-                                                    <p class="rounded-card__description">
-                                                        {{ .description }}
-                                                    </p>
+                                                    <p class="rounded-card__description">{{ .description }}</p>
                                                 {{ end }}
                                                 {{ if and .buttoncopy .buttonlink }}
                                                     <a href="{{ .buttonlink }}" class="rounded-card__link">{{ .buttoncopy }}</a>
@@ -139,7 +138,7 @@
         {{ else if eq .type "footer" }}
             <section class="section__landing-footer">
                 <div class="section__landing-footer-top text-center">
-                    <div class="container" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="container">
                         {{ if .heading }}
                             <h2 class="section__landing-footer-top-heading">{{ .heading }}</h2>
                         {{ end }}
@@ -151,9 +150,9 @@
                     </div>
                 </div>
                 <div class="section__landing-footer-middle text-center">
-                    <div class="container" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="container">
                         {{ if .whitecopy }}
-                            <div class="section__landing-footer-middle-description" data-aos="fade-up">
+                            <div class="section__landing-footer-middle-description">
                                 {{ .whitecopy | safeHTML }}
                             </div>
                         {{ end }}
@@ -162,7 +161,7 @@
                 <div class="section__landing-footer-bottom">
                     <div class="container">
                         <h2 class="heading-withblock text-center" data-aos="fade-up" data-aos-duration="1000"><span><span class="copy">Get in touch</span></span></h2>
-                        <form method="post" action="https://formspree.io/talk@fuzzylabs.ai" role="form" class="form-styling" data-aos="fade-up" data-aos-duration="1000">
+                        <form method="post" action="https://formspree.io/talk@fuzzylabs.ai" role="form" class="form-styling">
                             <fieldset class="form-styling__fieldset">
                                 <div class="row">
                                     <div class="col-md-6">
