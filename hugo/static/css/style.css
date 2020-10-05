@@ -2,8 +2,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  padding-top: 54px;
-  font-family: Sora;
+  padding-top: 54px;    
+  font-family: Asap;
   font-size: 15pt;
 }
 
@@ -467,6 +467,10 @@ ul.link-list li {
 
 
 /* -- Landing template -- */
+#landing-template {
+    font-family: Sora;
+}
+
 .section__landing-intro {
     padding: 40px 0;
     background: #145C81;
@@ -635,7 +639,7 @@ ul.link-list li {
     font-weight: bold;
     font-size: 32px;
     line-height: 44px;
-    color: #145C81;
+    color: #101D39;
     z-index: 2;
     position: relative;
 }
@@ -909,7 +913,7 @@ ul.link-list li {
 
 .section__landing-footer-top {
     background: #7ADBBA;
-    color: #145C81;
+    color: #101D39;
     padding: 50px 0;
     position: relative;
 }
@@ -963,6 +967,7 @@ ul.link-list li {
 
 .section__landing-footer-middle-description {
     font-weight: bold;
+    color: #101D39;
 }
 
 @media(min-width: 768px) {
