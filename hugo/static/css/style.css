@@ -473,7 +473,7 @@ ul.link-list li {
 
 .section__landing-intro {
     padding: 40px 0;
-    background: #145C81;
+    background: #101D39;
     color: #fff;
     font-weight: 500;
     font-size: 20px;
@@ -705,7 +705,7 @@ ul.link-list li {
     /*background: url(/images/bg-imagecopy.png) no-repeat center;*/
     font-size: 18px;
     line-height: 26px;
-    color: #145C81;
+    color: #101D39;
 }
 
 @media(min-width: 992px) {
@@ -735,7 +735,7 @@ ul.link-list li {
     font-weight: bold;
     font-size: 30px;
     line-height: 40px;
-    color: #145C81;
+    color: #101D39;
 }
 
 
@@ -819,19 +819,19 @@ ul.link-list li {
     font-weight: 500;
     font-size: 22px;
     line-height: 30px;
-    color: #145C81;
+    color: #101D39;
 }
 
 .section__landing-copy {
     padding: 50px 0;
-    color: #145C81;
+    color: #101D39;
     font-size: 18px;
     font-weight: 500;
 }
 
 .section__landing-copy a {
     text-decoration: underline;
-    color: #145C81;
+    color: #101D39;
     font-weight: bold;
 }
 
@@ -921,7 +921,7 @@ ul.link-list li {
 .section__landing-footer-top a,
 .section__landing-footer-middle a {
     font-weight: bold;
-    color: #145C81;
+    color: #101D39;
     text-decoration: underline
 }
 
@@ -959,7 +959,7 @@ ul.link-list li {
 
 .section__landing-footer-middle {
     font-size: 20px;
-    color: #145C81;
+    color: #101D39;
     font-weight: 500;
     padding: 40px 0 0;
     position: relative;
@@ -1022,14 +1022,14 @@ ul.link-list li {
     padding: 20px;
     border: 0;
     font-size: 13px;
-    color: #145C81;
+    color: #101D39;
     border-bottom: 2px solid #000;
     width: 100%;
 }
 
 .form-styling input::placeholder,
 .form-styling textarea::placeholder {
-    color: #145C81;
+    color: #101D39;
 }
 
 .form-styling textarea {
@@ -1050,7 +1050,7 @@ ul.link-list li {
 
 .form-styling__radios-label {
     font-size: 13px;
-    color: #145C81;
+    color: #101D39;
     margin-right: 20px;
     display: block;
     margin-bottom: 10px;
@@ -1058,7 +1058,7 @@ ul.link-list li {
 
 .form-styling__radios .form-styling__radio {
     font-size: 13px;
-    color: #145C81;
+    color: #101D39;
     margin-right: 20px;
     display: block;
 }
@@ -1075,7 +1075,7 @@ ul.link-list li {
 
 .form-styling__checkbox {
     font-size: 13px;
-    color: #145C81;
+    color: #101D39;
     padding: 20px 0 20px 20px;
 }
 
