@@ -703,8 +703,8 @@ ul.link-list li {
 .section__landing-imagecopy {
     padding: 50px 0;
     /*background: url(/images/bg-imagecopy.png) no-repeat center;*/
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 15px;
+    line-height: 23px;
     color: #101D39;
 }
 
@@ -772,8 +772,7 @@ ul.link-list li {
     top: 15%;
     left: 0;
     z-index: 1;
-    background-size: auto 200px;
-    background-repeat: repeat-x;
+    background-repeat: repeat;
     background-position: center;
 }
 
@@ -794,9 +793,14 @@ ul.link-list li {
 }
 
 .section__landing-textblock .section__landing-textblock-content h3 {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 23px;
     font-weight: bold;
+}
+
+.section__landing-textblock .section__landing-textblock-content {
+    font-size: 15px;
+    line-height: 23px; 
 }
 
 .section__landing-textblock .heading-withblock span {
@@ -838,6 +842,8 @@ ul.link-list li {
 .heading-withunderline {
     font-weight: bold;
     color: #101D39;
+    font-size: 32px;
+    line-height: 44px;
 }
 
 .heading-withunderline.heading-withunderline--left:after {
@@ -1090,7 +1096,7 @@ ul.link-list li {
 }
 
 .form-styling__small {
-    font-size: 10px;
+    font-size: 13px;
     margin: 20px 0;
 }
 
