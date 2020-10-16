@@ -108,7 +108,7 @@
                                                         <h2 class="rounded-card__heading">{{ .heading }}</h2>
                                                     {{ end }}
                                                     {{ if .description }}
-                                                        <p class="rounded-card__description">{{ .description }}</p>
+                                                        <p class="rounded-card__description">{{ .description | safeHTML }}</p>
                                                     {{ end }}
                                                     {{ if and .buttoncopy .buttonlink }}
                                                         <a href="{{ .buttonlink }}" class="rounded-card__link">{{ .buttoncopy }}</a>
