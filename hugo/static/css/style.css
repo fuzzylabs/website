@@ -3,7 +3,7 @@ html {
 }
 body {
   padding-top: 54px;    
-  font-family: Asap;
+  font-family: Sora;
   font-size: 15pt;
 }
 
@@ -1027,7 +1027,7 @@ ul.link-list li {
     background: transparent;
     padding: 20px;
     border: 0;
-    font-size: 13px;
+    font-size: 14px;
     color: #101D39;
     border-bottom: 2px solid #000;
     width: 100%;
@@ -1055,7 +1055,7 @@ ul.link-list li {
 }
 
 .form-styling__radios-label {
-    font-size: 13px;
+    font-size: 14px;
     color: #101D39;
     margin-right: 20px;
     display: block;
@@ -1063,7 +1063,7 @@ ul.link-list li {
 }
 
 .form-styling__radios .form-styling__radio {
-    font-size: 13px;
+    font-size: 14px;
     color: #101D39;
     margin-right: 20px;
     display: block;
@@ -1080,7 +1080,7 @@ ul.link-list li {
 }
 
 .form-styling__checkbox {
-    font-size: 13px;
+    font-size: 14px;
     color: #101D39;
     padding: 20px 0 20px 20px;
 }
@@ -1096,7 +1096,7 @@ ul.link-list li {
 }
 
 .form-styling__small {
-    font-size: 13px;
+    font-size: 14px;
     margin: 20px 0;
 }
 
