@@ -14,7 +14,12 @@
           <a class="nav-link nav-link-in-page" href="{{ "/" | absURL }}#home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{ if eq "Our Services" .Title }}selected{{ end }}" href="/services">Services</a>
+          <p class="nav-link">Services</a>
+          <ul class="nav-submenu">
+            <li class="nav-item"><a href="/ai-for-healthcare/" class="nav-link">AI For Healthcare</a></li>
+            <li class="nav-item"><a href="/ai-for-financial-services/" class="nav-link">AI For Financial Services</a></li>
+            <li class="nav-item"><a href="/ai-for-marketing/" class="nav-link">AI For Marketing</a></li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link {{ if eq "Blog" .Title }}selected{{ end }}" href="/blog">Blog</a>

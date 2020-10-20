@@ -58,3 +58,11 @@ firebase serve
 firebase login
 firebase deploy
 ```
+
+## Deploying to an alternative (dev) firebase project
+
+```
+firebase deploy --project=fuzzylabs-dev
+```
+
+Deploys to: https://fuzzylabs-dev.web.app
