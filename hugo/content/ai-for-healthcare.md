@@ -20,7 +20,7 @@ sections:
    background: "/images/bg-arrows-2.png"
    backgroundalign: "right"
  - type: "cards"
-   columns: "4"
+   columns: "2"
    heading: "AI for healthcare can help:"
    cards:
     - image: "/images/AdobeStock_175508874.jpeg"
