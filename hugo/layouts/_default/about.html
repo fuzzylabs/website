@@ -1,76 +1,102 @@
 {{ define "main" }}
 <section class="section section-page-header section-about-us">
-    <div class="container">
-        <div class="row" style="height: 600px">
-            <div class="col-md-12 align-items-center ml-auto d-flex">
-                <div class="col-md-6">
-                    <h1>{{ .Params.articletitle }}</h1>
-                    <p class="lead">Fuzzy Labs was co-Founded by Matt Squire and Tom Stockton in Manchester, UK, drawing on 35 years
-                        of combined commercial experience in writing and deploying world-class, modern, scalable
-                        software and data systems.</p>
-                    <p class="lead">We have worked with organisations including Disney Streaming Services, MoneySupermarket,
-                        Booking.com and McLaren.</p>
-                </div>
-            </div>
+  <div class="container">
+    <div class="row" style="height: 600px">
+      <div class="col-md-12 align-items-center ml-auto d-flex">
+        <div class="col-md-6">
+          <h1>{{ .Params.articletitle }}</h1>
+          <p>Fuzzy Labs was co-Founded by Matt Squire and Tom Stockton in Manchester, UK, drawing on 35 years
+            of combined commercial experience in writing and deploying world-class, modern, scalable
+            software and data systems.</p>
+          <p>We have worked with organisations including Disney Streaming Services, MoneySupermarket, Booking.com and McLaren.</p>
         </div>
+      </div>
     </div>
+  </div>
 </section>
 
 <section class="section-padded">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 article-post">
-                <div class="card card mb-5 h-100">
-
-                    <div class="card-body">
-                        <div class="d-flex flex-column justify-content-center align-items-center">
-                            <a href="https://www.linkedin.com/in/tom-stockton-37a5644/"><img class="about-image d-block mt-2"
-                                                                                             src="/images/tom-square-thumb.jpg"></a>
-                            <h3 class="mt-4">About Tom</h3>
-                        </div>
-                        <p>With a background in DevOps and SRE, Tom not only has a wealth of experience engineering
-                            reliable production environments, but as the lead guitarist in his band, he's a literal
-                            DevOps rockstar. He's worked with many prominent tech clients, most recently leading efforts
-                            to deploy large-scale data processing infrastructure in Kubernetes for Disney Streaming
-                            Services.</p>
-
-                        <p>When he's not doing rockstar DevOps or building cool stuff in the cloud, Tom's a commited
-                            mountain biker with an intimidating training regime.</p>
-
-                        <p>Tom uses <a href="https://www.vim.org">Vim</a>.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 article-post">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <div class="d-flex flex-column justify-content-center align-items-center">
-
-                            <a href="https://www.linkedin.com/in/matt-squire-a19896125"><img class="about-image d-block mt-2"
-                                                                                             src="/images/matt-square-thumb.jpg"></a>
-                            <h3 class="mt-4">About Matt</h3>
-                        </div>
-
-                        <p>Matt has spent his career building distributed and reactive software using Scala, Akka and
-                            Kafka in
-                            many domains including advertising, price comparison, biometrics, and IoT applications. His
-                            background is in natural computation, a field of computer science that studies how living
-                            things
-                            compute, to think about new ways to make machines smarter.</p>
-
-                        <p>Before starting Fuzzy Labs Matt was technical team lead at Disney Streaming Services, where
-                            he worked
-                            on a machine learning project to predict customer happiness based on their experience of
-                            using the
-                            Disney+ platform. In his spare time he likes to dabble in building hardware, cooking
-                            curries,
-                            exploring mountains and learning Mandarin.</p>
-
-                        <p>Matt uses <a href="https://www.gnu.org/s/emacs">Emacs</a>.</p>
-                    </div>
-                </div>
-            </div>
+  <div class="container">
+    <!-- Tom -->    
+    <div class="row border rounded" style="background: #fff">
+      <div class="media mt-4 ml-4 mr-4">
+        <div class="media-left">
+          <img class="media-object about-image mr-5" style="width: 250px; height: 250px" src="/images/tom-square-thumb.jpg" alt="...">
         </div>
+        <div class="media-body">
+          <h3 class="media-heading"><b>Tom Stockton</b></h3>
+
+          <p>With a background in DevOps and SRE, Tom not only has a wealth of experience engineering
+            reliable production environments, but as the lead guitarist in his band, he's a literal
+            DevOps rockstar. He's worked with many prominent tech clients, most recently leading efforts
+            to deploy large-scale data processing infrastructure in Kubernetes for Disney Streaming
+            Services.</p>
+
+          <p>When he's not doing rockstar DevOps or building cool stuff in the cloud, Tom's a commited
+            mountain biker with an intimidating training regime.</p>
+
+          <p>Tom uses <a href="https://www.vim.org">Vim</a>.</p>
+
+          <ul class="social-links p-0">
+            <li><a href="http://github.com/tomstockton" class="fab fa-github"></a></li>
+            <li><a href="https://www.linkedin.com/in/tom-stockton-37a5644" class="fab fa-linkedin"></a></li>
+          </ul>
+        </div>
+      </div>
     </div>
+
+    <!-- Matt -->
+    <div class="row border rounded mt-5" style="background: #fff">
+      <div class="media mt-4 ml-4 mr-4">
+        <div class="media-left">
+          <img class="media-object about-image mr-5" style="width: 250px; height: 250px" src="/images/matt-square-thumb.jpg" alt="...">
+        </div>
+        <div class="media-body">
+          <h3 class="media-heading"><b>Matt Squire</b></h3>
+
+          <p>Matt has spent his career building distributed and reactive software using Scala, Akka and Kafka in many domains including advertising, price comparison, biometrics, and IoT applications.
+            His background is in natural computation, a field of computer science that studies how living things compute.
+          </p>
+
+          <p>Before starting Fuzzy Labs Matt was technical team lead at Disney Streaming Services, where he worked
+            on a machine learning project to predict customer happiness based on their experience of using the
+            Disney+ platform. In his spare time he likes to dabble in building hardware, cooking curries,
+            exploring mountains and learning Mandarin.</p>
+
+          <p>Matt uses <a href="https://www.gnu.org/s/emacs">Emacs</a>.</p>
+
+          <ul class="social-links p-0">
+            <li><a href="http://github.com/archena" class="fab fa-github"></a></li>
+            <li><a href="https://www.linkedin.com/in/matt-squire-a19896125" class="fab fa-linkedin"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Misha -->
+    <div class="row border rounded mt-5" style="background: #fff">
+      <div class="media mt-4 ml-4 mr-4">
+        <div class="media-left">
+          <img class="media-object about-image mr-5" style="width: 250px; height: 250px" src="/images/misha-square-thumb.jpg" alt="...">
+        </div>
+        <div class="media-body">
+          <h3 class="media-heading"><b>Mikhail Iakovlev</b></h3>
+
+          <p>Hailing from the city of Kurgan on the edge of Siberia in Russia, Mikhail Iakovlev (Misha) studied computer science at the University of Manchester and went on to study a masters in bioinformatics and theoretical systems biology at Imperial College London, where he worked on the <a href="http://www.sbg.bio.ic.ac.uk/~missense3d">Missense3D project</a> for protein mutation effect prediction. He's also two-time finalist at <a href="https://www.hac100.com">Hack Manchester</a>. Misha is a full-stack engineer and data scientist with a deep-seated passion for technology.</p>
+
+          <p>In his spare time Misha unwinds by hacking with infosec tools and playing his electronic drum kit. Weekends are often spent at his local village and <a href="https://en.wikipedia.org/wiki/Dacha">Dacha</a> hanging out with friends and enjoying burgers on the BBQ. We imagine it’s a bit like <a href="https://www.youtube.com/watch?v=-4kzBmmGyhA&t=3s">this</a>.</p>
+
+          <p>Misha uses <a href="https://code.visualstudio.com">Visual Studio Code</a>.</p>
+
+          <ul class="social-links p-0">
+            <li><a href="http://github.com/d-lowl" class="fab fa-github"></a></li>
+            <li><a href="https://www.linkedin.com/in/mikhail-iakovlev" class="fab fa-linkedin"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- /container -->
+  </div>
 </section>
 {{ end }}

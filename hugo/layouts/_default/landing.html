@@ -1,0 +1,206 @@
+{{ define "main" }}
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <div id="landing-template">
+        {{ range .Params.sections }}
+            {{ if eq .type "intro" }}
+                <section class="section section__landing-intro background-icon--{{ .backgroundicon }}">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 align-items-center ml-auto d-flex">
+                                <div class="text-center">
+                                    {{ if .heading }}
+                                        <h1>{{ .heading }}</h1>
+                                    {{ end }}
+                                    {{ if .description }}
+                                        {{ .description | safeHTML }}
+                                    {{ end }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            {{ else if eq .type "image" }}
+                <section class="section__landing-image section__landing-image__overlay--{{ .overlay }}" style="background-image: url({{ .image }});"></section>
+            {{ else if eq .type "imagecopy" }}
+                <section class="section__landing-imagecopy">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            {{ $.Scratch.Set "imagealign" "" }}
+                            {{if eq .imagealign "right"}}
+                                {{ $.Scratch.Set "imagealign" " order-lg-last" }}
+                            {{ end }}
+                            <div class="col-xl-1"></div>
+                            <div class='col-xl-6{{ $.Scratch.Get "imagealign" }}'>
+                                <img src="{{ .image }}" alt="{{ .heading }}" class="imagecopy__image">
+                            </div>
+                            <div class="col-xl-5">
+                                {{ if .heading }}
+                                    <h2 class="heading-withunderline heading-withunderline--left">{{ .heading }}</h2>
+                                {{ end }}
+                                {{ if .description }}
+                                    {{ .description | safeHTML }}
+                                {{ end }}
+                                {{ if and .buttonText .buttonLink }}
+                                    <p style="margin-top: 30px;">
+                                        <a href="{{ .buttonLink }}" class="btn btn-secondary btn-lg">{{ .buttonText | safeHTML }}</a>
+                                    </p>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            {{ else if eq .type "textblock" }}
+                <section class="section__landing-textblock">
+                    <div class="section__landing-textblock-top text-center">
+                        <div class="container">
+                            {{ if .heading }}
+                                <h2 class="heading-withunderline heading-withunderline--green">{{ .heading }}</h2>
+                            {{ end }}
+                            {{ if .subheading }}
+                                <div class="section__landing-textblock-subheading">{{ .subheading | safeHTML }}</div>
+                            {{ end }}
+                        </div>
+                    </div>
+                    <div class="section__landing-textblock-main">
+                        <div class="section__landing-textblock-main-bg" style="background-image: url({{ .background }});" data-aos="fade-up" data-aos-duration="1000"></div>
+                        <div class="container">
+                            <div class="section__landing-textblock-content">
+                                <div>
+                                    {{ if .copy }}
+                                        {{ .copy | safeHTML }}
+                                    {{ end }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            {{ else if eq .type "cards" }}
+                <section class="section__landing-cards">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                {{ if .heading }}
+                                    <h2 class="heading-withblock heading-withblock--white"><span><span class="copy">{{ .heading }}</span></span></h2>
+                                {{ end }}
+                                {{ .description | safeHTML }}
+                            </div>
+                        </div>
+                        <div class="section__landing-cards-main">
+                            {{if eq .columns "4"}}
+                                {{ $.Scratch.Set "columns" "col-lg-6 col-xl-3" }}
+                            {{ else if eq .columns "3" }}
+                                {{ $.Scratch.Set "columns" "col-lg-4" }}
+                            {{ else if eq .columns "2" }}
+                                {{ $.Scratch.Set "columns" "col-md-6" }}
+                            {{ else }}
+                                {{ $.Scratch.Set "columns" "col-12" }}
+                            {{end}}
+                            {{ if .cards }}
+                                <div class="row mt-4">
+                                    {{ range .cards }}
+                                        <div class='{{ $.Scratch.Get "columns" }}'>
+                                            <div class="rounded-card">
+                                                <div class="rounded-card__img">
+                                                    <img src="{{ .image }}" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="rounded-card__content">
+                                                    {{ if .heading }}
+                                                        <h2 class="rounded-card__heading">{{ .heading }}</h2>
+                                                    {{ end }}
+                                                    {{ if .description }}
+                                                        <p class="rounded-card__description">{{ .description | safeHTML }}</p>
+                                                    {{ end }}
+                                                    {{ if and .buttoncopy .buttonlink }}
+                                                        <a href="{{ .buttonlink }}" class="rounded-card__link">{{ .buttoncopy }}</a>
+                                                    {{ end }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {{ end }}
+                                </div>
+                            {{ end }}
+                        </div>
+                    </div>
+                </section>
+            {{ else if eq .type "copy" }}
+                <section class="section__landing-copy section__landing-copy--bg-{{ .imagealign }} ">
+                    <div class="container">
+                        <div class="row">
+                            {{if eq .imagealign "left"}}
+                                <div class="col-lg-9 offset-lg-3">
+                            {{ else }}
+                                <div class="col-lg-9">
+                            {{ end }}
+                            {{ .copy | safeHTML }}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            {{ else if eq .type "footer" }}
+                <section class="section__landing-footer">
+                    <div class="section__landing-footer-top text-center">
+                        <div class="container">
+                            {{ if .heading }}
+                                <h2 class="section__landing-footer-top-heading">{{ .heading }}</h2>
+                            {{ end }}
+                            {{ if .description }}
+                                <div class="section__landing-footer-top-description">
+                                    {{ .description | safeHTML }}
+                                </div>
+                            {{ end }}
+                        </div>
+                    </div>
+                    <div class="section__landing-footer-middle text-center">
+                        <div class="container">
+                            {{ if .whitecopy }}
+                                <div class="section__landing-footer-middle-description">
+                                    {{ .whitecopy | safeHTML }}
+                                </div>
+                            {{ end }}
+                        </div>
+                    </div>
+                    <div class="section__landing-footer-bottom">
+                        <div class="container">
+                            <h2 class="heading-withblock text-center" data-aos="fade-up" data-aos-duration="1000"><span><span class="copy">Get in touch</span></span></h2>
+                            <form method="post" action="https://formspree.io/talk@fuzzylabs.ai" role="form" class="form-styling">
+                                <fieldset class="form-styling__fieldset">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input type="text" name="fname" placeholder="First name*" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" name="lname" placeholder="Last name*" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="email" name="email" placeholder="Email address*" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" name="phone" placeholder="Phone number">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <textarea name="message" placeholder="Message"></textarea>
+                                <label class="form-styling__checkbox">
+                                    <input type="checkbox" name="signup" value="Yes">
+                                    I'd like to receive the occasional article/news item
+                                </label>
+                                <div class="row align-items-center">
+                                    <div class="col-lg-8">
+                                      <p class="form-styling__small">By submitting this form, I can confirm I have read and accepted Fuzzy Labs’ <a href="/privacy">privacy policy</a></p>
+                                    </div>
+                                    <div class="col-lg-4 form-styling__button-wrapper">
+                                        <button type="submit">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            {{ end }}
+        {{ end }}
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+{{ end }}
