@@ -21,7 +21,9 @@ jobs:
             hugo --config="hugo/config.toml" -s hugo -d $PWD/public
       - run:
           name: Install Firebase Tools
-          command: npm install --prefix=./firebase-deploy firebase-tools
+          command: |
+            mkdir firebase-deploy
+            npm install --prefix=./firebase-deploy firebase-tools
       - run:
           name: Deploy to Firebase
           command: ./firebase-deploy/node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --project $GOOGLE_PROJECT_ID
