@@ -378,3 +378,11 @@ span.navigation {
     padding-left: 0px !important;
   }
 }
+
+table {
+  margin: 20px;
+}
+
+th {
+  background: #f0f0f0;
+}

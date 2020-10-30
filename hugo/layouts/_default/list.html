@@ -26,14 +26,14 @@
           <div class="image" style="background: url({{ .Params.image }}); background-position: center; background-size: cover; background-repeat: no-repeat">
           </div>
           <h1>{{ .Params.articletitle }}</h1>
-          <p>{{ .Description }}</p>
+          <p>{{ .Description }}<br/></p>
         </a>
         {{ if .Params.author_name }}
         <p class="text-bottom">
           <small>
-            <time><i class="far fa-star"></i>  {{ dateFormat "Jan 2, 2006" .Date }}</time>
-            <span><i class="fas fa-user"></i>  {{ .Params.author_name }}</span>
-            <span><i class="far fa-clock"></i>{{ div .FuzzyWordCount 220 }} min read</span>
+            <time><i class="far fa-star"></i>  {{ dateFormat "Jan 2, 06" .Date }}</time>
+            <span><i class="fas fa-user"></i>  {{ substr .Params.author_name 0 15 }}</span>
+            <span><i class="far fa-clock"></i>{{ div .FuzzyWordCount 220 }} min</span>
           </small>
         </p>
         {{ end }}
