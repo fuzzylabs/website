@@ -5,7 +5,7 @@ description: "Predicting running power"
 metadescription: "Predicting running power"
 date: 2020-10-30T00:00:00
 tags: ["artificial intelligence", "iot"]
-image: "https://miro.medium.com/max/1400/1*ycne6a1JIQ3WOnlYStc8cA.png"
+image: "https://miro.medium.com/max/1400/1*4HW5ffXce4LRc34nalKyHw.png"
 author_name: "Misha Iakovlev and Matt Squire"
 author_thumbnail: "/images/Misha-square-thumb.jpg"
 author_description: ""
@@ -16,7 +16,7 @@ draft: false
 
 This blog is part of our ongoing series documenting *[Wearable My Foot](https://wearablemyfoot.tech/)*, our ongoing R&D project to build a wearable fitness device powered by data science and machine learning. Today we’re looking at exercise data from [Stryd](https://www.stryd.com/), a commercially-available fitness tracker for runners.
 
-![](https://cdn-images-1.medium.com/max/3840/1*ycne6a1JIQ3WOnlYStc8cA.png)
+![](https://cdn-images-1.medium.com/max/3840/1*4HW5ffXce4LRc34nalKyHw.png)
 
 Stryd accurately records speed, cadence and running power over the course of a run. Because running power is a particularly useful metric for serious runners, we want to extract raw data from Stryd and understand how running power is related to other metrics, such as pace and cadence.
 
