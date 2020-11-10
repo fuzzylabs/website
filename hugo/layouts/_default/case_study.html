@@ -1,0 +1,149 @@
+{{ define "main" }}
+    {{ range .Params.sections }}
+        {{ if eq .type "hero" }}
+            <section class="section section-csintro" style="background-image: url({{ .image }});">
+                <div class="container">
+                    <div class="csintro__content">
+                        {{ if .subheading }}
+                            <p class="heading-withunderline heading-withunderline--green csintro__content-subheading">{{ .subheading }}</p>
+                        {{ end }}
+                        {{ if .heading }}
+                            <h1 class="section__heading">{{ .heading }}</h1>
+                        {{ end }}
+                        {{ if .description }}
+                            {{ .description | safeHTML }}
+                        {{ end }}
+                    </div>
+                </div>
+            </section>
+        {{ else if eq .type "textblock1" }}
+            <section class="section section-padded section-cstextblock1">
+                <div class="cstextblock1__top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 offset-xl-1 copy--small">
+                                {{ if .intro }}
+                                    <div class="cstextblock1__intro copy--large">{{ .intro | safeHTML }}</div>
+                                {{ end }}
+                                {{ if .copy }}
+                                    {{ .copy | safeHTML }}
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cstextblock1__bottom">
+                    <div class="container">
+                        <div class="featured-block bg--green copy--small">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    {{ if .greenblockHeading }}
+                                        <h2 class="heading-withblock heading-withblock--white"><span><span class="copy">{{ .greenblockHeading }}</span></span></h2>
+                                    {{ end }}
+                                </div>
+                                <div class="col-lg-8">
+                                    {{ if .greenblockCopy }}
+                                        <div>{{ .greenblockCopy | safeHTML }}</div>
+                                    {{ end }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        {{ else if eq .type "textblock2" }}
+            <section class="section section-padded section-cstextblock2 bg--lightblue copy--small">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-8 offset-xl-4">
+                            {{ if .heading }}
+                                <h2 class="heading-withblock heading-withblock--white"><span><span class="copy">{{ .heading }}</span></span></h2>
+                            {{ end }}
+                            {{ if .copy }}
+                                {{ .copy | safeHTML }}
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        {{ else if eq .type "textblock3" }}
+            <section class="section section-padded section-cstextblock3 copy--small">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            {{ if .copy }}
+                                {{ .copy | safeHTML }}
+                            {{ end }}
+                        </div>
+                        <div class="col-lg-4 offset-lg-1 text-center">
+                            {{ if .image }}
+                                <div class="section-cstextblock3__image">
+                                    <img src="{{ .image }}">
+                                </div>
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        {{ else if eq .type "cards" }}
+            <section class="section__landing-cards section-padded">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            {{ if .heading }}
+                                <h2 class="section__heading">{{ .heading }}</h2>
+                            {{ end }}
+                            {{ .description | safeHTML }}
+                        </div>
+                    </div>
+                    <div class="section__landing-cards-main">
+                        {{ if .cards }}
+                            <div class="cards-carousel">
+                                {{ range .cards }}
+                                    <div class="cards-carousel__item">
+                                        <div class="rounded-card">
+                                            <div class="rounded-card__img">
+                                                <img src="{{ .image }}" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="rounded-card__content">
+                                                {{ if .heading }}
+                                                    <h2 class="heading-withunderline heading-withunderline--left heading-withunderline--small rounded-card__heading">{{ .heading }}</h2>
+                                                {{ end }}
+                                                {{ if .description }}
+                                                    <p class="rounded-card__description">{{ .description }}</p>
+                                                {{ end }}
+                                                {{ if .buttonlink }}
+                                                    <a href="{{ .buttonlink }}" class="link link--withimage rounded-card__link copy--medium">Read more <img src="/images/chevron-darkblue.png" alt="Chevron"></a>
+                                                {{ end }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                {{ end }}
+                            </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </section>
+        {{ end }}
+    {{ end }}
+    <link rel="stylesheet" href="/vendor/slick/slick.css">
+    <script src="/vendor/jquery/jquery-3.4.1.min.js"></script>
+    <script src="/vendor/slick/slick.min.js"></script>
+    <script>
+        $('.cards-carousel').slick({
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: true,
+            responsive: [
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 1
+                  }
+                }
+            ]
+        });
+    </script>
+{{ end }}
