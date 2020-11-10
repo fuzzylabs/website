@@ -5,6 +5,7 @@ draft: false
 type: page
 layout: landing
 metadescription: "Customer experience matters in marketing. Get to know your customer better, by applying AI where it really counts. Boost campaign performance, speed up ROI and do so much more with your data."
+image: "/images/marketing-peacock.jpg"
 sections:
  - type: "intro"
    backgroundicon: "topright"

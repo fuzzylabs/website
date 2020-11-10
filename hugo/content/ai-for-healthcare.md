@@ -5,6 +5,7 @@ draft: false
 type: page
 layout: landing
 metadescription: "AI is powering huge advances in healthcare. Smarter medical imaging, improving disease detection and diagnosis. Searching and connecting billions of data points and research papers, speeding up drug discovery. And all while ensuring patient privacy and compliance in the age of information. AI in healthcare is here to stay – it’s time to get on board."
+image: "/images/medical-scope.jpeg"
 sections:
  - type: "intro"
    backgroundicon: "topright"

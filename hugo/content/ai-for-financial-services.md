@@ -5,6 +5,7 @@ draft: false
 type: page
 layout: landing
 metadescription: "AI works at every level in financial services - improving the customer experience, automating processes and managing compliance and risk. For both the front and back office, the right AI tools transform efficiency, and power better decision making. Complex problem or simple process: we’ve got the right AI tools for the job."
+image: "/images/financial-zebra-crossing.jpg"
 sections:
  - type: "intro"
    backgroundicon: "topright"

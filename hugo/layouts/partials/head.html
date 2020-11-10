@@ -2,6 +2,10 @@
   <meta charset="utf-8">
   <meta name="Description" content="{{ .Params.metadescription }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:description" content="{{ .Params.metadescription }}" />
+  {{ if .Params.image }}<meta property="og:image" content="{{ .Params.image }}" />{{ end }}
+
   <title>{{ .Title }}</title>
   <link href="{{ "/vendor/bootstrap/css/bootstrap.min.css" | absURL }}" rel="stylesheet">
   <link href="{{ "/css/style.css" | absURL }}" rel="stylesheet">
