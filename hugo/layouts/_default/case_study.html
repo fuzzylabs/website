@@ -11,7 +11,7 @@
                             <h1 class="section__heading">{{ .heading }}</h1>
                         {{ end }}
                         {{ if .description }}
-                            {{ .description | safeHTML }}
+                            <p>{{ .description | safeHTML }}</p>
                         {{ end }}
                     </div>
                 </div>

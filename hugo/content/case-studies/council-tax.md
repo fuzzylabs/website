@@ -1,16 +1,17 @@
 ---
 title: "Council Tax Case Study | Fuzzy Labs"
-description: ""
+description: &description "How AI helped enable faster benefits and council tax claims"
 draft: false
 type: page
 layout: case_study
 metadescription: "Automate to improve - how AI helped enable faster benefits and council tax claims "
+image: &image "/images/hero-counciltax.jpg"
 sections:
  - type: "hero"
-   image: "/images/hero-counciltax.jpg"
+   image: *image
    subheading: "Case Study"
    heading: "Automate to improve"
-   description: "<p>How AI helped enable faster benefits and council tax claims </p>"
+   description: *description
  - type: "textblock1"
    intro: "<p>Lots of clients know that AI can probably help speed up their processes, but aren’t sure what is possible, or how to start.</p>"
    copy: "<p>We were able to build proof of concept for our client, XpertRule, to help them show how robotic process automation (RPA) could be used to improve efficiency for local government.</p><p>This helped them to secure investment in a wider project to increase overall efficiency for their client, the local council Revenues and Benefits department, who handled benefits claims processing.</p><p>We didn’t just outline what was possible – we built a working demo for XpertRule to use to strengthen their business case, and ultimately secure the work.</p>"
