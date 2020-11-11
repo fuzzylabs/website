@@ -5,7 +5,7 @@ draft: false
 type: page
 layout: case_study
 metadescription: "Automate to improve - how AI helped enable faster benefits and council tax claims "
-image: &image "/images/hero-counciltax.jpg"
+image: &image "/images/AdobeStock_137836038_Preview.jpeg"
 sections:
  - type: "hero"
    image: *image
