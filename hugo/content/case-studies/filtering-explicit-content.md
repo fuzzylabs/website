@@ -5,12 +5,12 @@ draft: false
 type: page
 layout: case_study
 metadescription: "AI as a service - filtering explicit content quickly and cost effectively"
-image: "/images/hero-explicitcontent.jpg"
+image: "/images/AdobeStock_364087987_Preview.jpeg"
 sections:
  - type: "hero"
-   image: "/images/hero-explicitcontent.jpg"
+   image: "/images/AdobeStock_364087987_Preview.jpeg"
    subheading: "Case Study"
-   heading: AI as a service"
+   heading: "AI as a Service"
    description: "<p>Filtering explicit content quickly and cost effectively</p>"
  - type: "textblock1"
    intro: "<p>How common is the problem you need to solve? When our client came to us asking for help filtering out inappropriate adult content from their site, we were pretty confident they weren’t the first to need this tech.</p>"
@@ -21,7 +21,7 @@ sections:
    heading: "The solution"
    copy: "<p>Philosophical and ethical questions aside, because we quickly understood how our client’s existing systems operated, we were able to identify and integrate the right AIaaS tool to filter any explicit content, which in this case was Microsoft Azure Cognitive Services. It involved machine assisted moderation, as well as human-in-the-loop processes.</p><p>The system used two separate metrics to ‘grade’ images, with the combination of both yielding a score as a percentage. From this, thresholds could be set for automatic exclusion – (e.g. anything with a score above 90% would almost certainly be the bad stuff) or queued into a workflow for review by a moderator team.</p>"
  - type: "textblock3"
-   image: "/images/subimage-counciltax.jpg"
+   image: "/images/AdobeStock_75578713_Preview.jpg"
    copy: "<p><strong>What was important here was getting a solution in place quickly (for obvious reasons).</strong></p><p>We’ve written before about how AI can be used at different levels, depending on quite how particular your problem is. In this case – and for other common problems – rather than spending hours trying to re-do on a smaller budget what the big guns like Microsoft have already achieved, an easy access, pre-trained AI solution was the best bet.</p><p>Of course, knowing this is half the battle. Because at Fuzzy Labs we also work on much more bespoke applications of AI - using Machine Learning as a service (MLaaS) for example, using datasets to train custom algorithms rather than off-the-shelf solutions - we knew AIaaS was the best way to get the problem solved quickly, and within the client’s budget. The explicit content filter did the job right, with a minimum of fuss, and without compromising the final site experience.</p><p>Our client got big AI functionality with a low barrier to entry, and frankly, that’s what we’re all about.</p>"
  - type: "cards"
    heading: "Our other case studies:"
