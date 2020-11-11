@@ -1,10 +1,11 @@
 ---
 title: "Personalised Healthcare DNA Case Study | Fuzzy Labs"
-description: ""
+description: "How AI improved personalised healthcare using genetic data"
 draft: false
 type: page
 layout: case_study
 metadescription: "Making better decisions - how AI improved personalised healthcare using genetic data"
+image: "/images/AdobeStock_281726818_Preview.jpeg"
 sections:
  - type: "hero"
    image: "/images/AdobeStock_281726818_Preview.jpeg"

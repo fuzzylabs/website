@@ -1,0 +1,29 @@
+{{ define "main" }}
+<section class="section section-page-header">
+  <div class="container">
+    <div class="row case-studies-header" style="height: 600px;">
+      <div class="col-md-12 align-items-center ml-auto d-flex">
+        <div class="col-md-6">
+
+          <h1>{{ .Params.articletitle }}</h1>
+          <p class="lead">Our work has been Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam,
+            corporis dignissimos
+            enim excepturi facere hic illum maxime necessitatibus nobis odit officiis, porro quasi reprehenderit sequi
+            sunt, tempore ullam voluptas..</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-padded">
+  <div class="container">
+    <div class="row">
+{{ range $index, $page := .Pages.ByTitle }}
+      {{ partial "case_study.html" . }}
+{{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

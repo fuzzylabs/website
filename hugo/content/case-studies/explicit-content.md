@@ -1,10 +1,11 @@
 ---
 title: "Explicit Content Case Study | Fuzzy Labs"
-description: ""
+description: "Filtering explicit content quickly and cost effectively"
 draft: false
 type: page
 layout: case_study
 metadescription: "AI as a service - filtering explicit content quickly and cost effectively"
+image: "/images/hero-explicitcontent.jpg"
 sections:
  - type: "hero"
    image: "/images/hero-explicitcontent.jpg"
