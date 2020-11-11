@@ -1182,6 +1182,8 @@ ul.link-list li {
     margin: 0 auto;
     padding: 30px;
     font-size: 22px;
+    border-radius: 15px;
+    opacity: 0.95;
 }
 
 .csintro__content .section__heading {
@@ -1251,6 +1253,7 @@ hr {
 
 .featured-block {
     padding: 30px;
+    border-radius: 15px;
 }
 
 @media(min-width: 992px) {
@@ -1304,6 +1307,7 @@ hr {
     margin: 0 auto;
     position: relative;
     z-index: 2;
+    border-radius: 15px;
 }
 
 .arrow-list {
