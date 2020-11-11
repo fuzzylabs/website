@@ -1,10 +1,11 @@
 ---
 title: "Council Tax Case Study | Fuzzy Labs"
-description: ""
+description: "How AI helped enable faster benefits and council tax claims"
 draft: false
 type: page
 layout: case_study
 metadescription: "Automate to improve - how AI helped enable faster benefits and council tax claims "
+image: "/images/hero-counciltax.jpg"
 sections:
  - type: "hero"
    image: "/images/hero-counciltax.jpg"

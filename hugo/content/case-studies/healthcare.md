@@ -1,10 +1,11 @@
 ---
 title: "Healthcare Case Study | Fuzzy Labs"
-description: ""
+description: "How AI improved personalised healthcare using genetic data"
 draft: false
 type: page
 layout: case_study
 metadescription: "Making better decisions - how AI improved personalised healthcare using genetic data"
+image: "/images/hero-healthcare.jpg"
 sections:
  - type: "hero"
    image: "/images/hero-healthcare.jpg"

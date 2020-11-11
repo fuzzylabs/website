@@ -25,9 +25,9 @@
         <li class="nav-item">
           <a class="nav-link {{ if or ( eq "case_studies" .Layout) ( eq "case_study_detail" .Layout) }}selected{{ end }}" href="/case-studies">Case Studies</a>
           <ul class="nav-submenu">
-            <li class="nav-item"><a class="nav-link {{ if eq "About" .Title }}selected{{ end }}" href="/about">1 TODO</a></li>
-            <li class="nav-item"><a class="nav-link nav-link-in-page" href="{{ "/" | absURL }}#contact">2 TODO</a></li>
-            <li class="nav-item"><a class="nav-link nav-link-in-page" href="{{ "/join-us" | absURL }}">3 TODO</a></li>
+            <li class="nav-item"><a class="nav-link" href="/case-studies/council-tax">Automating Council Tax Claims</a></li>
+            <li class="nav-item"><a class="nav-link" href="/case-studies/explicit-content">Filtering Explicit Content</a></li>
+            <li class="nav-item"><a class="nav-link" href="/case-studies/healthcare">AI in Healthcare</a></li>
           </ul>
         </li>
 
@@ -41,7 +41,7 @@
           <ul class="nav-submenu">
             <li class="nav-item"><a class="nav-link {{ if eq "About" .Title }}selected{{ end }}" href="/about">About</a></li>
             <li class="nav-item"><a class="nav-link nav-link-in-page" href="{{ "/" | absURL }}#contact">Let's Talk</a></li>
-            <li class="nav-item"><a class="nav-link nav-link-in-page" href="{{ "/join-us" | absURL }}">Join Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ "/join-us" | absURL }}">Join Us</a></li>
           </ul>
         </li>
 
