@@ -16,7 +16,7 @@
 
 <section class="section__landing-cards section-padded">
   <div class="container">
-    {{ range $index, $page := where $.Site.RegularPages "Type" "case-studies" }}
+    {{ range $index, $page := where $.Site.RegularPages.ByWeight "Type" "case-studies" }}
 
     {{ if eq (mod $index 2) 0 }}
     <div class="row">

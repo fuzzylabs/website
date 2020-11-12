@@ -2,6 +2,7 @@
 title: &title "Do more with your data"
 subtitle: &subtitle "Speed up reporting with data warehousing"
 description: &description "How much more could you be doing with your data? This was the question we asked our client, Regital, a digital agency specialising in programmatic advertising, when they asked us to help speed up their reporting processes."
+weight: 3
 draft: false
 layout: case_study
 metadescription: "Do more with your data - speed up reporting with data warehousing"

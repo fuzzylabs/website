@@ -2,6 +2,7 @@
 title: &title "Automate to improve"
 subtitle: &subtitle "How AI helped enable faster benefits and council tax claims"
 description: &description "Lots of clients know that AI can probably help speed up their processes, but aren’t sure what is possible, or how to start. Demonstrating how automation can improve efficiency for local government."
+weight: 4
 draft: false
 layout: case_study
 metadescription: "Automate to improve - how AI helped enable faster benefits and council tax claims "
