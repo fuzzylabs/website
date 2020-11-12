@@ -5,7 +5,7 @@ description: &description "How much more could you be doing with your data? This
 draft: false
 layout: case_study
 metadescription: "Do more with your data - speed up reporting with data warehousing"
-image: &image "/images/AdobeStock_138317085_Preview.jpeg"
+image: &image "/images/AdobeStock_138317085.jpeg"
 sections:
  - type: "hero"
    image: *image
