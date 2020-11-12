@@ -1,16 +1,17 @@
 ---
-title: "AI as a service"
-description: "Filtering explicit content quickly and cost effectively"
+title: &title "AI as a Service"
+subtitle: &subtitle "Filtering explicit content quickly and cost effectively."
+description: &description "How common is the problem you need to solve? When our client came to us asking for help filtering out inappropriate adult content from their site, we were pretty confident they weren’t the first to need this tech."
 draft: false
 layout: case_study
 metadescription: "AI as a service - filtering explicit content quickly and cost effectively"
-image: "/images/AdobeStock_364087987_Preview.jpeg"
+image: &image "/images/AdobeStock_364087987_Preview.jpeg"
 sections:
  - type: "hero"
-   image: "/images/AdobeStock_364087987_Preview.jpeg"
+   image: *image
    subheading: "Case Study"
-   heading: "AI as a Service"
-   description: "<p>Filtering explicit content quickly and cost effectively</p>"
+   heading: *title
+   subtitle: *subtitle
  - type: "textblock1"
    intro: "<p>How common is the problem you need to solve? When our client came to us asking for help filtering out inappropriate adult content from their site, we were pretty confident they weren’t the first to need this tech.</p>"
    copy: "<p>However respectable your business and the legitimate users of your website or service are, if it involves uploading content then this always introduces an element of risk. Let’s assume that 99% of people out there would use your functionality exactly as you intend. It’s just that 1% who try to upload pictures of naked ladies for lolz you’ve got to worry about. It’s been the same since the dawn of time, or at the very least, the dawn of the internet. Or social media.</p><p>Solving common problems is easy, when you know where to start. That’s where we come in. By using Microsoft Azure Cognitive Services, we were able to provide an <a href='/blog/nice-aiaas/'>'AI as a service’ (or ‘AIaaS’) solution</a> for our client in just three days.</p><p>The big-hitters in cloud services like Google, Amazon and Microsoft have already spent ages solving problems like these. Setting up a pre-trained AI integration meant our client got all the benefit of this tech, but without the years of development, or billion-dollar price tag. And no more nudes. Win!</p>"

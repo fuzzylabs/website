@@ -10,8 +10,8 @@
                         {{ if .heading }}
                             <h1 class="section__heading">{{ .heading }}</h1>
                         {{ end }}
-                        {{ if .description }}
-                            <p>{{ .description | safeHTML }}</p>
+                        {{ if .subtitle }}
+                            <p>{{ .subtitle | safeHTML }}</p>
                         {{ end }}
                     </div>
                 </div>
@@ -105,6 +105,7 @@
                             </div>
                             <div class="rounded-card__content">
                                 <h2 class="heading-withunderline heading-withunderline--left heading-withunderline--small rounded-card__heading">{{ .Params.Title }}</h2>
+                                <p>{{ .Params.subtitle }}</p>
                                 <p class="rounded-card__description">{{ .Params.description }}</p>
                                 <a href="{{ .Permalink }}" class="link link--withimage rounded-card__link copy--medium">Read more <img src="/images/chevron-darkblue.png" alt="Chevron"></a>
                             </div>

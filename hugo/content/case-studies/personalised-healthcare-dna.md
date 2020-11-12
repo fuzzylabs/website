@@ -1,16 +1,17 @@
 ---
-title: "Making better decisions"
-description: "How AI improved personalised healthcare using genetic data"
+title: &title "Making better decisions"
+subtitle: &subtitle "How AI improved personalised healthcare using genetic data"
+description: "If you identify a gap in your services, could AI be used to speed up the decision making process on what a potential solution or product could look like? That’s exactly what we helped our healthcare company client to achieve."
 draft: false
 layout: case_study
 metadescription: "Making better decisions - how AI improved personalised healthcare using genetic data"
-image: "/images/AdobeStock_281726818_Preview.jpeg"
+image: &image "/images/AdobeStock_281726818_Preview.jpeg"
 sections:
  - type: "hero"
-   image: "/images/AdobeStock_281726818_Preview.jpeg"
+   image: *image
    subheading: "Case Study"
-   heading: "Making better decisions"
-   description: "<p>How AI improved personalised healthcare using genetic data</p>"
+   heading: *title
+   subtitle: *subtitle
  - type: "textblock1"
    intro: "<p>If you identify a gap in your services, could AI be used to speed up the decision making process on what a potential solution or product could look like? That’s exactly what we helped our healthcare company client to achieve.</p>"
    copy: "<p>The client currently offered a genetic testing service. The test gave their customers a detailed insight into their own health. DNA testing reveals a wealth of information for individuals, like which foods or medicines they may be sensitive to, and how susceptible they are to disease.</p><p>The testing service also included specific recommendations on lifestyle for customers, advising how to mitigate their unique risk factors, and improve their overall health.</p>"

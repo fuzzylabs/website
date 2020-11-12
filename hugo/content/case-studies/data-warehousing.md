@@ -1,16 +1,17 @@
 ---
-title: "Do more with your data"
-description: "Do more with your data - speed up reporting with data warehousing"
+title: &title "Do more with your data"
+subtitle: &subtitle "Speed up reporting with data warehousing"
+description: &description "How much more could you be doing with your data? This was the question we asked our client, Regital, a digital agency specialising in programmatic advertising, when they asked us to help speed up their reporting processes."
 draft: false
 layout: case_study
 metadescription: "Do more with your data - speed up reporting with data warehousing"
-image: "/images/AdobeStock_138317085_Preview.jpeg"
+image: &image "/images/AdobeStock_138317085_Preview.jpeg"
 sections:
  - type: "hero"
-   image: "/images/AdobeStock_138317085_Preview.jpeg"
+   image: *image
    subheading: "Case Study"
-   heading: "Do more with your data"
-   description: "<p>Speed up reporting with data warehousing</p>"
+   heading: *title
+   subtitle: *subtitle
  - type: "textblock1"
    intro: "<p>How much more could you be doing with your data? This was the question we asked our client, Regital, a digital agency specialising in programmatic advertising, when they asked us to help speed up their reporting processes.</p>"
    copy: "<p>The system our client had for reporting was slow, and labour intensive. We were able to not just automate much of the manual data gathering work which was slowing things down, but also, to introduce a completely new way of working. It allowed them to access the data they needed much more quickly, and then work smarter with it to improve reporting.</p><p>So - more efficient for them in the back end, more value for their clients up front. Everybody wins. Are we wizards? Well, yes, but that’s a story for another time. It all came down to asking the right questions first. And then later, being just a bit tasty when it comes to building a data warehousing solution.</p>"
