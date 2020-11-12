@@ -14,13 +14,33 @@
   </div>
 </section>
 
-<section class="section-padded">
+<section class="section__landing-cards section-padded">
   <div class="container">
+    {{ range $index, $page := where $.Site.RegularPages "Type" "case-studies" }}
+
+    {{ if eq (mod $index 2) 0 }}
     <div class="row">
-      {{ range $index, $page := .Pages.ByTitle }}
-        {{ partial "case_study.html" . }}
       {{ end }}
+
+      <div class="col-sm cards-carousel__item" style="margin-bottom: 30px">
+        <div class="rounded-card">
+          <div class="rounded-card__img">
+            <img src="{{ .Params.Image }}" alt="" class="img-fluid section__landing-cards-img">
+          </div>
+          <div class="rounded-card__content">
+            <h2 class="heading-withunderline heading-withunderline--left heading-withunderline--small rounded-card__heading">{{ .Params.Title }}</h2>
+            <p>{{ .Params.subtitle }}</p>
+            <p class="rounded-card__description">{{ .Params.description }}</p>
+            <a href="{{ .Permalink }}" class="link link--withimage rounded-card__link copy--medium">Read more <img src="/images/chevron-darkblue.png" alt="Chevron"></a>
+          </div>
+        </div>
+      </div>
+
+
+      {{ if eq (mod $index 2) 1 }}
     </div>
+    {{ end }}
+    {{ end }}
   </div>
 </section>
 {{ end }}
