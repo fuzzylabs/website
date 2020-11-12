@@ -97,20 +97,23 @@
             </div>
             <div class="section__landing-cards-main">
                 <div class="cards-carousel">
+                    {{ $page := .Params.Title }}
                     {{ range where $.Site.RegularPages "Type" "case-studies" }}
-                    <div class="cards-carousel__item">
-                        <div class="rounded-card">
-                            <div class="rounded-card__img">
-                                <img src="{{ .Params.Image }}" alt="" class="img-fluid section__landing-cards-img">
+                        {{ if ne .Params.Title $page }}
+                            <div class="cards-carousel__item">
+                                <div class="rounded-card">
+                                    <div class="rounded-card__img">
+                                        <img src="{{ .Params.Image }}" alt="" class="img-fluid section__landing-cards-img">
+                                    </div>
+                                    <div class="rounded-card__content">
+                                        <h2 class="heading-withunderline heading-withunderline--left heading-withunderline--small rounded-card__heading">{{ .Params.Title }}</h2>
+                                        <p>{{ .Params.subtitle }}</p>
+                                        <p class="rounded-card__description">{{ .Params.description }}</p>
+                                        <a href="{{ .Permalink }}" class="link link--withimage rounded-card__link copy--medium">Read more <img src="/images/chevron-darkblue.png" alt="Chevron"></a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="rounded-card__content">
-                                <h2 class="heading-withunderline heading-withunderline--left heading-withunderline--small rounded-card__heading">{{ .Params.Title }}</h2>
-                                <p>{{ .Params.subtitle }}</p>
-                                <p class="rounded-card__description">{{ .Params.description }}</p>
-                                <a href="{{ .Permalink }}" class="link link--withimage rounded-card__link copy--medium">Read more <img src="/images/chevron-darkblue.png" alt="Chevron"></a>
-                            </div>
-                        </div>
-                    </div>
+                        {{ end }}
                     {{ end }}
                 </div>
             </div>
