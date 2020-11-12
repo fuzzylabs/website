@@ -1,0 +1,46 @@
+{{ define "main" }}
+<section class="section section-page-header">
+  <div class="container">
+    <div class="row case-studies-header" style="height: 300px;">
+      <div class="col-md-12 align-items-center ml-auto d-flex">
+        <div class="col-md-6">
+
+          <h1>{{ .Params.articletitle }}</h1>
+          <p class="lead">We work across a range of industries to solve challenging problems using AI. Here are a few of our recent case studies...</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section__landing-cards section-padded">
+  <div class="container">
+    {{ range $index, $page := where $.Site.RegularPages.ByWeight "Type" "case-studies" }}
+
+    {{ if eq (mod $index 2) 0 }}
+    <div class="row">
+      {{ end }}
+
+      <div class="col-sm cards-carousel__item" style="margin-bottom: 30px">
+        <div class="rounded-card">
+          <div class="rounded-card__img">
+            <img src="{{ .Params.Image }}" alt="" class="img-fluid section__landing-cards-img">
+          </div>
+          <div class="rounded-card__content">
+            <h2 class="heading-withunderline heading-withunderline--left heading-withunderline--small rounded-card__heading">{{ .Params.Title }}</h2>
+            <p>{{ .Params.subtitle }}</p>
+            <p class="rounded-card__description">{{ .Params.description }}</p>
+            <a href="{{ .Permalink }}" class="link link--withimage rounded-card__link copy--medium">Read more <img src="/images/chevron-darkblue.png" alt="Chevron"></a>
+          </div>
+        </div>
+      </div>
+
+
+      {{ if eq (mod $index 2) 1 }}
+    </div>
+    {{ end }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}
