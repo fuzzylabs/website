@@ -2,6 +2,7 @@
 title: &title "Making better decisions"
 subtitle: &subtitle "How AI improved personalised healthcare using genetic data"
 description: "If you identify a gap in your services, could AI be used to speed up the decision making process on what a potential solution or product could look like? That’s exactly what we helped our healthcare company client to achieve."
+weight: 1
 draft: false
 layout: case_study
 metadescription: "Making better decisions - how AI improved personalised healthcare using genetic data"

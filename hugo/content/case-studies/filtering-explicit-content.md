@@ -2,6 +2,7 @@
 title: &title "AI as a Service"
 subtitle: &subtitle "Filtering explicit content quickly and cost effectively."
 description: &description "How common is the problem you need to solve? When our client came to us asking for help filtering out inappropriate adult content from their site, we were pretty confident they weren’t the first to need this tech."
+weight: 2
 draft: false
 layout: case_study
 metadescription: "AI as a service - filtering explicit content quickly and cost effectively"
