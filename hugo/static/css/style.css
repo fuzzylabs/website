@@ -700,6 +700,12 @@ ul.link-list li {
     padding: 0 12px;
 }
 
+.section__landing-cards-img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
 .section__landing-imagecopy {
     padding: 50px 0;
     /*background: url(/images/bg-imagecopy.png) no-repeat center;*/
