@@ -1,8 +1,7 @@
 ---
-title: "Personalised Healthcare DNA Case Study | Fuzzy Labs"
+title: "Making better decisions"
 description: "How AI improved personalised healthcare using genetic data"
 draft: false
-type: page
 layout: case_study
 metadescription: "Making better decisions - how AI improved personalised healthcare using genetic data"
 image: "/images/AdobeStock_281726818_Preview.jpeg"
@@ -23,23 +22,4 @@ sections:
  - type: "textblock3"
    image: "/images/AdobeStock_283216139_Preview.jpeg"
    copy: "<p>The process gave us an in-depth understanding of what was important to both client and customer, and allowed us to explore the ways in which AI could be useful. For example:</p><ul class='arrow-list'><li><strong>Using context to target better recommendations:</strong> The user’s daily routine, location and habits could be considered in order to deliver better individual recommendations.</li><li><strong>Better targeting through segmentation:</strong> Segmentation algorithms could help discover groups of similar users based on behaviours and preferences.</li><li><strong>Integrating recommendations into other devices:</strong> For example, using Fitbit data (or similar devices) to provide relevant exercise recommendations, and help users track progress against their goals. Or using food label barcode scans on a smartphone to inform diet recommendations.</li><li><strong>Learning from user behaviour and feedback:</strong> Understanding which recommendations were effective and which were not generates a labelled dataset. Machine learning algorithms could use this ‘what happened next’ data to improve the quality of recommendations to users.</li></ul><p><strong>With our expertise and input, we were able to help fully map out the journey from problem to solution for our client. We deployed the right AI technology to build a working prototype, giving the client the confidence to develop the right product to take to market.</strong></p>"
- - type: "cards"
-   heading: "Our other case studies:"
-   cards:
-    - image: "/images/case-study-module-example.jpg"
-      heading: "AI as a service Case Study"
-      description: "How common is the problem you need to solve? When our client came to us asking for help filtering out inappropriate adult content from their site, we were pretty confident they weren’t the first to need this tech."
-      buttonlink: "/"
-    - image: "/images/case-study-module-example.jpg"
-      heading: "XpertRule Case Study"
-      description: "Lots of clients know that AI can probably help speed up processes, but aren’t sure what is possible, or how to start. We were able to build proof of concept, to help them show how robotic process automation (RPA) could be used to improve efficiency for local government."
-      buttonlink: "/"
-    - image: "/images/case-study-module-example.jpg"
-      heading: "AI as a service Case Study"
-      description: "How common is the problem you need to solve? When our client came to us asking for help filtering out inappropriate adult content from their site, we were pretty confident they weren’t the first to need this tech."
-      buttonlink: "/"
-    - image: "/images/case-study-module-example.jpg"
-      heading: "XpertRule Case Study"
-      description: "Lots of clients know that AI can probably help speed up processes, but aren’t sure what is possible, or how to start. We were able to build proof of concept, to help them show how robotic process automation (RPA) could be used to improve efficiency for local government."
-      buttonlink: "/"
 ---

@@ -1,8 +1,7 @@
 ---
-title: "Council Tax Case Study | Fuzzy Labs"
+title: "Automate to improve"
 description: &description "How AI helped enable faster benefits and council tax claims"
 draft: false
-type: page
 layout: case_study
 metadescription: "Automate to improve - how AI helped enable faster benefits and council tax claims "
 image: &image "/images/AdobeStock_137836038_Preview.jpeg"
@@ -23,23 +22,4 @@ sections:
  - type: "textblock3"
    image: "/images/subimage-counciltax.jpg"
    copy: "<p><strong>In order to automate the claims data indexing stage, we identified two main problems to solve.</strong></p><p>1. Classifying documents by type – e.g. council tax bill, utility bill etc.</p><p>2. Extracting key data from each document – names, postcodes etc.</p><h2>Classification</h2><p>We used Google Vison AI service to extract text from the scanned documents. This process is traditionally known as Optical Character Recognition (OCR) and normally requires licenced software. However, with our expertise, the functionality is readily available on the Google Cloud via a simple API call, saving time and money.</p><p>Next, we created a custom AI model using the Google AutoML service. This gave us the ability to classify new documents, using the extracted text. AutoML is an efficient way to create custom machine learning models without having to dig deep into data science. You can read more about Cloud AI services here.</p><h2>Data extraction</h2><p>We passed the extracted text to the Google Natural Language Service, which returned the information (like postcodes and names) that we used to render in the results to the user.</p><p>You can see the working demo here:</p><p>And the code here:</p><p>By successfully proving what was possible with AI, and demonstrating quickly how it could work, we were able to help our client win valuable new business, and improve overall efficiency for local government. In the client’s words:</p><p>“The speed and quality of the work Fuzzy Labs do, along with their deep expertise in AI tools, means that we would definitely look to work with them again in the future”.</p><p><strong>We’ll take that.</strong></p>"
- - type: "cards"
-   heading: "Our other case studies:"
-   cards:
-    - image: "/images/case-study-module-example.jpg"
-      heading: "AI as a service Case Study"
-      description: "How common is the problem you need to solve? When our client came to us asking for help filtering out inappropriate adult content from their site, we were pretty confident they weren’t the first to need this tech."
-      buttonlink: "/"
-    - image: "/images/case-study-module-example.jpg"
-      heading: "XpertRule Case Study"
-      description: "Lots of clients know that AI can probably help speed up processes, but aren’t sure what is possible, or how to start. We were able to build proof of concept, to help them show how robotic process automation (RPA) could be used to improve efficiency for local government."
-      buttonlink: "/"
-    - image: "/images/case-study-module-example.jpg"
-      heading: "AI as a service Case Study"
-      description: "How common is the problem you need to solve? When our client came to us asking for help filtering out inappropriate adult content from their site, we were pretty confident they weren’t the first to need this tech."
-      buttonlink: "/"
-    - image: "/images/case-study-module-example.jpg"
-      heading: "XpertRule Case Study"
-      description: "Lots of clients know that AI can probably help speed up processes, but aren’t sure what is possible, or how to start. We were able to build proof of concept, to help them show how robotic process automation (RPA) could be used to improve efficiency for local government."
-      buttonlink: "/"
 ---

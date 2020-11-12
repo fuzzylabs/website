@@ -1,8 +1,7 @@
 ---
-title: "Explicit Content Case Study | Fuzzy Labs"
+title: "AI as a service"
 description: "Filtering explicit content quickly and cost effectively"
 draft: false
-type: page
 layout: case_study
 metadescription: "AI as a service - filtering explicit content quickly and cost effectively"
 image: "/images/AdobeStock_364087987_Preview.jpeg"
@@ -23,23 +22,4 @@ sections:
  - type: "textblock3"
    image: "/images/AdobeStock_75578713_Preview.jpg"
    copy: "<p><strong>What was important here was getting a solution in place quickly (for obvious reasons).</strong></p><p>We’ve <a href='/blog/the-ai-arms-race-in-the-cloud/'>written before</a> about how AI can be used at different levels, depending on quite how particular your problem is. In this case – and for other common problems – rather than spending hours trying to re-do on a smaller budget what the big guns like Microsoft have already achieved, an easy access, pre-trained AI solution was the best bet.</p><p>Of course, knowing this is half the battle. Because at Fuzzy Labs we also work on much more bespoke applications of AI - using Machine Learning as a service (MLaaS) for example, using datasets to train custom algorithms rather than off-the-shelf solutions - we knew AIaaS was the best way to get the problem solved quickly, and within the client’s budget. The explicit content filter did the job right, with a minimum of fuss, and without compromising the final site experience.</p><p>Our client got big AI functionality with a low barrier to entry, and frankly, that’s what we’re all about.</p>"
- - type: "cards"
-   heading: "Our other case studies:"
-   cards:
-    - image: "/images/case-study-module-example.jpg"
-      heading: "AI as a service Case Study"
-      description: "How common is the problem you need to solve? When our client came to us asking for help filtering out inappropriate adult content from their site, we were pretty confident they weren’t the first to need this tech."
-      buttonlink: "/"
-    - image: "/images/case-study-module-example.jpg"
-      heading: "XpertRule Case Study"
-      description: "Lots of clients know that AI can probably help speed up processes, but aren’t sure what is possible, or how to start. We were able to build proof of concept, to help them show how robotic process automation (RPA) could be used to improve efficiency for local government."
-      buttonlink: "/"
-    - image: "/images/case-study-module-example.jpg"
-      heading: "AI as a service Case Study"
-      description: "How common is the problem you need to solve? When our client came to us asking for help filtering out inappropriate adult content from their site, we were pretty confident they weren’t the first to need this tech."
-      buttonlink: "/"
-    - image: "/images/case-study-module-example.jpg"
-      heading: "XpertRule Case Study"
-      description: "Lots of clients know that AI can probably help speed up processes, but aren’t sure what is possible, or how to start. We were able to build proof of concept, to help them show how robotic process automation (RPA) could be used to improve efficiency for local government."
-      buttonlink: "/"
 ---

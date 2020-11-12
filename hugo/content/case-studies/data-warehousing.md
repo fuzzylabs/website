@@ -1,8 +1,7 @@
 ---
-title: "Data Warehousing Case Study | Fuzzy Labs"
+title: "Do more with your data"
 description: "Do more with your data - speed up reporting with data warehousing"
 draft: false
-type: page
 layout: case_study
 metadescription: "Do more with your data - speed up reporting with data warehousing"
 image: "/images/AdobeStock_138317085_Preview.jpeg"
@@ -23,23 +22,4 @@ sections:
  - type: "textblock3"
    image: "/images/regital_logo.png"
    copy: "<p><strong>This might work for you too…</strong></p><p>For a completely data-driven business like Regital, improving the overall efficiency of how that data is imported, stored and used is a game changer. It allowed them not just to add value for their own clients’ advertising campaigns, but also to better understand their own business planning and internal reporting.</p><hr><blockquote>“Working with Matt and the team at Fuzzy Labs has been a hugely positive experience. Not only have they helped us drive operational efficiencies and enhance our tools, but our minds have been opened to how we leverage cloud platforms to derive value from our data in new, innovative ways. I’ve particularly enjoyed collaborating with Matt, who has both the technical knowhow and the imagination to make pretty much any idea a reality”</blockquote><hr><p>The solution we built for our client is not just great for right now - it’s also future-proof. When (because it is ‘when’, not ‘if’!) new platforms and data sets emerge, they can be easily integrated into the data warehousing solution, which means our client can be confident they’re equipped to cope with change. They’re now in the best position to scale up, offer greater value and generally win at life. (Ok, win at reporting).</p><p>Ultimately, data warehousing means they are equipped to make better business decisions, both now and in the future, and that sounds pretty good to us.</p>"
- - type: "cards"
-   heading: "Our other case studies:"
-   cards:
-    - image: "/images/case-study-module-example.jpg"
-      heading: "AI as a service Case Study"
-      description: "How common is the problem you need to solve? When our client came to us asking for help filtering out inappropriate adult content from their site, we were pretty confident they weren’t the first to need this tech."
-      buttonlink: "/"
-    - image: "/images/case-study-module-example.jpg"
-      heading: "XpertRule Case Study"
-      description: "Lots of clients know that AI can probably help speed up processes, but aren’t sure what is possible, or how to start. We were able to build proof of concept, to help them show how robotic process automation (RPA) could be used to improve efficiency for local government."
-      buttonlink: "/"
-    - image: "/images/case-study-module-example.jpg"
-      heading: "AI as a service Case Study"
-      description: "How common is the problem you need to solve? When our client came to us asking for help filtering out inappropriate adult content from their site, we were pretty confident they weren’t the first to need this tech."
-      buttonlink: "/"
-    - image: "/images/case-study-module-example.jpg"
-      heading: "XpertRule Case Study"
-      description: "Lots of clients know that AI can probably help speed up processes, but aren’t sure what is possible, or how to start. We were able to build proof of concept, to help them show how robotic process automation (RPA) could be used to improve efficiency for local government."
-      buttonlink: "/"
 ---

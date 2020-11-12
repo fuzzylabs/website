@@ -85,47 +85,37 @@
                     </div>
                 </div>
             </section>
-        {{ else if eq .type "cards" }}
-            <section class="section__landing-cards section-padded">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            {{ if .heading }}
-                                <h2 class="section__heading mb-5">{{ .heading }}</h2>
-                            {{ end }}
-                            {{ .description | safeHTML }}
-                        </div>
-                    </div>
-                    <div class="section__landing-cards-main">
-                        {{ if .cards }}
-                            <div class="cards-carousel">
-                                {{ range .cards }}
-                                    <div class="cards-carousel__item">
-                                        <div class="rounded-card">
-                                            <div class="rounded-card__img">
-                                                <img src="{{ .image }}" alt="" class="img-fluid">
-                                            </div>
-                                            <div class="rounded-card__content">
-                                                {{ if .heading }}
-                                                    <h2 class="heading-withunderline heading-withunderline--left heading-withunderline--small rounded-card__heading">{{ .heading }}</h2>
-                                                {{ end }}
-                                                {{ if .description }}
-                                                    <p class="rounded-card__description">{{ .description }}</p>
-                                                {{ end }}
-                                                {{ if .buttonlink }}
-                                                    <a href="{{ .buttonlink }}" class="link link--withimage rounded-card__link copy--medium">Read more <img src="/images/chevron-darkblue.png" alt="Chevron"></a>
-                                                {{ end }}
-                                            </div>
-                                        </div>
-                                    </div>
-                                {{ end }}
-                            </div>
-                        {{ end }}
-                    </div>
-                </div>
-            </section>
         {{ end }}
     {{ end }}
+
+    <section class="section__landing-cards section-padded">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section__heading">Our other case studies:</h2>
+                </div>
+            </div>
+            <div class="section__landing-cards-main">
+                <div class="cards-carousel">
+                    {{ range where $.Site.RegularPages "Type" "case-studies" }}
+                    <div class="cards-carousel__item">
+                        <div class="rounded-card">
+                            <div class="rounded-card__img">
+                                <img src="{{ .Params.Image }}" alt="" class="img-fluid">
+                            </div>
+                            <div class="rounded-card__content">
+                                <h2 class="heading-withunderline heading-withunderline--left heading-withunderline--small rounded-card__heading">{{ .Params.Title }}</h2>
+                                <p class="rounded-card__description">{{ .Params.description }}</p>
+                                <a href="{{ .Permalink }}" class="link link--withimage rounded-card__link copy--medium">Read more <img src="/images/chevron-darkblue.png" alt="Chevron"></a>
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </section>
+
     <link rel="stylesheet" href="/vendor/slick/slick.css">
     <script src="/vendor/jquery/jquery-3.4.1.min.js"></script>
     <script src="/vendor/slick/slick.min.js"></script>
