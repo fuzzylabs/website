@@ -2,98 +2,123 @@
 	<section class="section section-padded section__blueprint-hero bg--blue copy--white copy--small">
 		<div class="container">
 			{{ if .Params.heroHeading }}
-                <h1 class="heading-withunderline heading-withunderline--left heading-withunderline--small">{{ .Params.heroHeading }}</h1>
+                <h1 class="heading-withunderline heading-withunderline--left">{{ .Params.heroHeading }}</h1>
             {{ end }}
             {{ .Params.heroCopy | safeHTML }}
 		</div>
 	</section>
-	<section class="section section-padded section__blueprint-intro copy--small">
+	<section class="section section__blueprint-intro">
 		<div class="container">
 			<div class="blueprint-intro__content">
 				{{ if .Params.introSubheading }}
-	                <p>{{ .Params.introSubheading }}</p>
+	                <p class="blueprint-intro__subheading">{{ .Params.introSubheading }}</p>
 	            {{ end }}
 				{{ if .Params.introHeading }}
 	                <h2 class="section__heading">{{ .Params.introHeading }}</h2>
 	            {{ end }}  
 				{{ if .Params.introLarge }}
 	            	<div class="blueprint-intro__large copy--large">{{ .Params.introLarge | safeHTML }}</div>
-	            {{ end }}  
+	            {{ end }} 
+	            <hr> 
 	            {{ .Params.introCopy | safeHTML }}
-				{{ if .Params.introImage }}
-					<div class="blueprint-intro__image">
-						<img src="{{ .Params.introImage }}">
-					</div>
-				{{ end }}
 	        </div>
+			{{ if .Params.introImage }}
+				<div class="blueprint-intro__image">
+					<img src="{{ .Params.introImage }}">
+				</div>
+			{{ end }}
 		</div>
 	</section>
-	<section class="section section-padded section__blueprint-copy section__blueprint-copy-1 copy--small">
+	<section class="section section__blueprint-headings text-center">
 		<div class="container">
-			<h2 class="section__heading">1. {{ .Params.section1Heading }}</h2>		
-			<div class="blueprint-copy__content">
-				<div class="blueprint-copy__content-block">
-					<h3>Overview:</h3>
-					{{ .Params.section1Overview | safeHTML }}
-				</div>
-				<div class="blueprint-copy__content-block">
-					<h3>What happens:</h3>
-					{{ .Params.section1WhatHappens | safeHTML }}
-				</div>
-				<div class="blueprint-copy__content-block">
-					<h3>Outputs:</h3>
-					{{ .Params.section1Outputs | safeHTML }}
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section section-padded section__blueprint-copy section__blueprint-copy-2 copy--small">
-		<div class="container">
-			<h2 class="section__heading">2. {{ .Params.section2Heading }}</h2>		
-			<div class="blueprint-copy__content">
-				<div class="blueprint-copy__content-block">
-					<h3>Overview:</h3>
-					{{ .Params.section2Overview | safeHTML }}
-				</div>
-				<div class="blueprint-copy__content-block">
-					<h3>What happens:</h3>
-					{{ .Params.section2WhatHappens | safeHTML }}
-				</div>
-				<div class="blueprint-copy__content-block">
-					<h3>Outputs:</h3>
-					{{ .Params.section2Outputs | safeHTML }}
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section section-padded section__blueprint-copy section__blueprint-copy-3 copy--small">
-		<div class="container">
-			<h2 class="section__heading">1. {{ .Params.section3Heading }}</h2>		
-			<div class="blueprint-copy__content">
-				<div class="blueprint-copy__content-block">
-					<h3>Overview:</h3>
-					{{ .Params.section3Overview | safeHTML }}
-				</div>
-				<div class="blueprint-copy__content-block">
-					<h3>What happens:</h3>
-					{{ .Params.section3WhatHappens | safeHTML }}
-				</div>
-				<div class="blueprint-copy__content-block">
-					<h3>Outputs:</h3>
-					{{ .Params.section3Outputs | safeHTML }}
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section section-padded section__blueprint-outro copy--small">
-		<div class="container">
-			{{ if .Params.outroSubheading }}
-                <p>{{ .Params.outroSubheading }}</p>
+			{{ if .Params.mainSubheading }}
+                <p class="blueprint-headings__subheading">{{ .Params.mainSubheading }}</p>
             {{ end }}
-			{{ if .Params.outroHeading }}
-                <h1 class="heading-withunderline heading-withunderline--left heading-withunderline--small">{{ .Params.outroHeading }}</h1>
+			{{ if .Params.mainHeading }}
+                <h2 class="heading-withblock heading-withblock--lightblue blueprint-headings__heading"><span><span class="copy">{{ .Params.mainHeading }}</span></span></h2>
             {{ end }}
-            {{ .Params.outroCopy | safeHTML }}
+		</div>
+	</section>
+	<section class="section section__blueprint-copy section__blueprint-copy-1">
+		<div class="container">
+			<div class="section__blueprint-copy-wrapper">
+				<h2 class="section__heading">1. {{ .Params.section1Heading }}</h2>		
+				<div class="blueprint-copy__content">
+					<div class="blueprint-copy__content-block">
+						<h3>Overview:</h3>
+						{{ .Params.section1Overview | safeHTML }}
+					</div>
+					<hr>
+					<div class="blueprint-copy__content-block">
+						<h3>What happens:</h3>
+						{{ .Params.section1WhatHappens | safeHTML }}
+					</div>
+					<hr>
+					<div class="blueprint-copy__content-block">
+						<h3>Outputs:</h3>
+						{{ .Params.section1Outputs | safeHTML }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section section__blueprint-copy section__blueprint-copy-2">
+		<div class="container">
+			<div class="section__blueprint-copy-wrapper">
+				<h2 class="section__heading">2. {{ .Params.section2Heading }}</h2>		
+				<div class="blueprint-copy__content">
+					<div class="blueprint-copy__content-block">
+						<h3>Overview:</h3>
+						{{ .Params.section2Overview | safeHTML }}
+					</div>
+					<hr>
+					<div class="blueprint-copy__content-block">
+						<h3>What happens:</h3>
+						{{ .Params.section2WhatHappens | safeHTML }}
+					</div>
+					<hr>
+					<div class="blueprint-copy__content-block">
+						<h3>Outputs:</h3>
+						{{ .Params.section2Outputs | safeHTML }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section section__blueprint-copy section__blueprint-copy-3">
+		<div class="container">
+			<div class="section__blueprint-copy-wrapper">	
+				<h2 class="section__heading">3. {{ .Params.section3Heading }}</h2>	
+				<div class="blueprint-copy__content">
+					<div class="blueprint-copy__content-block">
+						<h3>Overview:</h3>
+						{{ .Params.section3Overview | safeHTML }}
+					</div>
+					<hr>
+					<div class="blueprint-copy__content-block">
+						<h3>What happens:</h3>
+						{{ .Params.section3WhatHappens | safeHTML }}
+					</div>
+					<hr>
+					<div class="blueprint-copy__content-block">
+						<h3>Outputs:</h3>
+						{{ .Params.section3Outputs | safeHTML }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section section__blueprint-outro">
+		<div class="container">
+			<div class="section__blueprint-outro-wrapper">
+				{{ if .Params.outroSubheading }}
+	                <p>{{ .Params.outroSubheading }}</p>
+	            {{ end }}
+				{{ if .Params.outroHeading }}
+	                <h2 class="heading-withunderline heading-withunderline--left">{{ .Params.outroHeading }}</h2>
+	            {{ end }}
+	            {{ .Params.outroCopy | safeHTML }}
+	        </div>
 		</div>
 	</section>
     <section class="section__landing-footer section__landing-footer--nomiddle">
