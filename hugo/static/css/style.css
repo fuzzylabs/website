@@ -648,6 +648,10 @@ ul.link-list li {
     background-color: #fff;
 }
 
+.heading-withblock.heading-withblock--lightblue > span:after {
+    background-color: #ECF9FE;
+}
+
 .heading-withblock > span {
     position: relative;
 }
@@ -1038,7 +1042,7 @@ ul.link-list li {
 }
 
 .section__landing-footer.section__landing-footer--nomiddle .section__landing-footer-top {
-    padding: 50px 0 0;
+    padding: 50px 0 30px;
 }
 
 .section__landing-footer.section__landing-footer--nomiddle .section__landing-footer-top:after {
@@ -1328,11 +1332,13 @@ hr {
 .arrow-list {
     list-style: none;
     margin: 40px 0;
+    padding: 0;
 }
 
 .arrow-list li {
     padding-left: 30px;
     position: relative;
+    margin-bottom: 10px;
 }
 
 .arrow-list li:before {
@@ -1399,4 +1405,207 @@ hr {
     .slick-slider {
         padding: 0 90px;
     }
+}
+
+/* -- Blueprint --*/
+.section__blueprint-hero {
+    padding-bottom: 150px;
+    position: relative;
+    z-index: 1;
+}
+
+.section__blueprint-intro {
+    position: relative;
+    z-index: 2;    
+    margin-bottom: -120px;
+}
+
+.blueprint-intro__content {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    background: #101D39;
+    top: -100px;
+    position: relative;
+    color: #fff;
+    padding: 50px 30px 150px;
+    font-size: 15px;
+}
+
+.blueprint-intro__image {
+    background: #7ADBBA;
+    border-radius: 12px;
+    margin-bottom: -100px;
+    max-width: 700px;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    top: -200px;
+    position: relative;
+    background: #7ADBBA;
+    padding: 30px;
+}
+
+.blueprint-intro__subheading {
+    font-weight: bold;
+    margin: 0;
+}
+
+@media(min-width: 992px) {
+    .section__blueprint-hero .container {
+        max-width: 900px;
+    }
+
+    .blueprint-intro__content {
+        padding: 85px 100px 150px;
+    }
+
+    .blueprint-intro__image {
+        padding: 55px 70px;
+        width: calc(100% - 100px);
+    }
+}
+
+@media(min-width: 1200px) {
+    .section__blueprint-intro:before {
+        content: '';
+        display: block;
+        width: calc(50% - 450px);
+        height: 100%;
+        background: url(../images/blueprint-intro-bg-1.jpg) no-repeat center top;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    .section__blueprint-intro:after {
+        content: '';
+        display: block;
+        width: calc(50% - 450px);
+        height: 100%;
+        background: url(../images/blueprint-intro-bg-2.jpg) no-repeat center top;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+    }    
+}
+
+.section__blueprint-copy-wrapper {
+    position: relative;
+    font-size: 15px;
+    padding-top: 30px;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section__blueprint-copy-wrapper:before {
+    content: '';
+    width: 3px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: #7ADBBA;
+}
+
+.blueprint-copy__content {
+    padding: 0 0 100px 30px;
+}
+
+@media(min-width: 992px) {
+    .blueprint-copy__content {
+        padding-left: 115px;
+    }
+}
+
+.section__blueprint-copy .section__heading {
+    margin-left: -6px;
+    background: #fff;
+    padding: 20px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.blueprint-copy__content-block h3 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.section__blueprint-copy-1 .section__blueprint-copy-wrapper {
+    padding-top: 0;
+}
+
+.section__blueprint-copy-2 .container {
+    background: #ECF9FE;
+}
+
+.section__blueprint-copy-2 .section__heading {
+    background: #ECF9FE;
+}
+
+.section__blueprint-copy-3 {
+    background:  #145C81 no-repeat right top;
+    color: #fff;
+}
+
+@media(min-width: 1200px) {
+    .section__blueprint-copy-3 {
+        background-image: url(../images/blueprint-copy-3-bg.png);
+    }
+}
+
+.section__blueprint-copy-3 .section__heading {
+    background: #145C81;
+}
+
+.section__blueprint-copy-3 .section__blueprint-copy-wrapper {
+    padding-top: 50px;
+}
+
+.section__blueprint-outro-wrapper {
+    position: relative;
+    padding: 90px 0 90px 30px;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+@media(min-width: 992px) {
+    .section__blueprint-outro-wrapper {
+        padding-left: 115px;
+    }
+}
+
+.section__blueprint-outro-wrapper:before {
+    content: '';
+    width: 3px;
+    height: 142px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: #7ADBBA;
+}
+
+.section__blueprint-outro-wrapper:after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: -7.5px;
+    top: 142px;
+    z-index: 1;
+    background: #7ADBBA;
+}
+
+.section__blueprint-headings {
+    padding-bottom: 40px;
 }
