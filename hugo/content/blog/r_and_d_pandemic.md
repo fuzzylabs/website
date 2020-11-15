@@ -14,7 +14,7 @@ draft: false
 ---
 April 2020 marked Fuzzy Labs’ first birthday. It also marked the start of a national lock-down in the UK owing to a worldwide pandemic—perhaps you’ve heard of it?
 
-Before you close that tab, I promise this isn’t yet another *“how to digitally transform your business for post-COVID enterprise buzzwording” *article. Of course we had to adapt, but so did everybody else, so you all know what that’s like by now. Instead I want to tell you about our internal R&D project, [*Wearable My Foot](http://wearablemyfoot.tech), *and share our journey into building data-powered wearables, a journey which just happens to include some unique logistical challenges otherwise known as the *new normal* (*ugh*! okay, I promise not to use those words again).
+Before you close that tab, I promise this isn’t yet another _“how to digitally transform your business for post-COVID enterprise buzzwording”_ article. Of course we had to adapt, but so did everybody else, so you all know what that’s like by now. Instead I want to tell you about our internal R&D project, _[Wearable My Foot](http://wearablemyfoot.tech)_, and share our journey into building data-powered wearables, a journey which just happens to include some unique logistical challenges otherwise known as the _new normal_ (_ugh!_ okay, I promise not to use those words again).
 
 It’s a tale of hardware prototyping, data wrangling and software hacking, while working across two continents. All made possible by camaraderie, teamwork, solder and whiskey.
 
@@ -32,7 +32,7 @@ So we started out working with pressure sensors embedded inside an insole. And w
 
 We found ourselves having a bit of time over summer to focus on R&D. Previously I’d been tinkering with this project alone in my ivory tower, but now we needed a ‘proper’ project, which means a Trello board, code reviews, standups and demos. All standard stuff that we don’t need to dwell on.
 
-As a team we’d never done hardware before, but we’ve ran lots of software projects, so *“how hard can it be?”*.
+As a team we’d never done hardware before, but we’ve ran lots of software projects, so _“how hard can it be?”_.
 
 The first hurdle is that physical components must be selected, purchased and distributed to the team. Not a huge problem, unless you’re in the middle of Russia — oh, I forgot to mention that one of us is in the middle of Russia.
 
@@ -48,7 +48,7 @@ A consensus developed that this hardware was too unreliable. The final nail in t
 
 ## The quest for power
 
-Cycling power meters are common. These devices directly measure the torque applied at the pedals, which along with rotational speed give us a decent idea of power. For running power the process is less obvious because we can’t measure the leg muscles directly, however commercially-available products like the Stryd are able to work from acceleration alone, and so once again we ask *how hard can it be?*
+Cycling power meters are common. These devices directly measure the torque applied at the pedals, which along with rotational speed give us a decent idea of power. For running power the process is less obvious because we can’t measure the leg muscles directly, however commercially-available products like the Stryd are able to work from acceleration alone, and so once again we ask _how hard can it be?_
 
 Our chosen microcontroller (Arduino Nano IoT), has an inbuilt accelerometer and gyroscope, so no additional hardware is needed. Furthermore, models like [EESA](http://www.georgeron.com/2017/12/stryd-running-power-model.html) offer some promising theoretical grounds for calculating power from foot acceleration.
 
@@ -62,7 +62,7 @@ We picked on the most athletic of our team, Tom, to gather data, and we sent him
 
 ![](https://cdn-images-1.medium.com/max/8000/1*iqCPkif5Is0HR7LVgIkk_A.jpeg)
 
-The tricky bit is deciding exactly what data to collect. We’d start by coming up with some theory and devising an experiment; for instance we may want to understand how change in elevation is related to change in power output. Next we’d gather example data in the chosen conditions. Finally experiments would be run on the data, inevitably leading us to need even more data. Repeat *ad infinitum*.
+The tricky bit is deciding exactly what data to collect. We’d start by coming up with some theory and devising an experiment; for instance we may want to understand how change in elevation is related to change in power output. Next we’d gather example data in the chosen conditions. Finally experiments would be run on the data, inevitably leading us to need even more data. Repeat _ad infinitum_.
 
 At least we got some exercise!
 
@@ -86,13 +86,13 @@ Because this is an open-source project aimed at nerds, we’re not afraid to add
 
 One particular challenge arose. Without getting too far into the detail, we needed to keep an up-to-date estimate as to the direction in which the user moves.
 
-A good approach is [*principal component analysis](https://en.wikipedia.org/wiki/Principal_component_analysis)*, a common technique that is used to find trends in all sorts of situations. In our case, we’re trying to find a major axis of motion from the accelerometer data — i.e. a clear direction.
+A good approach is _[principal component analysis](https://en.wikipedia.org/wiki/Principal_component_analysis)_, a common technique that is used to find trends in all sorts of situations. In our case, we’re trying to find a major axis of motion from the accelerometer data — i.e. a clear direction.
 
 It needed to be done in real-time too, updating the estimate over time so that the mobile app could calculate up-to-date metrics for speed and power. Since nothing out there seemed to fit the bill, we released an [implementation of online PCA](https://github.com/fuzzylabs/incrementalPCA-kotlin) that’s specifically designed to be used in Android apps.
 
 ## The ever receding finish line
 
-*Wearable My Foot* is an ongoing R&D project for Fuzzy Labs. It challenges us as a team to learn and it enables us to try out new technologies away from our client work.
+_Wearable My Foot_ is an ongoing R&D project for Fuzzy Labs. It challenges us as a team to learn and it enables us to try out new technologies away from our client work.
 
 Moreover, much of the underlying technology that we’ve developed can be readily repurposed for similar projects involving analytics and machine learning on sensor data. Get in touch to see how we might be able to help with similar projects.
 
