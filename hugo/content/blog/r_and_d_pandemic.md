@@ -86,7 +86,7 @@ Because this is an open-source project aimed at nerds, we’re not afraid to add
 
 One particular challenge arose. Without getting too far into the detail, we needed to keep an up-to-date estimate as to the direction in which the user moves.
 
-A good approach is _[principal component analysis](https://en.wikipedia.org/wiki/Principal_component_analysis)_, a common technique that is used to find trends in all sorts of situations. In our case, we’re trying to find a major axis of motion from the accelerometer data — i.e. a clear direction.
+A good approach is [principal component analysis](https://en.wikipedia.org/wiki/Principal_component_analysis), a common technique that is used to find trends in all sorts of situations. In our case, we’re trying to find a major axis of motion from the accelerometer data — i.e. a clear direction.
 
 It needed to be done in real-time too, updating the estimate over time so that the mobile app could calculate up-to-date metrics for speed and power. Since nothing out there seemed to fit the bill, we released an [implementation of online PCA](https://github.com/fuzzylabs/incrementalPCA-kotlin) that’s specifically designed to be used in Android apps.
 
