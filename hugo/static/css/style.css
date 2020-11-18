@@ -1553,8 +1553,16 @@ hr {
 }
 
 @media(min-width: 1200px) {
+    .section__blueprint-copy-2 {
+        background-image: url(../images/blueprint-copy-2-bg.png);
+        background-size: 100% auto;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+
     .section__blueprint-copy-3 {
         background-image: url(../images/blueprint-copy-3-bg.png);
+        background-size: auto 100%;
     }
 }
 
