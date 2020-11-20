@@ -4,6 +4,9 @@
 			{{ if .Params.heroHeading }}
                 <h1 class="heading-withunderline heading-withunderline--left">{{ .Params.heroHeading }}</h1>
             {{ end }}
+            {{ if .Params.heroIntro }}
+           		<div class="copy--large">{{ .Params.heroIntro | safeHTML }}</div>
+           	{{ end }}
             {{ .Params.heroCopy | safeHTML }}
 		</div>
 	</section>
