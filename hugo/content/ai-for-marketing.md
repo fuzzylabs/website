@@ -38,6 +38,8 @@ sections:
    image: "/images/AdobeStock_383263142.jpeg"
    heading: "Our approach"
    description: "<p><b>We believe that AI should be for everyone. We work with some pretty clever technologies, but Fuzzy Labs believe in keeping things simple. We don’t assume any prior knowledge of AI, and work with all kinds of business and marketing teams on building and integrating AI systems from the really simple, to the really complex.</b></p><p>Whether you have a lot of data, or very little, we can help you get started with AI to improve your marketing for rapid results. A three phase process means that however you choose to work with us, short or long term, our solutions are quick to deploy.</p><p>We’re completely transparent about the way we work, using both off the shelf technologies along with more bespoke and custom-built solutions. It’s a cost-effective approach, whatever your budget.</p>"
+   buttonText: "Read more about our AI Blueprint"
+   buttonLink: "/ai-blueprint"
  - type: "footer"
    heading: "AI for your marketing..."
    description: "We’d love to chat about how our AI solutions could help improve your marketing."

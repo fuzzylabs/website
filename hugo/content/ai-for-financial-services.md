@@ -41,6 +41,8 @@ sections:
    image: "/images/AdobeStock_266037208.jpeg"
    heading: "Our approach to AI for financial services"
    description: "<p><b>We get it – so much is possible with AI in finance, but changing course can be a long process. Implementing new technologies may also require radical shifts in culture, people, skills and approach, which doesn’t happen overnight.</b></p><p>Our philosophy at Fuzzy Labs is always to keep things as straightforward as possible. We work with you to get clear on where you want to be, then roadmap simple steps on how to put in place the right AI solution and get there, faster, whatever the appetite for innovation.</p><p>From simply testing a quick automation hypothesis, through to implementing a complete end-to-end in house solution, we scale our approach to give you the biggest and best result for your budget.</p><p>There’s no one-size-fits-all solution when it comes to deploying AI, which is why we’ve developed our flexible AI Blueprint framework. It’s a structured process, which allows us to fully understand the opportunities for smarter technologies, and work in partnership with our clients to build a robust business case for progress.</p>"
+   buttonText: "Read more about our AI Blueprint"
+   buttonLink: "/ai-blueprint"
  - type: "footer"
    heading: "AI for your financial services business"
    description: "<p>If all this sounds up your street, you can read more about how Fuzzy Labs work with financial businesses like yours in our whitepaper, ‘Navigating AI in Financial Services’, where we cover all these areas in much more detail.</p><p><a href='/downloads/navigating-ai-in-financial-services.pdf'>Download our whitepaper</a></p>"

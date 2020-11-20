@@ -41,6 +41,8 @@ sections:
    image: "/images/AdobeStock_207219896.jpeg"
    heading: "Our approach"
    description: "<p><b>With a custom approach, we’re able to handle everything from the smallest to the most complex problems in medical technology. AI is our bread and butter, and we’re adept at understanding where existing technology can be applied in new ways to make giant leaps forward for biotech firms.</b></p><p>At Fuzzy Labs, we work collaboratively with our clients to fully understand the issues and opportunities, always scaling our solutions to be cost effective. So whether you need a smarter way of linking MRI scans to patient records, or a robust solution for anonymising your patient data in clinical trials, we can help."
+   buttonText: "Read more about our AI Blueprint"
+   buttonLink: "/ai-blueprint"
  - type: "footer"
    heading: "AI for your biotech business"
    description: "<p>We’re doing exciting things in AI with healthcare firms. If you have big ideas about what could be possible, let’s talk about getting our AI expertise working for your business and make it reality, sooner.</p>"
