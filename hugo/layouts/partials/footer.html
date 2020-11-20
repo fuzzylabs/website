@@ -57,4 +57,13 @@
 <script src="{{ "/vendor/jquery/jquery-3.4.1.min.js" | absURL }}"></script>
 <script src="{{ "/vendor/bootstrap/js/bootstrap.bundle.min.js" | absURL }}"></script>
 <script src="{{ "/js/script.js" | absURL }}"></script>
-
+<script>
+window.addEventListener('load',function(){
+  jQuery('form').submit(function(){
+    gtag('event', 'submit', {
+  'event_category' : 'form',
+  'event_label' : window.location.pathname
+});
+});
+  });
+</script>
