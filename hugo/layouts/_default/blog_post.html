@@ -66,6 +66,33 @@
           <div class="clearfix"></div>
         </div>
         <!-- End Next and PrevPage -->
+
+        <!-- Disqus comments -->
+        <div>
+          <hr>
+          <h1>Comments</h1>
+          <div id="disqus_thread"></div>
+            <script>
+              /**
+              *  recommended configuration variables: edit and uncomment the section below to insert dynamic values from your platform or cms.
+              *  learn why defining these variables is important: https://disqus.com/admin/universalcode/#configuration-variables    */
+              /*
+              var disqus_config = function () {
+              this.page.url = {{.URL}}
+              this.page.identifier = {{.URL}}
+              };
+              */
+              (function() { // DON'T EDIT BELOW THIS LINE
+              var d = document, s = d.createElement('script');
+              s.src = 'https://fuzzylabs.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+        <!-- End Disqus comments -->
+
       </div>
       <!-- End Post -->
     </div>
