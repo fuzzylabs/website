@@ -1,5 +1,4 @@
 $(function () {
-
     var pageLinks = $('.nav-link-in-page');
 
     function setSelectedLink() {
