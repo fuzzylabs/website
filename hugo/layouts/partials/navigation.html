@@ -14,7 +14,7 @@
           <a class="nav-link nav-link-in-page" href="/ai-blueprint">AI Blueprint</a>
         </li>
         <li class="nav-item">
-          <p class="nav-link">Services</p>
+          <span class="nav-link">Services</span>
           <ul class="nav-submenu">
             <li class="nav-item"><a href="/ai-for-healthcare/" class="nav-link">AI For Healthcare</a></li>
             <li class="nav-item"><a href="/ai-for-financial-services/" class="nav-link">AI For Financial Services</a></li>
@@ -38,7 +38,7 @@
         </li>
 
         <li class="nav-item">
-          <p class="nav-link">About</p>
+          <span class="nav-link">About</span>
           <ul class="nav-submenu">
             <li class="nav-item"><a class="nav-link {{ if eq "About" .Title }}selected{{ end }}" href="/about">About</a></li>
             <li class="nav-item"><a class="nav-link nav-link-in-page" href="{{ "/" | absURL }}#contact">Let's Talk</a></li>
@@ -51,6 +51,8 @@
         </li>
 
       </ul>
+
+      <a href="" class="btn btn-secondary btn-lg">Start a Project</a>
     </div>
   </div>
 </nav>
