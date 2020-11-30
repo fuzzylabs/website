@@ -1,58 +1,51 @@
-<nav class="navbar fixed-top navbar-expand-lg">
+<nav class="navbar fixed-top navbar-expand-md">
   <div class="container">
-    <a class="navbar-brand" href="{{ "/" | absURL }}#home"><img class="logo-rectangle" src="{{ "/images/logo.png" | absURL }}" alt="Fuzzy Labs"/></a>
+    <a class="col-xs-4 navbar-brand" href="{{ "/" | absURL }}#home"><img class="logo-rectangle" src="{{ "/images/logo.png" | absURL }}" alt="Fuzzy Labs"/></a>
+    
+    <ul class="col-xs-4 navbar-nav ml-auto">
+      <li class="nav-item">
+        <span class="nav-link">Services <i class="fas fa-caret-down"></i></span>
+        <ul class="nav-submenu">
+          <li class="nav-item"><a href="/ai-for-healthcare/" class="nav-link">AI For Healthcare</a></li>
+          <li class="nav-item"><a href="/ai-for-financial-services/" class="nav-link">AI For Financial Services</a></li>
+          <li class="nav-item"><a href="/ai-for-marketing/" class="nav-link">AI For Marketing</a></li>
+        </ul>
+      </li>
 
-    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="nav-menu-icon">
-        <i class="fas fa-bars fa-1x"></i>
-      </span>
-    </button>
+      <li class="nav-item">
+        <a class="nav-link {{ if or ( eq "case_studies" .Layout) ( eq "case_study_detail" .Layout) }}selected{{ end }}" href="/case-studies">Case Studies <i class="fas fa-caret-down"></i></a>
+        <ul class="nav-submenu">
+          <li class="nav-item"><a class="nav-link" href="/case-studies/personalised-healthcare-dna">Personalised Healthcare using Genetic Data</a></li>
+          <li class="nav-item"><a class="nav-link" href="/case-studies/filtering-explicit-content">Filtering Explicit Content</a></li>
+          <li class="nav-item"><a class="nav-link" href="/case-studies/document-automation">Automating Council Tax Claims</a></li>
+          <li class="nav-item"><a class="nav-link" href="/case-studies/data-warehousing">Speed up Reporting with Data Warehousing</a></li>
+        </ul>
+      </li>
 
-    <div class="collapse navbar-collapse" id="navbar-links">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link nav-link-in-page" href="/ai-blueprint">AI Blueprint</a>
-        </li>
-        <li class="nav-item">
-          <span class="nav-link">Services</span>
-          <ul class="nav-submenu">
-            <li class="nav-item"><a href="/ai-for-healthcare/" class="nav-link">AI For Healthcare</a></li>
-            <li class="nav-item"><a href="/ai-for-financial-services/" class="nav-link">AI For Financial Services</a></li>
-            <li class="nav-item"><a href="/ai-for-marketing/" class="nav-link">AI For Marketing</a></li>
-          </ul>
-        </li>
+      <li class="nav-item">
+        <span class="nav-link">About <i class="fas fa-caret-down"></i></span>
+        <ul class="nav-submenu">
+          <li class="nav-item"><a class="nav-link {{ if eq "About" .Title }}selected{{ end }}" href="/about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ "/join-us" | absURL }}">Join Us</a></li>
+        </ul>
+      </li>
 
-        <li class="nav-item">
-          <a class="nav-link {{ if or ( eq "case_studies" .Layout) ( eq "case_study_detail" .Layout) }}selected{{ end }}" href="/case-studies">Case Studies</a>
-          <ul class="nav-submenu">
-            <li class="nav-item"><a class="nav-link" href="/case-studies/personalised-healthcare-dna">Personalised Healthcare using Genetic Data</a></li>
-            <li class="nav-item"><a class="nav-link" href="/case-studies/filtering-explicit-content">Filtering Explicit Content</a></li>
-            <li class="nav-item"><a class="nav-link" href="/case-studies/document-automation">Automating Council Tax Claims</a></li>
-            <li class="nav-item"><a class="nav-link" href="/case-studies/data-warehousing">Speed up Reporting with Data Warehousing<a/></li>
-          </ul>
-        </li>
+      <li class="nav-item">
+        <a class="nav-link {{ if eq "Blog" .Title }}selected{{ end }}" href="/blog">Blog</a>
+      </li>
 
+      <li class="nav-item">
+        <a class="nav-link" href="http://github.com/fuzzylabs" target="_blank" rel="noopener">Code <i class="fab fa-github  ml-1"></i> </a>
+      </li>
+    </ul>
 
-        <li class="nav-item">
-          <a class="nav-link {{ if eq "Blog" .Title }}selected{{ end }}" href="/blog">Blog</a>
-        </li>
-
-        <li class="nav-item">
-          <span class="nav-link">About</span>
-          <ul class="nav-submenu">
-            <li class="nav-item"><a class="nav-link {{ if eq "About" .Title }}selected{{ end }}" href="/about">About</a></li>
-            <li class="nav-item"><a class="nav-link nav-link-in-page" href="{{ "/" | absURL }}#contact">Let's Talk</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ "/join-us" | absURL }}">Join Us</a></li>
-          </ul>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="http://github.com/fuzzylabs" target="_blank" rel="noopener">Code <i class="fab fa-github  ml-1"></i> </a>
-        </li>
-
-      </ul>
-
-      <a href="" class="btn btn-secondary btn-lg">Start a Project</a>
-    </div>
+    <ul class="col-xs-4 navbar-nav ml-auto">
+      <li class="nav-item">
+        <a href="/ai-blueprint" id="navbar-cta" class="btn btn-info" role="button">AI Blueprint</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-link-in-page" href="/sales">Contact Sales</a>
+      </li>
+    </ul>
   </div>
 </nav>
