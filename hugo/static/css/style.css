@@ -102,23 +102,10 @@ a:hover {
   color: #fff;
 }
 
-.nav-submenu {
-    display: none;
-    list-style: none;
-    margin: 0;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #101d39;
-    padding: 10px;
-}
-
-.nav-item:hover .nav-submenu {
-    display: block;
-}
-
-.nav-submenu .nav-item {
-    white-space: nowrap;
+.dropdown-menu {
+  background: #145C81;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .section-blog {
