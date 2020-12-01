@@ -1140,7 +1140,8 @@ ul.link-list li {
     line-height: 24px;
     cursor: pointer;
     padding: 10px 50px 10px 10px;
-    background: url(/images/chevron.png) #7ADBBA no-repeat right 10px center;
+    color: #fff;
+    background: url(/images/chevron.png) #48a7aa no-repeat right 10px center;
     background-size: auto 50%;
 }
 

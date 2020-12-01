@@ -143,42 +143,26 @@
     </div>
   </div>
 </section>
-<section id="contact" class="section section-contact">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 align-items-center ml-auto d-flex">
-        <div style="max-width: 440px" class="mb-5">
-          <h1 style="padding-top: 50px; color: #48a7aa">Let's talk</h1>
-          <p class="mb-4">We love to talk about AI. Drop us a message and we'll get back to you.</p>
-          <form method="post" action="https://formspree.io/talk@fuzzylabs.ai" role="form">
-            <div class="controls">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label for="email">Email *</label>
-                    <input id="email" type="email" name="email" class="form-control"
-                           placeholder="Please enter your email" required="required">
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label for="message">Message *</label>
-                    <textarea id="message" name="message" class="form-control"
-                              placeholder="Write your message here" rows="10" cols="90"
-                              required="required"></textarea>
-                  </div>
-                </div>
-                <div class="col-md-12 mt-2">
-                  <input type="submit" class="btn btn-lg btn-secondary btn-send" value="Send message">
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
+<section id="contact" class="section">
+  <div class="section__landing-footer-top text-center">
+    <div class="container">
+      <h2 class="section__landing-footer-top-heading">AI For You</h2>
+      <div class="section__landing-footer-top-description">
+        We work with forward-thinking business to deliver world-class AI-driven solutions.
       </div>
+    </div>
+  </div>
+  <div class="section__landing-footer-middle text-center">
+    <div class="container">
+      <div class="section__landing-footer-middle-description">
+        Have a question about how AI could work for you? <br>Give us a shout using the form below.
+      </div>
+    </div>
+  </div>
+  <div class="section__landing-footer-bottom">
+    <div class="container">
+      <h2 class="heading-withblock text-center" data-aos="fade-up" data-aos-duration="1000"><span><span class="copy">Get in touch</span></span></h2>
+      {{ partial "contact-form.html" . }}
     </div>
   </div>
 </section>
