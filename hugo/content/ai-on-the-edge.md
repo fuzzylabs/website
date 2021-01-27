@@ -5,7 +5,7 @@ draft: false
 type: page
 layout: landing
 metadescription: "With AI, two things really count. Firstly, what your AI model does – the capability it’s trained for, for example recognising images, or tracking movement. Secondly, where and how that capability is deployed. Edge computing runs the power of the AI model right where you need it – in your hardware or device. Why? For faster, powerful, portable and secure processing."
-image: "/images/medical-scope.jpg"
+image: "/images/AdobeStock_405767900.jpeg"
 sections:
  - type: "intro"
    backgroundicon: "topright"
