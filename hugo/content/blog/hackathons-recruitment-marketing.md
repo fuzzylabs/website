@@ -1,7 +1,7 @@
 ---
 title: "How Hackathons Help With Recruitment, Marketing And The Community | Blog | Fuzzy Labs"
 articletitle: "How Hackathons Help With Recruitment, Marketing And The Community"
-description: "How Hackathons Help With Recruitment, Marketing And The Community"
+description: " "
 metadescription: "How Hackathons Help With Recruitment, Marketing And The Community"
 date: 2021-04-20T00:00:00
 tags: ["artificial intelligence"]
