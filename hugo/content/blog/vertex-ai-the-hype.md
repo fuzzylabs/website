@@ -57,7 +57,8 @@ Some of the options for managed datasets
 As for experiment tracking, Vertex promises centralised tracking of parameters and performance, via TensorBoard. Unfortunately we ran into problems here as well because, while TensorBoard itself works fine when run locally, we couldn’t upload the logs to Vertex, which means you can’t easily share experiments among a team, which defeats the object of experiment tracking.
 
 Overall we found the tooling at this phase needs some work. For now, we’d prefer to use a specialised data versioning system and experiment tracker.
-Training
+
+### Training
 
 So, you have a model that you’re happy with. You’ve trained and tested it locally as part of your experimentation, and now you want to productionise it. Vertex offers two things: training jobs and pipelines.
 
@@ -98,7 +99,7 @@ Note that the model, on its own, is not exposed as a web service. Deployment of 
 
 Model hosting is a mature feature which we would recommend for production use.
 
-## Monitoring
+### Monitoring
 
 The prospect of model monitoring in Vertex is pretty exciting. According to the documentation, it can monitor your deployed models for suspicious inputs. Specifically, it works in one of two modes:
 
@@ -115,7 +116,7 @@ Unfortunately, even though we were able to set monitoring up — using the gclou
 
 Even if we had got it to work, the lack of UI would still be a serious negative. Our conclusion is that while this looks like a really useful thing to have, it just isn’t ready yet.
 
-## Continuous Training
+### Continuous Training
 
 Nothing is ever truly finished. We always need to re-train our models, either based on manual decisions or automation. Continuous training is about enabling a team to rapidly re-train and deploy new versions of models.
 
