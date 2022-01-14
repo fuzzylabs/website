@@ -50,11 +50,13 @@ It works with any kind of data, and for storing that data DVC offers a lot of fl
 Alternatively you can use it in conjunction with  DagsHub, which you can think of as Github for data. It makes it easy for people to share and collaborate on data. Like Github, DagsHub exposes datasets as repositories, which can either be public or private. This way you can use DVC without setting up any infrastructure yourself.
 
 Pros:
+
 * Easy to setup and use.
 * Intuitive Git integration
 * Works with any data format, framework and data storage.
 
 Cons:
+
 * Not suited to big data.
 * Git integration isn't appropriate for all use-cases.
 
@@ -67,9 +69,11 @@ For data storage it works with AWS, Google Cloud, and Azure cloud storage, as we
 Delta Lake is designed around something called the Lakehouse Architecture, which is an open source data management architecture designed to enable machine learning on big data.
 
 Pros:
+
 * The Lakehouse Architecture implemented by Delta Lake is a well-known open standard for managing big data.
 * Compatible with various data lake technologies.
 
 Cons:
+
 * Delta Lake is designed to work with big data. As a result, it's overkill for smaller projects that don't require that scale.
 * While it can work with any kind of data, Delta Lake persists that data using its own format, that isn't directly compatible with other tools.
