@@ -75,6 +75,21 @@ Cons:
 
 * Because it is a complete MLOps framework, MLFlow is a bit more complicated to set up and get started with than other tools in this list.
 
+### Sacred
+
+Sacred is developed by the Swiss AI Lab, IDSIA. It provides a Python library which you use in combination with your training code to log experiments. It stores those experiments to a database, allowing you to centrally track experiments in the cloud as long as you have a database instance available to use.
+
+Sacred is designed to support various database integrations, and furthermore it comes with a variety of different front-end user interfaces, many developed by 3rd parties, giving you a lot of choice in what you use. Additionally, it is relatively easy to build your own user interface for custom use-cases.
+
+Pros:
+
+* Separate database, experiment capture, and user interface making it easy to chose the best option for your use-case, or do custom builds.
+* Opinionated workflow provides a clear standard for structuring experiments.
+
+Cons:
+
+* Can be cumbersome to set up, because it requires a database server and a user interface server to be deployed and configured in a central location.
+
 ### Tensorboard
 
 TensorBoard comes as part of the TensorFlow machine learning framework. It's very easy to set up and use, and there's even a free cloud hosted version, tensorboard.dev, if you don't want to set up your own server.
