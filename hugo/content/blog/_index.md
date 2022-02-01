@@ -1,7 +1,7 @@
 ---
-title: "The AI Journal | Insights into Artificial Intelligence | Fuzzy Labs"
-articletitle: "The AI Journal"
-description: AI Insights from Fuzzy Labs
+title: "Insights into Open Source MLOps | Fuzzy Labs"
+articletitle: "The Open Source MLOps Blog"
+description: Open Source MLOps Insights from Fuzzy Labs
 draft: false
-metadescription: "Read our latest thoughts on AI, Cloud, DevOps, IoT and more!"
+metadescription: "Read our latest thoughts on MLOps, AI, Cloud, DevOps, IoT and more!"
 ---
