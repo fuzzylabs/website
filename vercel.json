@@ -7,9 +7,6 @@
       "HUGO_VERSION": "0.58.3"
     }
   },
-  "functions": {},
-  "redirects": [],
-  "rewrites": [],
   "headers": [
     {
       "source": "/static/(.*)",
