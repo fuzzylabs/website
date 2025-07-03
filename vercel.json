@@ -1,5 +1,5 @@
 {
-  "buildCommand": "cd hugo && hugo --minify",
+  "buildCommand": "cd hugo && hugo --minify --baseURL /",
   "outputDirectory": "hugo/public",
   "github": {
     "silent": true
@@ -11,7 +11,7 @@
   },
   "headers": [
     {
-      "source": "/static/(.*)",
+      "source": "/(.*\\.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot))",
       "headers": [
         {
           "key": "Cache-Control",
