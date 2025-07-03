@@ -2,25 +2,25 @@
   <p>Share</p>
   <ul>
     <li class="ml-1 mr-1">
-      <a target="_blank" href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .URL | absLangURL }}" onclick="window.open(this.href, 'twitter-share', 'width=550, height=435'); return false;">
+      <a target="_blank" href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .RelPermalink | absLangURL }}" onclick="window.open(this.href, 'twitter-share', 'width=550, height=435'); return false;">
         <i class="fab fa-twitter"></i>
       </a>
     </li>
 
     <li class="ml-1 mr-1">
-      <a target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url={{ .URL | absLangURL }}" onclick="window.open(this.href, 'twitter-share', 'width=550, height=435'); return false;">
+      <a target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url={{ .RelPermalink | absLangURL }}" onclick="window.open(this.href, 'twitter-share', 'width=550, height=435'); return false;">
         <i class="fab fa-linkedin"></i>
       </a>
     </li>
 
     <li class="ml-1 mr-1">
-      <a target="_blank" href="https://facebook.com/sharer.php?u={{ .URL | absLangURL }}" onclick="window.open(this.href, 'facebook-share', 'width=550, height=435'); return false;">
+      <a target="_blank" href="https://facebook.com/sharer.php?u={{ .RelPermalink | absLangURL }}" onclick="window.open(this.href, 'facebook-share', 'width=550, height=435'); return false;">
         <i class="fab fa-facebook-f"></i>
       </a>
     </li>
 
     <li class="ml-1 mr-1">
-      <a target="_blank" href="https://reddit.com/submit?url={{ .URL | absLangURL }}" onclick="window.open(this.href, 'facebook-share', 'width=550, height=435'); return false;">
+      <a target="_blank" href="https://reddit.com/submit?url={{ .RelPermalink | absLangURL }}" onclick="window.open(this.href, 'facebook-share', 'width=550, height=435'); return false;">
         <i class="fab fa-reddit"></i>
       </a>
     </li>

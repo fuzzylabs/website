@@ -55,12 +55,12 @@
         <div class="row PageNavigation d-flex justify-content-between" style="padding-bottom: 30px">
           <div class="col-md-6">
             {{with .NextInSection}}
-            <a class="d-block" href="{{.URL}}"> &laquo; {{.Params.articletitle}}</a>
+            <a class="d-block" href="{{.RelPermalink}}"> &laquo; {{.Params.articletitle}}</a>
             {{end}}
           </div>
           <div class="col-md-6">
             {{with .PrevInSection}}
-            <a class="d-block text-lg-right" href="{{.URL}}">{{.Params.articletitle}} &raquo;</a>
+            <a class="d-block text-lg-right" href="{{.RelPermalink}}">{{.Params.articletitle}} &raquo;</a>
             {{end}}
           </div>
           <div class="clearfix"></div>
@@ -78,8 +78,8 @@
               *  learn why defining these variables is important: https://disqus.com/admin/universalcode/#configuration-variables    */
               /*
               var disqus_config = function () {
-              this.page.url = {{.URL}}
-              this.page.identifier = {{.URL}}
+              this.page.url = {{.RelPermalink | absURL}}
+              this.page.identifier = {{.RelPermalink}}
               };
               */
               (function() { // DON'T EDIT BELOW THIS LINE
